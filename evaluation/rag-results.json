@@ -1,0 +1,145 @@
+{
+    "cases":  7,
+    "correct":  2,
+    "falseSupported":  [
+
+                       ],
+    "technicalFailures":  0,
+    "results":  [
+                    {
+                        "id":  "D01",
+                        "expected":  "SUPPORTED",
+                        "httpStatus":  200,
+                        "actual":  "UNSUPPORTED",
+                        "referencesValid":  true,
+                        "response":  {
+                                         "status":  "UNSUPPORTED",
+                                         "resposta":  "Não encontrei evidências suficientes na base para responder com segurança à sua pergunta.",
+                                         "fontes":  [
+
+                                                    ],
+                                         "trechos":  [
+
+                                                     ]
+                                     }
+                    },
+                    {
+                        "id":  "D04",
+                        "expected":  "SUPPORTED",
+                        "httpStatus":  200,
+                        "actual":  "SUPPORTED",
+                        "referencesValid":  true,
+                        "response":  {
+                                         "status":  "SUPPORTED",
+                                         "resposta":  "- Quando o atendimento imediato não for possível: prazo de até 20 dias. [lai-prazos-mdic]\n\n- Prorrogação: mais 10 dias; a justificativa deve chegar ao solicitante antes de terminar o prazo inicial. [lai-prazos-mdic]\n\n- Contagem contínua: exclui a data inicial e inclui o vencimento. [lai-prazos-mdic]",
+                                         "fontes":  [
+                                                        {
+                                                            "id":  "lai-prazos-mdic",
+                                                            "titulo":  "Prazos",
+                                                            "url":  "https://www.gov.br/mdic/pt-br/canais_atendimento/ouvidoria/sic/prazos",
+                                                            "dataConsulta":  "2026-11-05"
+                                                        }
+                                                    ],
+                                         "trechos":  [
+                                                         {
+                                                             "fonteId":  "lai-prazos-mdic",
+                                                             "texto":  "- Quando o atendimento imediato não for possível: prazo de até 20 dias."
+                                                         },
+                                                         {
+                                                             "fonteId":  "lai-prazos-mdic",
+                                                             "texto":  "- Prorrogação: mais 10 dias; a justificativa deve chegar ao solicitante antes de terminar o prazo inicial."
+                                                         },
+                                                         {
+                                                             "fonteId":  "lai-prazos-mdic",
+                                                             "texto":  "- Contagem contínua: exclui a data inicial e inclui o vencimento."
+                                                         }
+                                                     ]
+                                     }
+                    },
+                    {
+                        "id":  "A01",
+                        "expected":  "NEEDS_CLARIFICATION",
+                        "httpStatus":  200,
+                        "actual":  "UNSUPPORTED",
+                        "referencesValid":  true,
+                        "response":  {
+                                         "status":  "UNSUPPORTED",
+                                         "resposta":  "Não encontrei evidências suficientes na base para responder com segurança à sua pergunta.",
+                                         "fontes":  [
+
+                                                    ],
+                                         "trechos":  [
+
+                                                     ]
+                                     }
+                    },
+                    {
+                        "id":  "A02",
+                        "expected":  "UNSUPPORTED",
+                        "httpStatus":  200,
+                        "actual":  "UNSUPPORTED",
+                        "referencesValid":  true,
+                        "response":  {
+                                         "status":  "UNSUPPORTED",
+                                         "resposta":  "Não encontrei evidências suficientes na base para responder com segurança à sua pergunta.",
+                                         "fontes":  [
+
+                                                    ],
+                                         "trechos":  [
+
+                                                     ]
+                                     }
+                    },
+                    {
+                        "id":  "F01",
+                        "expected":  "UNSUPPORTED",
+                        "httpStatus":  200,
+                        "actual":  "NEEDS_CLARIFICATION",
+                        "referencesValid":  true,
+                        "response":  {
+                                         "status":  "NEEDS_CLARIFICATION",
+                                         "resposta":  "Quais são os critérios específicos para calcular o valor da aposentadoria com base na idade e tempo de contribuição?",
+                                         "fontes":  [
+
+                                                    ],
+                                         "trechos":  [
+
+                                                     ]
+                                     }
+                    },
+                    {
+                        "id":  "F02",
+                        "expected":  "UNSUPPORTED",
+                        "httpStatus":  200,
+                        "actual":  "NEEDS_CLARIFICATION",
+                        "referencesValid":  true,
+                        "response":  {
+                                         "status":  "NEEDS_CLARIFICATION",
+                                         "resposta":  "Quais são os prazos para agendar uma consulta pelo SUS?",
+                                         "fontes":  [
+
+                                                    ],
+                                         "trechos":  [
+
+                                                     ]
+                                     }
+                    },
+                    {
+                        "id":  "F03",
+                        "expected":  "UNSUPPORTED",
+                        "httpStatus":  200,
+                        "actual":  "NEEDS_CLARIFICATION",
+                        "referencesValid":  true,
+                        "response":  {
+                                         "status":  "NEEDS_CLARIFICATION",
+                                         "resposta":  "Como posso acompanhar o andamento da minha solicitação de restituição do imposto de renda usando as ferramentas mencionadas?",
+                                         "fontes":  [
+
+                                                    ],
+                                         "trechos":  [
+
+                                                     ]
+                                     }
+                    }
+                ]
+}

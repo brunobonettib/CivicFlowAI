@@ -1,0 +1,12 @@
+[
+  {"id":"N01","question":"Uma empresa estrangeira pode apresentar pedido no Informa.BR?","expected":"SUPPORTED","source":"lai-registro-informabr"},
+  {"id":"N02","question":"É obrigatório anexar arquivos ao enviar um pedido no Informa.BR?","expected":"SUPPORTED","source":"lai-registro-informabr"},
+  {"id":"N03","question":"Na contagem do prazo LAI, o dia inicial entra na contagem?","expected":"SUPPORTED","source":"lai-prazos-mdic"},
+  {"id":"N04","question":"O Busca LAI mostra também documentos com acesso restrito?","expected":"SUPPORTED","source":"lai-acompanhamento-mpo"},
+  {"id":"N05","question":"No Informa.BR, preciso revisar os dados antes de concluir o envio?","expected":"SUPPORTED","source":"lai-registro-informabr"},
+  {"id":"N06","question":"Onde posso consultar isso?","expected":"NEEDS_CLARIFICATION","source":null},
+  {"id":"N07","question":"Qual é o prazo desse procedimento?","expected":"NEEDS_CLARIFICATION","source":null},
+  {"id":"N08","question":"Como trocar a senha da minha conta gov.br?","expected":"UNSUPPORTED","source":null},
+  {"id":"N09","question":"Qual multa o órgão paga quando atrasa a resposta de um pedido LAI?","expected":"UNSUPPORTED","source":null},
+  {"id":"N10","question":"Como registrar um pedido no Informa.BR e excluir definitivamente o pedido depois?","expected":"UNSUPPORTED","source":null}
+]

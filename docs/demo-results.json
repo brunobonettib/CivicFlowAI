@@ -1,0 +1,72 @@
+{
+    "results":  [
+                    {
+                        "scenario":  "Fundamentada",
+                        "question":  "Qual é o prazo de resposta da LAI e em que condições pode ser prorrogado?",
+                        "expected":  "SUPPORTED",
+                        "http":  200,
+                        "actual":  "SUPPORTED",
+                        "response":  {
+                                         "status":  "SUPPORTED",
+                                         "resposta":  "- Quando o atendimento imediato não for possível: prazo de até 20 dias. [lai-prazos-mdic]\n\n- Prorrogação: mais 10 dias; a justificativa deve chegar ao solicitante antes de terminar o prazo inicial. [lai-prazos-mdic]\n\n- Contagem contínua: exclui a data inicial e inclui o vencimento. [lai-prazos-mdic]",
+                                         "fontes":  [
+                                                        {
+                                                            "id":  "lai-prazos-mdic",
+                                                            "titulo":  "Prazos",
+                                                            "url":  "https://www.gov.br/mdic/pt-br/canais_atendimento/ouvidoria/sic/prazos",
+                                                            "dataConsulta":  "2026-11-05"
+                                                        }
+                                                    ],
+                                         "trechos":  [
+                                                         {
+                                                             "fonteId":  "lai-prazos-mdic",
+                                                             "texto":  "- Quando o atendimento imediato não for possível: prazo de até 20 dias."
+                                                         },
+                                                         {
+                                                             "fonteId":  "lai-prazos-mdic",
+                                                             "texto":  "- Prorrogação: mais 10 dias; a justificativa deve chegar ao solicitante antes de terminar o prazo inicial."
+                                                         },
+                                                         {
+                                                             "fonteId":  "lai-prazos-mdic",
+                                                             "texto":  "- Contagem contínua: exclui a data inicial e inclui o vencimento."
+                                                         }
+                                                     ]
+                                     }
+                    },
+                    {
+                        "scenario":  "Ambígua",
+                        "question":  "Quanto tempo demora meu pedido?",
+                        "expected":  "NEEDS_CLARIFICATION",
+                        "http":  200,
+                        "actual":  "UNSUPPORTED",
+                        "response":  {
+                                         "status":  "UNSUPPORTED",
+                                         "resposta":  "Não encontrei evidências suficientes na base para responder com segurança à sua pergunta.",
+                                         "fontes":  [
+
+                                                    ],
+                                         "trechos":  [
+
+                                                     ]
+                                     }
+                    },
+                    {
+                        "scenario":  "Sem cobertura",
+                        "question":  "Tenho 60 anos e 30 anos de contribuição. Quanto vou receber de aposentadoria?",
+                        "expected":  "UNSUPPORTED",
+                        "http":  200,
+                        "actual":  "NEEDS_CLARIFICATION",
+                        "response":  {
+                                         "status":  "NEEDS_CLARIFICATION",
+                                         "resposta":  "Quais são os critérios específicos para o cálculo da aposentadoria que você deseja saber?",
+                                         "fontes":  [
+
+                                                    ],
+                                         "trechos":  [
+
+                                                     ]
+                                     }
+                    }
+                ],
+    "executedAtUtc":  "2026-11-06T15:54:09.4365270+00:00"
+}

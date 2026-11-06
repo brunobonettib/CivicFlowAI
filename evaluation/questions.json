@@ -1,0 +1,92 @@
+[
+  {
+    "id": "D01", "category": "dominio",
+    "question": "Como entro no Informa.BR e registro um pedido de acesso à informação?",
+    "expectedDocumentIds": ["lai-registro-informabr"], "relatedDocumentIds": [],
+    "evidence": "suficiente", "note": "Autenticação gov.br e etapas de abertura e envio."
+  },
+  {
+    "id": "D02", "category": "dominio",
+    "question": "Preciso pagar alguma taxa para fazer um pedido de informação?",
+    "expectedDocumentIds": ["lai-registro-informabr"], "relatedDocumentIds": [],
+    "evidence": "suficiente", "note": "A ficha informa a gratuidade do serviço."
+  },
+  {
+    "id": "D03", "category": "dominio",
+    "question": "Depois de enviar o pedido, como recebo o número do protocolo?",
+    "expectedDocumentIds": ["lai-registro-informabr"], "relatedDocumentIds": [],
+    "evidence": "suficiente", "note": "Envio do protocolo por e-mail."
+  },
+  {
+    "id": "D04", "category": "dominio",
+    "question": "Qual é o prazo de resposta da LAI e em que condições pode ser prorrogado?",
+    "expectedDocumentIds": ["lai-prazos-mdic"], "relatedDocumentIds": [],
+    "evidence": "suficiente", "note": "20 dias, mais 10 com justificativa antes do término inicial."
+  },
+  {
+    "id": "D05", "category": "dominio",
+    "question": "Se envio meu pedido de informação às 20h, quando começa a contagem do prazo?",
+    "expectedDocumentIds": ["lai-prazos-mdic"], "relatedDocumentIds": [],
+    "evidence": "suficiente", "note": "Regra para registros entre 19h e 23h59."
+  },
+  {
+    "id": "D06", "category": "dominio",
+    "question": "O que acontece se o prazo do pedido de informação vencer em um dia sem expediente?",
+    "expectedDocumentIds": ["lai-prazos-mdic"], "relatedDocumentIds": [],
+    "evidence": "suficiente", "note": "Deslocamento para o próximo dia útil."
+  },
+  {
+    "id": "D07", "category": "dominio",
+    "question": "Consigo pesquisar pedidos e respostas públicos por ano, órgão e instância de recurso?",
+    "expectedDocumentIds": ["lai-acompanhamento-mpo"], "relatedDocumentIds": [],
+    "evidence": "suficiente", "note": "Filtros da pesquisa pública no Busca LAI."
+  },
+  {
+    "id": "D08", "category": "dominio",
+    "question": "Desde quando o Busca LAI reúne pedidos públicos e ele mostra informações pessoais ou sigilosas?",
+    "expectedDocumentIds": ["lai-acompanhamento-mpo"], "relatedDocumentIds": [],
+    "evidence": "suficiente", "note": "Cobertura desde 2015-07-01 e exclusão de conteúdo restrito."
+  },
+  {
+    "id": "D09", "category": "dominio",
+    "question": "No Informa.BR posso acompanhar o tratamento do pedido, receber a resposta do órgão e apresentar recurso?",
+    "expectedDocumentIds": ["lai-acompanhamento-mpo"], "relatedDocumentIds": [],
+    "evidence": "suficiente", "note": "A ficha do MPO menciona expressamente as três funcionalidades."
+  },
+  {
+    "id": "A01", "category": "ambigua",
+    "question": "Quanto tempo demora meu pedido?",
+    "expectedDocumentIds": [], "relatedDocumentIds": ["lai-prazos-mdic"],
+    "evidence": "esclarecimento", "note": "Tipo de pedido não informado; não presumir que seja LAI."
+  },
+  {
+    "id": "A02", "category": "ambigua",
+    "question": "Como faço para recorrer de uma resposta ao pedido de informação e qual é o prazo do recurso?",
+    "expectedDocumentIds": [], "relatedDocumentIds": ["lai-acompanhamento-mpo"],
+    "evidence": "parcial", "note": "A ficha local cita recurso, mas não traz seu procedimento nem prazo. Avaliação do conteúdo local, não da página integral."
+  },
+  {
+    "id": "A03", "category": "ambigua",
+    "question": "Meu pedido de informação foi negado por sigilo. A negativa foi correta?",
+    "expectedDocumentIds": [], "relatedDocumentIds": ["lai-acompanhamento-mpo"],
+    "evidence": "insuficiente", "note": "Não há detalhes do caso nem regras de classificação que permitam julgar a negativa."
+  },
+  {
+    "id": "F01", "category": "fora",
+    "question": "Tenho 60 anos e 30 anos de contribuição. Quanto vou receber de aposentadoria?",
+    "expectedDocumentIds": [], "relatedDocumentIds": [],
+    "evidence": "insuficiente", "note": "A base não contém regras de cálculo previdenciário."
+  },
+  {
+    "id": "F02", "category": "fora",
+    "question": "Como agendar uma consulta pelo SUS e qual é o prazo de atendimento?",
+    "expectedDocumentIds": [], "relatedDocumentIds": [],
+    "evidence": "insuficiente", "note": "Agendamento e prazo de atendimento de saúde não são prazos da LAI."
+  },
+  {
+    "id": "F03", "category": "fora",
+    "question": "Como consultar o andamento da restituição do imposto de renda e quando vou receber?",
+    "expectedDocumentIds": [], "relatedDocumentIds": [],
+    "evidence": "insuficiente", "note": "A base não cobre consulta ou calendário de restituição tributária."
+  }
+]

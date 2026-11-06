@@ -1,0 +1,129 @@
+{
+    "cases":  7,
+    "correct":  1,
+    "falseSupported":  [
+
+                       ],
+    "technicalFailures":  0,
+    "results":  [
+                    {
+                        "id":  "D01",
+                        "expected":  "SUPPORTED",
+                        "httpStatus":  200,
+                        "actual":  "UNSUPPORTED",
+                        "referencesValid":  true,
+                        "response":  {
+                                         "status":  "UNSUPPORTED",
+                                         "resposta":  "Não encontrei evidências suficientes na base para responder com segurança à sua pergunta.",
+                                         "fontes":  [
+
+                                                    ],
+                                         "trechos":  [
+
+                                                     ]
+                                     }
+                    },
+                    {
+                        "id":  "D04",
+                        "expected":  "SUPPORTED",
+                        "httpStatus":  200,
+                        "actual":  "UNSUPPORTED",
+                        "referencesValid":  true,
+                        "response":  {
+                                         "status":  "UNSUPPORTED",
+                                         "resposta":  "Não encontrei evidências suficientes na base para responder com segurança à sua pergunta.",
+                                         "fontes":  [
+
+                                                    ],
+                                         "trechos":  [
+
+                                                     ]
+                                     }
+                    },
+                    {
+                        "id":  "A01",
+                        "expected":  "NEEDS_CLARIFICATION",
+                        "httpStatus":  200,
+                        "actual":  "UNSUPPORTED",
+                        "referencesValid":  true,
+                        "response":  {
+                                         "status":  "UNSUPPORTED",
+                                         "resposta":  "Não encontrei evidências suficientes na base para responder com segurança à sua pergunta.",
+                                         "fontes":  [
+
+                                                    ],
+                                         "trechos":  [
+
+                                                     ]
+                                     }
+                    },
+                    {
+                        "id":  "A02",
+                        "expected":  "UNSUPPORTED",
+                        "httpStatus":  200,
+                        "actual":  "UNSUPPORTED",
+                        "referencesValid":  true,
+                        "response":  {
+                                         "status":  "UNSUPPORTED",
+                                         "resposta":  "Não encontrei evidências suficientes na base para responder com segurança à sua pergunta.",
+                                         "fontes":  [
+
+                                                    ],
+                                         "trechos":  [
+
+                                                     ]
+                                     }
+                    },
+                    {
+                        "id":  "F01",
+                        "expected":  "UNSUPPORTED",
+                        "httpStatus":  200,
+                        "actual":  "NEEDS_CLARIFICATION",
+                        "referencesValid":  true,
+                        "response":  {
+                                         "status":  "NEEDS_CLARIFICATION",
+                                         "resposta":  "Quais são os critérios específicos para o cálculo da aposentadoria que você deseja saber?",
+                                         "fontes":  [
+
+                                                    ],
+                                         "trechos":  [
+
+                                                     ]
+                                     }
+                    },
+                    {
+                        "id":  "F02",
+                        "expected":  "UNSUPPORTED",
+                        "httpStatus":  200,
+                        "actual":  "NEEDS_CLARIFICATION",
+                        "referencesValid":  true,
+                        "response":  {
+                                         "status":  "NEEDS_CLARIFICATION",
+                                         "resposta":  "Quais são os prazos de atendimento para agendar uma consulta pelo SUS?",
+                                         "fontes":  [
+
+                                                    ],
+                                         "trechos":  [
+
+                                                     ]
+                                     }
+                    },
+                    {
+                        "id":  "F03",
+                        "expected":  "UNSUPPORTED",
+                        "httpStatus":  200,
+                        "actual":  "NEEDS_CLARIFICATION",
+                        "referencesValid":  true,
+                        "response":  {
+                                         "status":  "NEEDS_CLARIFICATION",
+                                         "resposta":  "Como posso consultar o andamento da minha restituição do imposto de renda?",
+                                         "fontes":  [
+
+                                                    ],
+                                         "trechos":  [
+
+                                                     ]
+                                     }
+                    }
+                ]
+}

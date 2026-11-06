@@ -1,0 +1,244 @@
+{
+  "ollamaVersion": "0.40.14",
+  "model": "embeddinggemma:latest",
+  "modelDigest": "85462619ee721b466c5927d109d4cb765861907d5417b9109caebc4e614679f1",
+  "questionsSha256": "c349e03274eb9671b51ec065bde6dd33224ab55be63cede96fc9f69c18cb54f7",
+  "corpusSha256": "eae87ed89aa36266a2bfaec36b39dee53ae8747f36f9695cf9e481eb24745ee2",
+  "targetCharacters": 1000,
+  "batchSize": 2,
+  "topK": 2,
+  "documents": 3,
+  "chunks": 3,
+  "dimensions": 768,
+  "expectedSourceCases": 9,
+  "top1Correct": 8,
+  "top1Accuracy": 0.8888888888888888,
+  "failures": 0,
+  "results": [
+    {
+      "id": "D01",
+      "status": "Completed",
+      "topResults": [
+        {
+          "documentId": "lai-registro-informabr",
+          "score": 0.7013349742367588
+        },
+        {
+          "documentId": "lai-acompanhamento-mpo",
+          "score": 0.5773550120572695
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "D02",
+      "status": "Completed",
+      "topResults": [
+        {
+          "documentId": "lai-registro-informabr",
+          "score": 0.5456776041840441
+        },
+        {
+          "documentId": "lai-acompanhamento-mpo",
+          "score": 0.39092132360795445
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "D03",
+      "status": "Completed",
+      "topResults": [
+        {
+          "documentId": "lai-registro-informabr",
+          "score": 0.3723853674875607
+        },
+        {
+          "documentId": "lai-prazos-mdic",
+          "score": 0.36029552527349
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "D04",
+      "status": "Completed",
+      "topResults": [
+        {
+          "documentId": "lai-prazos-mdic",
+          "score": 0.6309057893871115
+        },
+        {
+          "documentId": "lai-acompanhamento-mpo",
+          "score": 0.4805966137861709
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "D05",
+      "status": "Completed",
+      "topResults": [
+        {
+          "documentId": "lai-prazos-mdic",
+          "score": 0.6098940404247842
+        },
+        {
+          "documentId": "lai-registro-informabr",
+          "score": 0.4455449999703831
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "D06",
+      "status": "Completed",
+      "topResults": [
+        {
+          "documentId": "lai-prazos-mdic",
+          "score": 0.5678461114713497
+        },
+        {
+          "documentId": "lai-registro-informabr",
+          "score": 0.40356111872586514
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "D07",
+      "status": "Completed",
+      "topResults": [
+        {
+          "documentId": "lai-acompanhamento-mpo",
+          "score": 0.54977059930892
+        },
+        {
+          "documentId": "lai-registro-informabr",
+          "score": 0.5085603536099558
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "D08",
+      "status": "Completed",
+      "topResults": [
+        {
+          "documentId": "lai-acompanhamento-mpo",
+          "score": 0.6200675256777115
+        },
+        {
+          "documentId": "lai-registro-informabr",
+          "score": 0.48600171992529556
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "D09",
+      "status": "Completed",
+      "topResults": [
+        {
+          "documentId": "lai-registro-informabr",
+          "score": 0.6782618980872136
+        },
+        {
+          "documentId": "lai-acompanhamento-mpo",
+          "score": 0.6531013466867771
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "A01",
+      "status": "Completed",
+      "topResults": [
+        {
+          "documentId": "lai-prazos-mdic",
+          "score": 0.4294063400816839
+        },
+        {
+          "documentId": "lai-registro-informabr",
+          "score": 0.2915546059201559
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "A02",
+      "status": "Completed",
+      "topResults": [
+        {
+          "documentId": "lai-registro-informabr",
+          "score": 0.4754913002803734
+        },
+        {
+          "documentId": "lai-prazos-mdic",
+          "score": 0.4730779998474158
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "A03",
+      "status": "Completed",
+      "topResults": [
+        {
+          "documentId": "lai-registro-informabr",
+          "score": 0.47858136258052875
+        },
+        {
+          "documentId": "lai-acompanhamento-mpo",
+          "score": 0.42055653872166565
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "F01",
+      "status": "Completed",
+      "topResults": [
+        {
+          "documentId": "lai-registro-informabr",
+          "score": 0.29155162329682965
+        },
+        {
+          "documentId": "lai-prazos-mdic",
+          "score": 0.28601980013411915
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "F02",
+      "status": "Completed",
+      "topResults": [
+        {
+          "documentId": "lai-prazos-mdic",
+          "score": 0.5073265107848142
+        },
+        {
+          "documentId": "lai-registro-informabr",
+          "score": 0.4146545479850495
+        }
+      ],
+      "error": null
+    },
+    {
+      "id": "F03",
+      "status": "Completed",
+      "topResults": [
+        {
+          "documentId": "lai-prazos-mdic",
+          "score": 0.42738431835649315
+        },
+        {
+          "documentId": "lai-registro-informabr",
+          "score": 0.4009125902994798
+        }
+      ],
+      "error": null
+    }
+  ]
+}

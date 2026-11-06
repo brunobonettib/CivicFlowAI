@@ -1,0 +1,17 @@
+@baseUrl = http://localhost:5080
+
+### Consulta válida: RAG com evidências locais (Ollama deve estar disponível)
+POST {{baseUrl}}/api/consultas
+Content-Type: application/json
+
+{
+  "pergunta": "Como registrar um pedido de acesso à informação?"
+}
+
+### Pergunta inválida: HTTP 400
+POST {{baseUrl}}/api/consultas
+Content-Type: application/json
+
+{
+  "pergunta": " "
+}

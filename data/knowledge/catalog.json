@@ -1,0 +1,29 @@
+[
+  {
+    "id": "lai-registro-informabr",
+    "titulo": "Registrar pedido de acesso à informação na plataforma Informa.BR",
+    "orgao": "Controladoria-Geral da União — Catálogo de Serviços do Governo Federal",
+    "url": "https://www.gov.br/pt-br/servicos/acessar-informacoes-de-orgaos-publicos",
+    "dataConsulta": "2026-11-05",
+    "dataAtualizacao": "2026-07-14",
+    "licenca": "https://creativecommons.org/licenses/by-nd/3.0/"
+  },
+  {
+    "id": "lai-prazos-mdic",
+    "titulo": "Prazos",
+    "orgao": "Ministério do Desenvolvimento, Indústria, Comércio e Serviços",
+    "url": "https://www.gov.br/mdic/pt-br/canais_atendimento/ouvidoria/sic/prazos",
+    "dataConsulta": "2026-11-05",
+    "dataAtualizacao": "2026-07-01",
+    "licenca": "https://creativecommons.org/licenses/by-nd/3.0/"
+  },
+  {
+    "id": "lai-acompanhamento-mpo",
+    "titulo": "LAI - Como solicitar Informação",
+    "orgao": "Ministério do Planejamento e Orçamento",
+    "url": "https://www.gov.br/planejamento/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic/lai-como-solicitar-informacao",
+    "dataConsulta": "2026-11-05",
+    "dataAtualizacao": "2026-08-25",
+    "licenca": "https://creativecommons.org/licenses/by-nd/3.0/"
+  }
+]

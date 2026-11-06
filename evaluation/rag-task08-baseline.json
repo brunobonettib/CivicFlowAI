@@ -1,0 +1,241 @@
+{
+  "date": "2026-11-06",
+  "model": "embeddinggemma",
+  "generationModel": "gemma3:4b",
+  "topK": "3",
+  "results": [
+    {
+      "id": "D01",
+      "question": "Como entro no Informa.BR e registro um pedido de acesso \u00E0 informa\u00E7\u00E3o?",
+      "expected": "SUPPORTED",
+      "actual": "UNSUPPORTED",
+      "statusCode": 200,
+      "referencesValid": true,
+      "expectedSourcePresent": false,
+      "response": {
+        "status": "UNSUPPORTED",
+        "resposta": "N\u00E3o encontrei evid\u00EAncias suficientes na base para responder com seguran\u00E7a \u00E0 sua pergunta.",
+        "fontes": [],
+        "trechos": []
+      },
+      "stages": [
+        {
+          "stage": "evidence",
+          "documents": [
+            "https://www.gov.br/pt-br/servicos/acessar-informacoes-de-orgaos-publicos",
+            "https://www.gov.br/planejamento/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic/lai-como-solicitar-informacao",
+            "https://www.gov.br/mdic/pt-br/canais_atendimento/ouvidoria/sic/prazos"
+          ],
+          "raw": "{\u0022status\u0022:\u0022SUPPORTED\u0022, \u0022evidenceIds\u0022: [\u0022F1\u0022, \u0022F2\u0022, \u0022F3\u0022], \u0022justification\u0022: \u0022Os trechos fornecem informa\u00E7\u00F5es detalhadas sobre como registrar um pedido de acesso \u00E0 informa\u00E7\u00E3o na plataforma Informa.BR. O processo envolve autentica\u00E7\u00E3o via conta gov.br, preenchimento de um formul\u00E1rio com informa\u00E7\u00F5es sobre o tipo de informa\u00E7\u00E3o desejada e o \u00F3rg\u00E3o destinat\u00E1rio, e acompanhamento do pedido atrav\u00E9s da plataforma.\u0022, \u0022clarificationQuestion\u0022: null}",
+          "promptSha256": "BEE7659689A8DC35CBA80F5EAB443135A8EBB645B4FBDF8A387E609016FFE882"
+        },
+        {
+          "stage": "coverage",
+          "documents": [],
+          "raw": "{\u0022contextIdentified\u0022: true, \u0022missingInformation\u0022: [\u0022passos para acessar a plataforma\u0022, \u0022regras para o prazo de resposta do pedido de acesso\u0022], \u0022status\u0022: \u0022UNSUPPORTED\u0022, \u0022passageIds\u0022: []}",
+          "promptSha256": "ADCFE9D3516BE8DE5BCE49C41ECB8C9C0A57C895A200CCD1683B9AAF622BF2A4"
+        }
+      ]
+    },
+    {
+      "id": "D04",
+      "question": "Qual \u00E9 o prazo de resposta da LAI e em que condi\u00E7\u00F5es pode ser prorrogado?",
+      "expected": "SUPPORTED",
+      "actual": "SUPPORTED",
+      "statusCode": 200,
+      "referencesValid": true,
+      "expectedSourcePresent": true,
+      "response": {
+        "status": "SUPPORTED",
+        "resposta": "- Quando o atendimento imediato n\u00E3o for poss\u00EDvel: prazo de at\u00E9 20 dias. [lai-prazos-mdic]\n\n- Prorroga\u00E7\u00E3o: mais 10 dias; a justificativa deve chegar ao solicitante antes de terminar o prazo inicial. [lai-prazos-mdic]\n\n- Contagem cont\u00EDnua: exclui a data inicial e inclui o vencimento. [lai-prazos-mdic]",
+        "fontes": [
+          {
+            "id": "lai-prazos-mdic",
+            "titulo": "Prazos",
+            "url": "https://www.gov.br/mdic/pt-br/canais_atendimento/ouvidoria/sic/prazos",
+            "dataConsulta": "2026-11-05"
+          }
+        ],
+        "trechos": [
+          {
+            "fonteId": "lai-prazos-mdic",
+            "texto": "- Quando o atendimento imediato n\u00E3o for poss\u00EDvel: prazo de at\u00E9 20 dias."
+          },
+          {
+            "fonteId": "lai-prazos-mdic",
+            "texto": "- Prorroga\u00E7\u00E3o: mais 10 dias; a justificativa deve chegar ao solicitante antes de terminar o prazo inicial."
+          },
+          {
+            "fonteId": "lai-prazos-mdic",
+            "texto": "- Contagem cont\u00EDnua: exclui a data inicial e inclui o vencimento."
+          }
+        ]
+      },
+      "stages": [
+        {
+          "stage": "evidence",
+          "documents": [
+            "https://www.gov.br/mdic/pt-br/canais_atendimento/ouvidoria/sic/prazos",
+            "https://www.gov.br/planejamento/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic/lai-como-solicitar-informacao",
+            "https://www.gov.br/pt-br/servicos/acessar-informacoes-de-orgaos-publicos"
+          ],
+          "raw": "{\u0022status\u0022:\u0022SUPPORTED\u0022, \u0022evidenceIds\u0022: [\u0022F1\u0022], \u0022justification\u0022: \u0022O trecho F1 detalha os prazos de resposta da LAI, que s\u00E3o de 20 dias para atendimento imediato n\u00E3o poss\u00EDvel e podem ser prorrogados por mais 10 dias com justificativa. A prorroga\u00E7\u00E3o \u00E9 mencionada como sendo de 10 dias, com a necessidade de justificativa.\u0022, \u0022clarificationQuestion\u0022: null}",
+          "promptSha256": "BEE7659689A8DC35CBA80F5EAB443135A8EBB645B4FBDF8A387E609016FFE882"
+        },
+        {
+          "stage": "coverage",
+          "documents": [],
+          "raw": "{\u0022contextIdentified\u0022:true,\u0022missingInformation\u0022:[],\u0022status\u0022:\u0022SUPPORTED\u0022,\u0022passageIds\u0022:[\u0022P1\u0022,\u0022P2\u0022,\u0022P4\u0022]}",
+          "promptSha256": "ADCFE9D3516BE8DE5BCE49C41ECB8C9C0A57C895A200CCD1683B9AAF622BF2A4"
+        }
+      ]
+    },
+    {
+      "id": "A01",
+      "question": "Quanto tempo demora meu pedido?",
+      "expected": "NEEDS_CLARIFICATION",
+      "actual": "UNSUPPORTED",
+      "statusCode": 200,
+      "referencesValid": true,
+      "expectedSourcePresent": true,
+      "response": {
+        "status": "UNSUPPORTED",
+        "resposta": "N\u00E3o encontrei evid\u00EAncias suficientes na base para responder com seguran\u00E7a \u00E0 sua pergunta.",
+        "fontes": [],
+        "trechos": []
+      },
+      "stages": [
+        {
+          "stage": "evidence",
+          "documents": [
+            "https://www.gov.br/mdic/pt-br/canais_atendimento/ouvidoria/sic/prazos",
+            "https://www.gov.br/pt-br/servicos/acessar-informacoes-de-orgaos-publicos",
+            "https://www.gov.br/planejamento/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic/lai-como-solicitar-informacao"
+          ],
+          "raw": "{\u0022status\u0022:\u0022SUPPORTED\u0022, \u0022evidenceIds\u0022: [\u0022F1\u0022], \u0022justification\u0022: \u0022O trecho F1 detalha os prazos para atendimento de pedidos de informa\u00E7\u00E3o, informando que o prazo padr\u00E3o \u00E9 de 20 dias, podendo ser prorrogado em 10 dias. N\u00E3o h\u00E1 informa\u00E7\u00F5es sobre o tempo de processamento espec\u00EDfico para um pedido individual.\u0022, \u0022clarificationQuestion\u0022: null}",
+          "promptSha256": "BEE7659689A8DC35CBA80F5EAB443135A8EBB645B4FBDF8A387E609016FFE882"
+        },
+        {
+          "stage": "coverage",
+          "documents": [],
+          "raw": "{\u0022contextIdentified\u0022: true, \u0022missingInformation\u0022: [\u0022tempo\u0022], \u0022status\u0022: \u0022SUPPORTED\u0022, \u0022passageIds\u0022: [\u0022P1\u0022, \u0022P2\u0022, \u0022P3\u0022, \u0022P4\u0022, \u0022P5\u0022, \u0022P6\u0022]}",
+          "promptSha256": "ADCFE9D3516BE8DE5BCE49C41ECB8C9C0A57C895A200CCD1683B9AAF622BF2A4"
+        }
+      ]
+    },
+    {
+      "id": "A02",
+      "question": "Como fa\u00E7o para recorrer de uma resposta ao pedido de informa\u00E7\u00E3o e qual \u00E9 o prazo do recurso?",
+      "expected": "UNSUPPORTED",
+      "actual": "UNSUPPORTED",
+      "statusCode": 200,
+      "referencesValid": true,
+      "expectedSourcePresent": true,
+      "response": {
+        "status": "UNSUPPORTED",
+        "resposta": "N\u00E3o encontrei evid\u00EAncias suficientes na base para responder com seguran\u00E7a \u00E0 sua pergunta.",
+        "fontes": [],
+        "trechos": []
+      },
+      "stages": [
+        {
+          "stage": "evidence",
+          "documents": [
+            "https://www.gov.br/pt-br/servicos/acessar-informacoes-de-orgaos-publicos",
+            "https://www.gov.br/mdic/pt-br/canais_atendimento/ouvidoria/sic/prazos",
+            "https://www.gov.br/planejamento/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic/lai-como-solicitar-informacao"
+          ],
+          "raw": "{\u0022status\u0022:\u0022SUPPORTED\u0022, \u0022evidenceIds\u0022: [\u0022F1\u0022, \u0022F2\u0022, \u0022F3\u0022], \u0022justification\u0022:\u0022(F1) Explica o processo de registro de pedidos de acesso \u00E0 informa\u00E7\u00E3o na plataforma Informa.BR. (F2) Informa que o prazo para atendimento imediato \u00E9 de 20 dias, com possibilidade de prorroga\u00E7\u00E3o de 10 dias. (F3) Detalha que a plataforma permite acompanhar o tratamento da solicita\u00E7\u00E3o e recorrer em pedidos de informa\u00E7\u00E3o.\u0022, \u0022clarificationQuestion\u0022:null}",
+          "promptSha256": "BEE7659689A8DC35CBA80F5EAB443135A8EBB645B4FBDF8A387E609016FFE882"
+        },
+        {
+          "stage": "coverage",
+          "documents": [],
+          "raw": "{\u0022contextIdentified\u0022: true, \u0022missingInformation\u0022: [\u0022prazo para recorrer\u0022, \u0022passos para recorrer\u0022], \u0022status\u0022: \u0022UNSUPPORTED\u0022, \u0022passageIds\u0022: []}",
+          "promptSha256": "ADCFE9D3516BE8DE5BCE49C41ECB8C9C0A57C895A200CCD1683B9AAF622BF2A4"
+        }
+      ]
+    },
+    {
+      "id": "F01",
+      "question": "Tenho 60 anos e 30 anos de contribui\u00E7\u00E3o. Quanto vou receber de aposentadoria?",
+      "expected": "UNSUPPORTED",
+      "actual": "NEEDS_CLARIFICATION",
+      "statusCode": 200,
+      "referencesValid": true,
+      "expectedSourcePresent": true,
+      "response": {
+        "status": "NEEDS_CLARIFICATION",
+        "resposta": "Quais s\u00E3o os crit\u00E9rios espec\u00EDficos para calcular o valor da aposentadoria com base na idade e tempo de contribui\u00E7\u00E3o?",
+        "fontes": [],
+        "trechos": []
+      },
+      "stages": [
+        {
+          "stage": "evidence",
+          "documents": [
+            "https://www.gov.br/pt-br/servicos/acessar-informacoes-de-orgaos-publicos",
+            "https://www.gov.br/mdic/pt-br/canais_atendimento/ouvidoria/sic/prazos",
+            "https://www.gov.br/planejamento/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic/lai-como-solicitar-informacao"
+          ],
+          "raw": "{\u0022status\u0022:\u0022NEEDS_CLARIFICATION\u0022, \u0022evidenceIds\u0022: [\u0022F1\u0022, \u0022F2\u0022, \u0022F3\u0022], \u0022justification\u0022: \u0022A pergunta solicita informa\u00E7\u00F5es sobre o valor da aposentadoria com base na idade e tempo de contribui\u00E7\u00E3o. Os trechos fornecem informa\u00E7\u00F5es sobre registro de pedidos, prazos e acompanhamento de pedidos de informa\u00E7\u00E3o, mas n\u00E3o detalham os crit\u00E9rios para c\u00E1lculo de aposentadoria.\u0022, \u0022clarificationQuestion\u0022: \u0022Quais s\u00E3o os crit\u00E9rios espec\u00EDficos para calcular o valor da aposentadoria com base na idade e tempo de contribui\u00E7\u00E3o?\u0022}",
+          "promptSha256": "BEE7659689A8DC35CBA80F5EAB443135A8EBB645B4FBDF8A387E609016FFE882"
+        }
+      ]
+    },
+    {
+      "id": "F02",
+      "question": "Como agendar uma consulta pelo SUS e qual \u00E9 o prazo de atendimento?",
+      "expected": "UNSUPPORTED",
+      "actual": "NEEDS_CLARIFICATION",
+      "statusCode": 200,
+      "referencesValid": true,
+      "expectedSourcePresent": true,
+      "response": {
+        "status": "NEEDS_CLARIFICATION",
+        "resposta": "Quais s\u00E3o os prazos para agendar uma consulta pelo SUS?",
+        "fontes": [],
+        "trechos": []
+      },
+      "stages": [
+        {
+          "stage": "evidence",
+          "documents": [
+            "https://www.gov.br/mdic/pt-br/canais_atendimento/ouvidoria/sic/prazos",
+            "https://www.gov.br/pt-br/servicos/acessar-informacoes-de-orgaos-publicos",
+            "https://www.gov.br/planejamento/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic/lai-como-solicitar-informacao"
+          ],
+          "raw": "{\u0022status\u0022:\u0022NEEDS_CLARIFICATION\u0022, \u0022evidenceIds\u0022: [\u0022F1\u0022, \u0022F2\u0022, \u0022F3\u0022], \u0022justification\u0022: \u0022Os trechos fornecem informa\u00E7\u00F5es sobre prazos de atendimento do SUS, registro de pedidos na plataforma Informa.BR e funcionalidades do Busca LAI. No entanto, n\u00E3o especificam o prazo de atendimento para agendar uma consulta, apenas os prazos para o tratamento de pedidos de informa\u00E7\u00E3o.\u0022, \u0022clarificationQuestion\u0022: \u0022Quais s\u00E3o os prazos para agendar uma consulta pelo SUS?\u0022}",
+          "promptSha256": "BEE7659689A8DC35CBA80F5EAB443135A8EBB645B4FBDF8A387E609016FFE882"
+        }
+      ]
+    },
+    {
+      "id": "F03",
+      "question": "Como consultar o andamento da restitui\u00E7\u00E3o do imposto de renda e quando vou receber?",
+      "expected": "UNSUPPORTED",
+      "actual": "NEEDS_CLARIFICATION",
+      "statusCode": 200,
+      "referencesValid": true,
+      "expectedSourcePresent": true,
+      "response": {
+        "status": "NEEDS_CLARIFICATION",
+        "resposta": "Como posso acompanhar o andamento da minha solicita\u00E7\u00E3o de restitui\u00E7\u00E3o do imposto de renda usando as ferramentas mencionadas?",
+        "fontes": [],
+        "trechos": []
+      },
+      "stages": [
+        {
+          "stage": "evidence",
+          "documents": [
+            "https://www.gov.br/mdic/pt-br/canais_atendimento/ouvidoria/sic/prazos",
+            "https://www.gov.br/pt-br/servicos/acessar-informacoes-de-orgaos-publicos",
+            "https://www.gov.br/planejamento/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic/lai-como-solicitar-informacao"
+          ],
+          "raw": "{\u0022status\u0022:\u0022NEEDS_CLARIFICATION\u0022, \u0022evidenceIds\u0022: [\u0022F1\u0022, \u0022F2\u0022, \u0022F3\u0022], \u0022justification\u0022: \u0022Os trechos fornecem informa\u00E7\u00F5es sobre prazos de atendimento, registro de pedidos e funcionalidades do Busca LAI, mas n\u00E3o explicam como consultar o andamento espec\u00EDfico da restitui\u00E7\u00E3o do imposto de renda e quando ela ser\u00E1 recebida. \u00C9 necess\u00E1rio mais contexto para responder \u00E0 pergunta.\u0022, \u0022clarificationQuestion\u0022: \u0022Como posso acompanhar o andamento da minha solicita\u00E7\u00E3o de restitui\u00E7\u00E3o do imposto de renda usando as ferramentas mencionadas?\u0022}",
+          "promptSha256": "BEE7659689A8DC35CBA80F5EAB443135A8EBB645B4FBDF8A387E609016FFE882"
+        }
+      ]
+    }
+  ]
+}

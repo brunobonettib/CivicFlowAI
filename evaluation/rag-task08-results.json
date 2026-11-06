@@ -1,0 +1,1218 @@
+{
+  "date": "2026-11-06",
+  "model": "embeddinggemma",
+  "generationModel": "gemma3:4b",
+  "topK": "3",
+  "results": [
+    {
+      "id": "D01",
+      "question": "Como entro no Informa.BR e registro um pedido de acesso \u00E0 informa\u00E7\u00E3o?",
+      "expected": "SUPPORTED",
+      "actual": "SUPPORTED",
+      "statusCode": 200,
+      "referencesValid": true,
+      "expectedSourcePresent": true,
+      "response": {
+        "status": "SUPPORTED",
+        "resposta": "- Plataforma: https://informabr.cgu.gov.br/. Autentica\u00E7\u00E3o exigida: conta gov.br. [lai-registro-informabr]\n\n- Abertura: selecionar \u201CFazer Pedido\u201D, definir o tipo de informa\u00E7\u00E3o e o \u00F3rg\u00E3o destinat\u00E1rio. [lai-registro-informabr]\n\n- Preenchimento: explicar objetivamente o que se deseja obter; anexos s\u00E3o opcionais. [lai-registro-informabr]\n\n- Envio: revisar os dados e selecionar \u201CConcluir\u201D. O protocolo chega por e-mail. [lai-registro-informabr]\n\n- Consulta posterior: ap\u00F3s autenticar-se, abrir \u201CAcesso \u00E0 Informa\u00E7\u00E3o\u201D e \u201CMeus pedidos\u201D. A pesquisa por protocolo identifica um pedido espec\u00EDfico. [lai-registro-informabr]\n\n- Plataforma indicada: https://informabr.cgu.gov.br/. [lai-acompanhamento-mpo]\n\n- Permite acompanhar o tratamento da solicita\u00E7\u00E3o, consultar a resposta encaminhada pelo \u00F3rg\u00E3o e recorrer em pedidos de informa\u00E7\u00E3o. [lai-acompanhamento-mpo]\n\n- Antes de abrir um pedido, o MPO orienta pesquisar os canais de transpar\u00EAncia ativa e o Busca LAI. [lai-acompanhamento-mpo]\n\n- O Busca LAI re\u00FAne pedidos e respostas p\u00FAblicos, inclusive recursos; permite filtros por assunto, ano, \u00F3rg\u00E3o e inst\u00E2ncia recursal. [lai-acompanhamento-mpo]\n\n- A pesquisa p\u00FAblica cobre pedidos ao Executivo federal desde 2015-07-01, sem conte\u00FAdo sujeito a restri\u00E7\u00E3o. [lai-acompanhamento-mpo]\n\nNota editorial: esta p\u00E1gina descreve as funcionalidades, mas n\u00E3o detalha os menus de acompanhamento de pedidos pessoais. A pesquisa p\u00FAblica no Busca LAI n\u00E3o equivale ao acompanhamento de uma solicita\u00E7\u00E3o pessoal. [lai-acompanhamento-mpo]\n\n- Quando o atendimento imediato n\u00E3o for poss\u00EDvel: prazo de at\u00E9 20 dias. [lai-prazos-mdic]\n\n- Prorroga\u00E7\u00E3o: mais 10 dias; a justificativa deve chegar ao solicitante antes de terminar o prazo inicial. [lai-prazos-mdic]\n\n- Refer\u00EAncias mencionadas pela p\u00E1gina: artigo 11 da LAI; artigos 15 e 16 do Decreto 7.724/2012; artigo 66 da Lei 9.784/1999. [lai-prazos-mdic]\n\n- Contagem cont\u00EDnua: exclui a data inicial e inclui o vencimento. [lai-prazos-mdic]\n\n- Vencimento sem expediente normal: deslocamento para o pr\u00F3ximo dia \u00FAtil. [lai-prazos-mdic]\n\n- Registros entre 19h e 23h59: considerados recebidos no pr\u00F3ximo dia \u00FAtil; a contagem come\u00E7a no dia \u00FAtil posterior a esse recebimento. [lai-prazos-mdic]\n\n- O sistema calcula e apresenta os prazos. N\u00E3o presumir que o vencimento seja sempre exatamente 20 ou 30 dias corridos ap\u00F3s o envio. [lai-prazos-mdic]",
+        "fontes": [
+          {
+            "id": "lai-registro-informabr",
+            "titulo": "Registrar pedido de acesso \u00E0 informa\u00E7\u00E3o na plataforma Informa.BR",
+            "url": "https://www.gov.br/pt-br/servicos/acessar-informacoes-de-orgaos-publicos",
+            "dataConsulta": "2026-11-05"
+          },
+          {
+            "id": "lai-acompanhamento-mpo",
+            "titulo": "LAI - Como solicitar Informa\u00E7\u00E3o",
+            "url": "https://www.gov.br/planejamento/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic/lai-como-solicitar-informacao",
+            "dataConsulta": "2026-11-05"
+          },
+          {
+            "id": "lai-prazos-mdic",
+            "titulo": "Prazos",
+            "url": "https://www.gov.br/mdic/pt-br/canais_atendimento/ouvidoria/sic/prazos",
+            "dataConsulta": "2026-11-05"
+          }
+        ],
+        "trechos": [
+          {
+            "fonteId": "lai-registro-informabr",
+            "texto": "- Plataforma: https://informabr.cgu.gov.br/. Autentica\u00E7\u00E3o exigida: conta gov.br."
+          },
+          {
+            "fonteId": "lai-registro-informabr",
+            "texto": "- Abertura: selecionar \u201CFazer Pedido\u201D, definir o tipo de informa\u00E7\u00E3o e o \u00F3rg\u00E3o destinat\u00E1rio."
+          },
+          {
+            "fonteId": "lai-registro-informabr",
+            "texto": "- Preenchimento: explicar objetivamente o que se deseja obter; anexos s\u00E3o opcionais."
+          },
+          {
+            "fonteId": "lai-registro-informabr",
+            "texto": "- Envio: revisar os dados e selecionar \u201CConcluir\u201D. O protocolo chega por e-mail."
+          },
+          {
+            "fonteId": "lai-registro-informabr",
+            "texto": "- Consulta posterior: ap\u00F3s autenticar-se, abrir \u201CAcesso \u00E0 Informa\u00E7\u00E3o\u201D e \u201CMeus pedidos\u201D. A pesquisa por protocolo identifica um pedido espec\u00EDfico."
+          },
+          {
+            "fonteId": "lai-acompanhamento-mpo",
+            "texto": "- Plataforma indicada: https://informabr.cgu.gov.br/."
+          },
+          {
+            "fonteId": "lai-acompanhamento-mpo",
+            "texto": "- Permite acompanhar o tratamento da solicita\u00E7\u00E3o, consultar a resposta encaminhada pelo \u00F3rg\u00E3o e recorrer em pedidos de informa\u00E7\u00E3o."
+          },
+          {
+            "fonteId": "lai-acompanhamento-mpo",
+            "texto": "- Antes de abrir um pedido, o MPO orienta pesquisar os canais de transpar\u00EAncia ativa e o Busca LAI."
+          },
+          {
+            "fonteId": "lai-acompanhamento-mpo",
+            "texto": "- O Busca LAI re\u00FAne pedidos e respostas p\u00FAblicos, inclusive recursos; permite filtros por assunto, ano, \u00F3rg\u00E3o e inst\u00E2ncia recursal."
+          },
+          {
+            "fonteId": "lai-acompanhamento-mpo",
+            "texto": "- A pesquisa p\u00FAblica cobre pedidos ao Executivo federal desde 2015-07-01, sem conte\u00FAdo sujeito a restri\u00E7\u00E3o."
+          },
+          {
+            "fonteId": "lai-acompanhamento-mpo",
+            "texto": "Nota editorial: esta p\u00E1gina descreve as funcionalidades, mas n\u00E3o detalha os menus de acompanhamento de pedidos pessoais. A pesquisa p\u00FAblica no Busca LAI n\u00E3o equivale ao acompanhamento de uma solicita\u00E7\u00E3o pessoal."
+          },
+          {
+            "fonteId": "lai-prazos-mdic",
+            "texto": "- Quando o atendimento imediato n\u00E3o for poss\u00EDvel: prazo de at\u00E9 20 dias."
+          },
+          {
+            "fonteId": "lai-prazos-mdic",
+            "texto": "- Prorroga\u00E7\u00E3o: mais 10 dias; a justificativa deve chegar ao solicitante antes de terminar o prazo inicial."
+          },
+          {
+            "fonteId": "lai-prazos-mdic",
+            "texto": "- Refer\u00EAncias mencionadas pela p\u00E1gina: artigo 11 da LAI; artigos 15 e 16 do Decreto 7.724/2012; artigo 66 da Lei 9.784/1999."
+          },
+          {
+            "fonteId": "lai-prazos-mdic",
+            "texto": "- Contagem cont\u00EDnua: exclui a data inicial e inclui o vencimento."
+          },
+          {
+            "fonteId": "lai-prazos-mdic",
+            "texto": "- Vencimento sem expediente normal: deslocamento para o pr\u00F3ximo dia \u00FAtil."
+          },
+          {
+            "fonteId": "lai-prazos-mdic",
+            "texto": "- Registros entre 19h e 23h59: considerados recebidos no pr\u00F3ximo dia \u00FAtil; a contagem come\u00E7a no dia \u00FAtil posterior a esse recebimento."
+          },
+          {
+            "fonteId": "lai-prazos-mdic",
+            "texto": "- O sistema calcula e apresenta os prazos. N\u00E3o presumir que o vencimento seja sempre exatamente 20 ou 30 dias corridos ap\u00F3s o envio."
+          }
+        ]
+      },
+      "stages": [
+        {
+          "stage": "evidence",
+          "documents": [
+            "https://www.gov.br/pt-br/servicos/acessar-informacoes-de-orgaos-publicos",
+            "https://www.gov.br/planejamento/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic/lai-como-solicitar-informacao",
+            "https://www.gov.br/mdic/pt-br/canais_atendimento/ouvidoria/sic/prazos"
+          ],
+          "raw": "{\u0022status\u0022:\u0022SUPPORTED\u0022, \u0022evidenceIds\u0022: [\u0022F1\u0022, \u0022F2\u0022, \u0022F3\u0022], \u0022justification\u0022: \u0022Os trechos F1 e F2 descrevem o processo de registro de um pedido de acesso \u00E0 informa\u00E7\u00E3o na plataforma Informa.BR, detalhando as etapas desde a pesquisa de informa\u00E7\u00F5es dispon\u00EDveis at\u00E9 o envio do pedido. O trecho F3 fornece informa\u00E7\u00F5es sobre os prazos de atendimento e as regras de contagem dos prazos.\u0022, \u0022clarificationQuestion\u0022: null}",
+          "promptSha256": "A713B27B2CD42831D5CE223EE6CE3866049DCFE3F540C818EDE2C5CD1A003E73"
+        },
+        {
+          "stage": "coverage",
+          "documents": [],
+          "raw": "{\u0022contextIdentified\u0022:true,\u0022missingInformation\u0022:[],\u0022status\u0022:\u0022SUPPORTED\u0022,\u0022passageIds\u0022:[\u0022P2\u0022,\u0022P4\u0022,\u0022P5\u0022,\u0022P6\u0022,\u0022P7\u0022,\u0022P9\u0022,\u0022P10\u0022,\u0022P11\u0022,\u0022P12\u0022,\u0022P13\u0022,\u0022P14\u0022,\u0022P15\u0022,\u0022P16\u0022,\u0022P17\u0022,\u0022P18\u0022,\u0022P19\u0022,\u0022P20\u0022,\u0022P21\u0022]}",
+          "promptSha256": "79FE3E5EF230EBF5498699B679A55430EB0626C94C7BE4B043D4E55D4B49F5E6"
+        }
+      ]
+    },
+    {
+      "id": "D02",
+      "question": "Preciso pagar alguma taxa para fazer um pedido de informa\u00E7\u00E3o?",
+      "expected": "SUPPORTED",
+      "actual": "NEEDS_CLARIFICATION",
+      "statusCode": 200,
+      "referencesValid": true,
+      "expectedSourcePresent": false,
+      "response": {
+        "status": "NEEDS_CLARIFICATION",
+        "resposta": "Qual servi\u00E7o e qual etapa da solicita\u00E7\u00E3o voc\u00EA deseja consultar?",
+        "fontes": [],
+        "trechos": []
+      },
+      "stages": [
+        {
+          "stage": "evidence",
+          "documents": [
+            "https://www.gov.br/pt-br/servicos/acessar-informacoes-de-orgaos-publicos",
+            "https://www.gov.br/planejamento/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic/lai-como-solicitar-informacao",
+            "https://www.gov.br/mdic/pt-br/canais_atendimento/ouvidoria/sic/prazos"
+          ],
+          "raw": "{\u0022status\u0022:\u0022SUPPORTED\u0022, \u0022evidenceIds\u0022: [\u0022F1\u0022, \u0022F2\u0022, \u0022F3\u0022], \u0022justification\u0022: \u0022A base de conhecimento indica que a abertura de pedidos de informa\u00E7\u00E3o \u00E9 gratuita. O trecho F1 detalha o processo de abertura e o trecho F2 menciona que o servi\u00E7o \u00E9 gratuito. O trecho F3 fornece informa\u00E7\u00F5es sobre os prazos, mas n\u00E3o menciona custos.\u0022, \u0022clarificationQuestion\u0022: null}",
+          "promptSha256": "A713B27B2CD42831D5CE223EE6CE3866049DCFE3F540C818EDE2C5CD1A003E73"
+        },
+        {
+          "stage": "coverage",
+          "documents": [],
+          "raw": "{\u0022contextIdentified\u0022:false, \u0022missingInformation\u0022:[], \u0022status\u0022:\u0022SUPPORTED\u0022, \u0022passageIds\u0022:[\u0022P8\u0022, \u0022P15\u0022, \u0022P16\u0022, \u0022P17\u0022, \u0022P18\u0022, \u0022P19\u0022, \u0022P20\u0022, \u0022P21\u0022]}",
+          "promptSha256": "79FE3E5EF230EBF5498699B679A55430EB0626C94C7BE4B043D4E55D4B49F5E6"
+        }
+      ]
+    },
+    {
+      "id": "D03",
+      "question": "Depois de enviar o pedido, como recebo o n\u00FAmero do protocolo?",
+      "expected": "SUPPORTED",
+      "actual": null,
+      "statusCode": 502,
+      "referencesValid": false,
+      "expectedSourcePresent": false,
+      "response": null,
+      "stages": [
+        {
+          "stage": "evidence",
+          "documents": [
+            "https://www.gov.br/pt-br/servicos/acessar-informacoes-de-orgaos-publicos",
+            "https://www.gov.br/mdic/pt-br/canais_atendimento/ouvidoria/sic/prazos",
+            "https://www.gov.br/planejamento/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic/lai-como-solicitar-informacao"
+          ],
+          "raw": "{\u0022status\u0022:\u0022SUPPORTED\u0022, \u0022evidenceIds\u0022: [\u0022F1\u0022, \u0022F3\u0022], \u0022justification\u0022: \u0022O trecho F1 explica que o protocolo chega por e-mail ap\u00F3s a conclus\u00E3o do envio do pedido na plataforma Informa.BR. O trecho F3 detalha o uso da plataforma e a possibilidade de acompanhar o tratamento da solicita\u00E7\u00E3o, mas n\u00E3o especifica como o n\u00FAmero do protocolo \u00E9 recebido.\u0022, \u0022clarificationQuestion\u0022: null}",
+          "promptSha256": "A713B27B2CD42831D5CE223EE6CE3866049DCFE3F540C818EDE2C5CD1A003E73"
+        },
+        {
+          "stage": "coverage",
+          "documents": [],
+          "raw": "{\u0022contextIdentified\u0022:true,\u0022missingInformation\u0022:[],\u0022status\u0022:\u0022SUPPORTED\u0022,\u0022passageIds\u0022:[\u0022P6\u0022,\u0022P7\u0022,\u0022P14\u0022,\u0022P12\u0022,\u0022P13\u0022,\u0022P10\u0022,\u0022P9\u0022,\u0022P11\u0022,\u0022P14\u0022,\u0022P12\u0022,\u0022P13\u0022,\u0022P10\u0022,\u0022P9\u0022,\u0022P11\u0022,\u0022P12\u0022,\u0022P13\u0022,\u0022P10\u0022,\u0022P9\u0022,\u0022P11\u0022,\u0022P12\u0022,\u0022P13\u0022,\u0022P10\u0022,\u0022P9\u0022,\u0022P11\u0022,\u0022P12\u0022,\u0022P13\u0022,\u0022P10\u0022,\u0022P9\u0022,\u0022P11\u0022,\u0022P12\u0022,\u0022P13\u0022,\u0022P10\u0022,\u0022P9\u0022,\u0022P11\u0022,\u0022P12\u0022,\u0022P13\u0022,\u0022P10\u0022,\u0022P9\u0022,\u0022P11\u0022,\u0022P12\u0022,\u0022P13\u0022,\u0022P10\u0022,\u0022P9\u0022,\u0022P11\u0022,\u0022P12\u0022,\u0022P13\u0022,\u0022P10\u0022,\u0022P9\u0022,\u0022P11\u0022,\u0022P12\u0022,\u0022P13\u0022,\u0022P10\u0022,\u0022P9\u0022,\u0022P11\u0022,\u0022P12\u0022,\u0022P13\u0022,\u0022P10\u0022,\u0022P9\u0022,\u0022P11\u0022,\u0022P12\u0022,\u0022P13\u0022,\u0022P10\u0022,\u0022P9\u0022,\u0022P11\u0022,\u0022P12\u0022,\u0022P13\u0022,\u0022P10\u0022,\u0022P9\u0022,\u0022P11\u0022,\u0022P12\u0022,\u0022P13\u0022,\u0022P10\u0022,\u0022P9\u0022,\u0022P11\u0022,\u0022P12\u0022,\u0022P13\u0022,\u0022P10\u0022,\u0022P9\u0022,\u0022P11\u0022,\u0022P12\u0022,\u0022P13\u0022,\u0022P10\u0022,\u0022P9\u0022,\u0022P11\u0022,\u0022P12\u0022,\u0022P13\u0022,\u0022P10\u0022,\u0022P9\u0022,\u0022P11\u0022,\u0022P12\u0022,\u0022P13\u0022,\u0022P10\u0022,\u0022P9\u0022,\u0022P11\u0022,\u0022P12\u0022,\u0022P13\u0022,\u0022P10\u0022,\u0022P9\u0022,\u0022P11\u0022,\u0022P12\u0022,\u0022P13\u0022,\u0022P10\u0022,\u0022P9\u0022,\u0022P11\u0022,\u0022P12\u0022,\u0022P13\u0022,\u0022P10\u0022,\u0022P9\u0022,\u0022P11\u0022,\u0022P12\u0022,\u0022P13\u0022,\u0022P10\u0022,\u0022P9\u0022,\u0022P11\u0022,\u0022P12\u0022,\u0022P13\u0022,\u0022P10\u0022,\u0022P9\u0022,\u0022P11\u0022,\u0022P12\u0022,\u0022P13\u0022,\u0022P10\u0022,\u0022P9\u0022,\u0022P11\u0022,\u0022P12\u0022,\u0022P13\u0022,\u0022P10\u0022,\u0022P9\u0022,\u0022P11\u0022,\u0022P12\u0022,\u0022",
+          "promptSha256": "79FE3E5EF230EBF5498699B679A55430EB0626C94C7BE4B043D4E55D4B49F5E6"
+        }
+      ]
+    },
+    {
+      "id": "D04",
+      "question": "Qual \u00E9 o prazo de resposta da LAI e em que condi\u00E7\u00F5es pode ser prorrogado?",
+      "expected": "SUPPORTED",
+      "actual": "SUPPORTED",
+      "statusCode": 200,
+      "referencesValid": true,
+      "expectedSourcePresent": true,
+      "response": {
+        "status": "SUPPORTED",
+        "resposta": "- Quando o atendimento imediato n\u00E3o for poss\u00EDvel: prazo de at\u00E9 20 dias. [lai-prazos-mdic]\n\n- Prorroga\u00E7\u00E3o: mais 10 dias; a justificativa deve chegar ao solicitante antes de terminar o prazo inicial. [lai-prazos-mdic]\n\n- Refer\u00EAncias mencionadas pela p\u00E1gina: artigo 11 da LAI; artigos 15 e 16 do Decreto 7.724/2012; artigo 66 da Lei 9.784/1999. [lai-prazos-mdic]",
+        "fontes": [
+          {
+            "id": "lai-prazos-mdic",
+            "titulo": "Prazos",
+            "url": "https://www.gov.br/mdic/pt-br/canais_atendimento/ouvidoria/sic/prazos",
+            "dataConsulta": "2026-11-05"
+          }
+        ],
+        "trechos": [
+          {
+            "fonteId": "lai-prazos-mdic",
+            "texto": "- Quando o atendimento imediato n\u00E3o for poss\u00EDvel: prazo de at\u00E9 20 dias."
+          },
+          {
+            "fonteId": "lai-prazos-mdic",
+            "texto": "- Prorroga\u00E7\u00E3o: mais 10 dias; a justificativa deve chegar ao solicitante antes de terminar o prazo inicial."
+          },
+          {
+            "fonteId": "lai-prazos-mdic",
+            "texto": "- Refer\u00EAncias mencionadas pela p\u00E1gina: artigo 11 da LAI; artigos 15 e 16 do Decreto 7.724/2012; artigo 66 da Lei 9.784/1999."
+          }
+        ]
+      },
+      "stages": [
+        {
+          "stage": "evidence",
+          "documents": [
+            "https://www.gov.br/mdic/pt-br/canais_atendimento/ouvidoria/sic/prazos",
+            "https://www.gov.br/planejamento/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic/lai-como-solicitar-informacao",
+            "https://www.gov.br/pt-br/servicos/acessar-informacoes-de-orgaos-publicos"
+          ],
+          "raw": "{\u0022status\u0022:\u0022SUPPORTED\u0022, \u0022evidenceIds\u0022: [\u0022F1\u0022], \u0022justification\u0022: \u0022O trecho F1 detalha os prazos de resposta da LAI. O prazo inicial \u00E9 de 20 dias, podendo ser prorrogado por mais 10 dias com justificativa. A contagem do prazo \u00E9 cont\u00EDnua, excluindo a data inicial e incluindo o vencimento.\u0022, \u0022clarificationQuestion\u0022: null}",
+          "promptSha256": "A713B27B2CD42831D5CE223EE6CE3866049DCFE3F540C818EDE2C5CD1A003E73"
+        },
+        {
+          "stage": "coverage",
+          "documents": [],
+          "raw": "{\u0022contextIdentified\u0022:true, \u0022missingInformation\u0022:[], \u0022status\u0022:\u0022SUPPORTED\u0022, \u0022passageIds\u0022:[\u0022P1\u0022, \u0022P2\u0022, \u0022P3\u0022]}",
+          "promptSha256": "79FE3E5EF230EBF5498699B679A55430EB0626C94C7BE4B043D4E55D4B49F5E6"
+        }
+      ]
+    },
+    {
+      "id": "D05",
+      "question": "Se envio meu pedido de informa\u00E7\u00E3o \u00E0s 20h, quando come\u00E7a a contagem do prazo?",
+      "expected": "SUPPORTED",
+      "actual": "NEEDS_CLARIFICATION",
+      "statusCode": 200,
+      "referencesValid": true,
+      "expectedSourcePresent": false,
+      "response": {
+        "status": "NEEDS_CLARIFICATION",
+        "resposta": "Qual servi\u00E7o e qual etapa da solicita\u00E7\u00E3o voc\u00EA deseja consultar?",
+        "fontes": [],
+        "trechos": []
+      },
+      "stages": [
+        {
+          "stage": "evidence",
+          "documents": [
+            "https://www.gov.br/mdic/pt-br/canais_atendimento/ouvidoria/sic/prazos",
+            "https://www.gov.br/pt-br/servicos/acessar-informacoes-de-orgaos-publicos",
+            "https://www.gov.br/planejamento/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic/lai-como-solicitar-informacao"
+          ],
+          "raw": "{\u0022status\u0022:\u0022SUPPORTED\u0022, \u0022evidenceIds\u0022: [\u0022F1\u0022], \u0022justification\u0022: \u0022O trecho F1 indica que, se o pedido for enviado entre 19h e 23h59, a contagem do prazo come\u00E7a no dia \u00FAtil posterior ao recebimento. N\u00E3o h\u00E1 informa\u00E7\u00F5es sobre o momento exato em que a contagem come\u00E7a.\u0022, \u0022clarificationQuestion\u0022: null}",
+          "promptSha256": "A713B27B2CD42831D5CE223EE6CE3866049DCFE3F540C818EDE2C5CD1A003E73"
+        },
+        {
+          "stage": "coverage",
+          "documents": [],
+          "raw": "{\u0022contextIdentified\u0022:false,\u0022missingInformation\u0022:[],\u0022status\u0022:\u0022SUPPORTED\u0022,\u0022passageIds\u0022:[\u0022P6\u0022,\u0022P7\u0022]}",
+          "promptSha256": "79FE3E5EF230EBF5498699B679A55430EB0626C94C7BE4B043D4E55D4B49F5E6"
+        }
+      ]
+    },
+    {
+      "id": "D06",
+      "question": "O que acontece se o prazo do pedido de informa\u00E7\u00E3o vencer em um dia sem expediente?",
+      "expected": "SUPPORTED",
+      "actual": "SUPPORTED",
+      "statusCode": 200,
+      "referencesValid": true,
+      "expectedSourcePresent": true,
+      "response": {
+        "status": "SUPPORTED",
+        "resposta": "- Vencimento sem expediente normal: deslocamento para o pr\u00F3ximo dia \u00FAtil. [lai-prazos-mdic]\n\n- O sistema calcula e apresenta os prazos. N\u00E3o presumir que o vencimento seja sempre exatamente 20 ou 30 dias corridos ap\u00F3s o envio. [lai-prazos-mdic]",
+        "fontes": [
+          {
+            "id": "lai-prazos-mdic",
+            "titulo": "Prazos",
+            "url": "https://www.gov.br/mdic/pt-br/canais_atendimento/ouvidoria/sic/prazos",
+            "dataConsulta": "2026-11-05"
+          }
+        ],
+        "trechos": [
+          {
+            "fonteId": "lai-prazos-mdic",
+            "texto": "- Vencimento sem expediente normal: deslocamento para o pr\u00F3ximo dia \u00FAtil."
+          },
+          {
+            "fonteId": "lai-prazos-mdic",
+            "texto": "- O sistema calcula e apresenta os prazos. N\u00E3o presumir que o vencimento seja sempre exatamente 20 ou 30 dias corridos ap\u00F3s o envio."
+          }
+        ]
+      },
+      "stages": [
+        {
+          "stage": "evidence",
+          "documents": [
+            "https://www.gov.br/mdic/pt-br/canais_atendimento/ouvidoria/sic/prazos",
+            "https://www.gov.br/pt-br/servicos/acessar-informacoes-de-orgaos-publicos",
+            "https://www.gov.br/planejamento/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic/lai-como-solicitar-informacao"
+          ],
+          "raw": "{\u0022status\u0022:\u0022SUPPORTED\u0022, \u0022evidenceIds\u0022: [\u0022F1\u0022], \u0022justification\u0022: \u0022O trecho F1 indica que, se o atendimento imediato n\u00E3o for poss\u00EDvel, o prazo \u00E9 de 20 dias. Al\u00E9m disso, especifica que, em caso de vencimento sem expediente normal, o prazo \u00E9 deslocado para o pr\u00F3ximo dia \u00FAtil.\u0022, \u0022clarificationQuestion\u0022: null}",
+          "promptSha256": "A713B27B2CD42831D5CE223EE6CE3866049DCFE3F540C818EDE2C5CD1A003E73"
+        },
+        {
+          "stage": "coverage",
+          "documents": [],
+          "raw": "{\u0022contextIdentified\u0022:true, \u0022missingInformation\u0022:[], \u0022status\u0022:\u0022SUPPORTED\u0022, \u0022passageIds\u0022:[\u0022P5\u0022, \u0022P7\u0022]}",
+          "promptSha256": "79FE3E5EF230EBF5498699B679A55430EB0626C94C7BE4B043D4E55D4B49F5E6"
+        }
+      ]
+    },
+    {
+      "id": "D07",
+      "question": "Consigo pesquisar pedidos e respostas p\u00FAblicos por ano, \u00F3rg\u00E3o e inst\u00E2ncia de recurso?",
+      "expected": "SUPPORTED",
+      "actual": "SUPPORTED",
+      "statusCode": 200,
+      "referencesValid": true,
+      "expectedSourcePresent": true,
+      "response": {
+        "status": "SUPPORTED",
+        "resposta": "- O Busca LAI re\u00FAne pedidos e respostas p\u00FAblicos, inclusive recursos; permite filtros por assunto, ano, \u00F3rg\u00E3o e inst\u00E2ncia recursal. [lai-acompanhamento-mpo]\n\n- A pesquisa p\u00FAblica cobre pedidos ao Executivo federal desde 2015-07-01, sem conte\u00FAdo sujeito a restri\u00E7\u00E3o. [lai-acompanhamento-mpo]",
+        "fontes": [
+          {
+            "id": "lai-acompanhamento-mpo",
+            "titulo": "LAI - Como solicitar Informa\u00E7\u00E3o",
+            "url": "https://www.gov.br/planejamento/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic/lai-como-solicitar-informacao",
+            "dataConsulta": "2026-11-05"
+          }
+        ],
+        "trechos": [
+          {
+            "fonteId": "lai-acompanhamento-mpo",
+            "texto": "- O Busca LAI re\u00FAne pedidos e respostas p\u00FAblicos, inclusive recursos; permite filtros por assunto, ano, \u00F3rg\u00E3o e inst\u00E2ncia recursal."
+          },
+          {
+            "fonteId": "lai-acompanhamento-mpo",
+            "texto": "- A pesquisa p\u00FAblica cobre pedidos ao Executivo federal desde 2015-07-01, sem conte\u00FAdo sujeito a restri\u00E7\u00E3o."
+          }
+        ]
+      },
+      "stages": [
+        {
+          "stage": "evidence",
+          "documents": [
+            "https://www.gov.br/planejamento/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic/lai-como-solicitar-informacao",
+            "https://www.gov.br/pt-br/servicos/acessar-informacoes-de-orgaos-publicos",
+            "https://www.gov.br/mdic/pt-br/canais_atendimento/ouvidoria/sic/prazos"
+          ],
+          "raw": "{\u0022status\u0022:\u0022SUPPORTED\u0022, \u0022evidenceIds\u0022: [\u0022F1\u0022], \u0022justification\u0022: \u0022O trecho F1 descreve o Busca LAI, que permite pesquisar pedidos e respostas p\u00FAblicas por ano, \u00F3rg\u00E3o e inst\u00E2ncia recursal.\u0022, \u0022clarificationQuestion\u0022: null}",
+          "promptSha256": "A713B27B2CD42831D5CE223EE6CE3866049DCFE3F540C818EDE2C5CD1A003E73"
+        },
+        {
+          "stage": "coverage",
+          "documents": [],
+          "raw": "{\u0022contextIdentified\u0022:true, \u0022missingInformation\u0022:[], \u0022status\u0022:\u0022SUPPORTED\u0022, \u0022passageIds\u0022:[\u0022P4\u0022, \u0022P5\u0022]}",
+          "promptSha256": "79FE3E5EF230EBF5498699B679A55430EB0626C94C7BE4B043D4E55D4B49F5E6"
+        }
+      ]
+    },
+    {
+      "id": "D08",
+      "question": "Desde quando o Busca LAI re\u00FAne pedidos p\u00FAblicos e ele mostra informa\u00E7\u00F5es pessoais ou sigilosas?",
+      "expected": "SUPPORTED",
+      "actual": "SUPPORTED",
+      "statusCode": 200,
+      "referencesValid": true,
+      "expectedSourcePresent": true,
+      "response": {
+        "status": "SUPPORTED",
+        "resposta": "- O Busca LAI re\u00FAne pedidos e respostas p\u00FAblicos, inclusive recursos; permite filtros por assunto, ano, \u00F3rg\u00E3o e inst\u00E2ncia recursal. [lai-acompanhamento-mpo]\n\n- A pesquisa p\u00FAblica cobre pedidos ao Executivo federal desde 2015-07-01, sem conte\u00FAdo sujeito a restri\u00E7\u00E3o. [lai-acompanhamento-mpo]",
+        "fontes": [
+          {
+            "id": "lai-acompanhamento-mpo",
+            "titulo": "LAI - Como solicitar Informa\u00E7\u00E3o",
+            "url": "https://www.gov.br/planejamento/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic/lai-como-solicitar-informacao",
+            "dataConsulta": "2026-11-05"
+          }
+        ],
+        "trechos": [
+          {
+            "fonteId": "lai-acompanhamento-mpo",
+            "texto": "- O Busca LAI re\u00FAne pedidos e respostas p\u00FAblicos, inclusive recursos; permite filtros por assunto, ano, \u00F3rg\u00E3o e inst\u00E2ncia recursal."
+          },
+          {
+            "fonteId": "lai-acompanhamento-mpo",
+            "texto": "- A pesquisa p\u00FAblica cobre pedidos ao Executivo federal desde 2015-07-01, sem conte\u00FAdo sujeito a restri\u00E7\u00E3o."
+          }
+        ]
+      },
+      "stages": [
+        {
+          "stage": "evidence",
+          "documents": [
+            "https://www.gov.br/planejamento/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic/lai-como-solicitar-informacao",
+            "https://www.gov.br/pt-br/servicos/acessar-informacoes-de-orgaos-publicos",
+            "https://www.gov.br/mdic/pt-br/canais_atendimento/ouvidoria/sic/prazos"
+          ],
+          "raw": "{\u0022status\u0022:\u0022SUPPORTED\u0022, \u0022evidenceIds\u0022: [\u0022F1\u0022], \u0022justification\u0022: \u0022O trecho F1 indica que o Busca LAI reune pedidos p\u00FAblicos, incluindo recursos, e permite filtros por assunto, ano, \u00F3rg\u00E3o e inst\u00E2ncia recursal. Al\u00E9m disso, especifica que a pesquisa p\u00FAblica no Busca LAI cobre pedidos ao Executivo federal desde 2015-07-01, sem conte\u00FAdo sujeito a restri\u00E7\u00E3o.\u0022, \u0022clarificationQuestion\u0022: null}",
+          "promptSha256": "A713B27B2CD42831D5CE223EE6CE3866049DCFE3F540C818EDE2C5CD1A003E73"
+        },
+        {
+          "stage": "coverage",
+          "documents": [],
+          "raw": "{\u0022contextIdentified\u0022:true, \u0022missingInformation\u0022:[], \u0022status\u0022:\u0022SUPPORTED\u0022, \u0022passageIds\u0022:[\u0022P4\u0022, \u0022P5\u0022]}",
+          "promptSha256": "79FE3E5EF230EBF5498699B679A55430EB0626C94C7BE4B043D4E55D4B49F5E6"
+        }
+      ]
+    },
+    {
+      "id": "D09",
+      "question": "No Informa.BR posso acompanhar o tratamento do pedido, receber a resposta do \u00F3rg\u00E3o e apresentar recurso?",
+      "expected": "SUPPORTED",
+      "actual": "SUPPORTED",
+      "statusCode": 200,
+      "referencesValid": true,
+      "expectedSourcePresent": true,
+      "response": {
+        "status": "SUPPORTED",
+        "resposta": "- Permite acompanhar o tratamento da solicita\u00E7\u00E3o, consultar a resposta encaminhada pelo \u00F3rg\u00E3o e recorrer em pedidos de informa\u00E7\u00E3o. [lai-acompanhamento-mpo]\n\n- O Busca LAI re\u00FAne pedidos e respostas p\u00FAblicos, inclusive recursos; permite filtros por assunto, ano, \u00F3rg\u00E3o e inst\u00E2ncia recursal. [lai-acompanhamento-mpo]\n\n- A pesquisa p\u00FAblica cobre pedidos ao Executivo federal desde 2015-07-01, sem conte\u00FAdo sujeito a restri\u00E7\u00E3o. [lai-acompanhamento-mpo]\n\nNota editorial: esta p\u00E1gina descreve as funcionalidades, mas n\u00E3o detalha os menus de acompanhamento de pedidos pessoais. A pesquisa p\u00FAblica no Busca LAI n\u00E3o equivale ao acompanhamento de uma solicita\u00E7\u00E3o pessoal. [lai-acompanhamento-mpo]",
+        "fontes": [
+          {
+            "id": "lai-acompanhamento-mpo",
+            "titulo": "LAI - Como solicitar Informa\u00E7\u00E3o",
+            "url": "https://www.gov.br/planejamento/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic/lai-como-solicitar-informacao",
+            "dataConsulta": "2026-11-05"
+          }
+        ],
+        "trechos": [
+          {
+            "fonteId": "lai-acompanhamento-mpo",
+            "texto": "- Permite acompanhar o tratamento da solicita\u00E7\u00E3o, consultar a resposta encaminhada pelo \u00F3rg\u00E3o e recorrer em pedidos de informa\u00E7\u00E3o."
+          },
+          {
+            "fonteId": "lai-acompanhamento-mpo",
+            "texto": "- O Busca LAI re\u00FAne pedidos e respostas p\u00FAblicos, inclusive recursos; permite filtros por assunto, ano, \u00F3rg\u00E3o e inst\u00E2ncia recursal."
+          },
+          {
+            "fonteId": "lai-acompanhamento-mpo",
+            "texto": "- A pesquisa p\u00FAblica cobre pedidos ao Executivo federal desde 2015-07-01, sem conte\u00FAdo sujeito a restri\u00E7\u00E3o."
+          },
+          {
+            "fonteId": "lai-acompanhamento-mpo",
+            "texto": "Nota editorial: esta p\u00E1gina descreve as funcionalidades, mas n\u00E3o detalha os menus de acompanhamento de pedidos pessoais. A pesquisa p\u00FAblica no Busca LAI n\u00E3o equivale ao acompanhamento de uma solicita\u00E7\u00E3o pessoal."
+          }
+        ]
+      },
+      "stages": [
+        {
+          "stage": "evidence",
+          "documents": [
+            "https://www.gov.br/pt-br/servicos/acessar-informacoes-de-orgaos-publicos",
+            "https://www.gov.br/planejamento/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic/lai-como-solicitar-informacao",
+            "https://www.gov.br/mdic/pt-br/canais_atendimento/ouvidoria/sic/prazos"
+          ],
+          "raw": "{\u0022status\u0022:\u0022SUPPORTED\u0022, \u0022evidenceIds\u0022: [\u0022F1\u0022, \u0022F2\u0022, \u0022F3\u0022], \u0022justification\u0022: \u0022O trecho F2 afirma que a plataforma Informa.BR permite acompanhar o tratamento do pedido, receber a resposta do \u00F3rg\u00E3o e apresentar recurso. O trecho F3 detalha os prazos para cada etapa, incluindo a possibilidade de recurso. O trecho F1 descreve como registrar o pedido, mas n\u00E3o aborda diretamente as funcionalidades de acompanhamento e recurso.\u0022, \u0022clarificationQuestion\u0022: null}",
+          "promptSha256": "A713B27B2CD42831D5CE223EE6CE3866049DCFE3F540C818EDE2C5CD1A003E73"
+        },
+        {
+          "stage": "coverage",
+          "documents": [],
+          "raw": "{\u0022contextIdentified\u0022:true,\u0022missingInformation\u0022:[],\u0022status\u0022:\u0022SUPPORTED\u0022,\u0022passageIds\u0022:[\u0022P10\u0022,\u0022P12\u0022,\u0022P13\u0022,\u0022P14\u0022]}",
+          "promptSha256": "79FE3E5EF230EBF5498699B679A55430EB0626C94C7BE4B043D4E55D4B49F5E6"
+        }
+      ]
+    },
+    {
+      "id": "A01",
+      "question": "Quanto tempo demora meu pedido?",
+      "expected": "NEEDS_CLARIFICATION",
+      "actual": "UNSUPPORTED",
+      "statusCode": 200,
+      "referencesValid": true,
+      "expectedSourcePresent": true,
+      "response": {
+        "status": "UNSUPPORTED",
+        "resposta": "N\u00E3o encontrei evid\u00EAncias suficientes na base para responder com seguran\u00E7a \u00E0 sua pergunta.",
+        "fontes": [],
+        "trechos": []
+      },
+      "stages": [
+        {
+          "stage": "evidence",
+          "documents": [
+            "https://www.gov.br/mdic/pt-br/canais_atendimento/ouvidoria/sic/prazos",
+            "https://www.gov.br/pt-br/servicos/acessar-informacoes-de-orgaos-publicos",
+            "https://www.gov.br/planejamento/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic/lai-como-solicitar-informacao"
+          ],
+          "raw": "{\u0022status\u0022:\u0022UNSUPPORTED\u0022,\u0022evidenceIds\u0022:[\u0022F1\u0022,\u0022F2\u0022,\u0022F3\u0022], \u0022justification\u0022:\u0022A informa\u00E7\u00E3o sobre o tempo de processamento de pedidos n\u00E3o est\u00E1 presente nos trechos fornecidos. Os documentos detalham prazos gerais, o registro de pedidos na plataforma Informa.BR e o acompanhamento de pedidos, mas n\u00E3o especificam o tempo de espera para um pedido individual.\u0022, \u0022clarificationQuestion\u0022: null}",
+          "promptSha256": "A713B27B2CD42831D5CE223EE6CE3866049DCFE3F540C818EDE2C5CD1A003E73"
+        }
+      ]
+    },
+    {
+      "id": "A02",
+      "question": "Como fa\u00E7o para recorrer de uma resposta ao pedido de informa\u00E7\u00E3o e qual \u00E9 o prazo do recurso?",
+      "expected": "UNSUPPORTED",
+      "actual": "UNSUPPORTED",
+      "statusCode": 200,
+      "referencesValid": true,
+      "expectedSourcePresent": true,
+      "response": {
+        "status": "UNSUPPORTED",
+        "resposta": "N\u00E3o encontrei evid\u00EAncias suficientes na base para responder com seguran\u00E7a \u00E0 sua pergunta.",
+        "fontes": [],
+        "trechos": []
+      },
+      "stages": [
+        {
+          "stage": "evidence",
+          "documents": [
+            "https://www.gov.br/pt-br/servicos/acessar-informacoes-de-orgaos-publicos",
+            "https://www.gov.br/mdic/pt-br/canais_atendimento/ouvidoria/sic/prazos",
+            "https://www.gov.br/planejamento/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic/lai-como-solicitar-informacao"
+          ],
+          "raw": "{\u0022status\u0022:\u0022UNSUPPORTED\u0022,\u0022evidenceIds\u0022:[],\u0022justification\u0022:\u0022A base de conhecimento fornece informa\u00E7\u00F5es sobre como registrar um pedido de acesso \u00E0 informa\u00E7\u00E3o, prazos e como recorrer de uma resposta. No entanto, n\u00E3o especifica o procedimento exato para recorrer, nem o prazo para o recurso.\u0022,\u0022clarificationQuestion\u0022:null}",
+          "promptSha256": "A713B27B2CD42831D5CE223EE6CE3866049DCFE3F540C818EDE2C5CD1A003E73"
+        }
+      ]
+    },
+    {
+      "id": "A03",
+      "question": "Meu pedido de informa\u00E7\u00E3o foi negado por sigilo. A negativa foi correta?",
+      "expected": "UNSUPPORTED",
+      "actual": "UNSUPPORTED",
+      "statusCode": 200,
+      "referencesValid": true,
+      "expectedSourcePresent": true,
+      "response": {
+        "status": "UNSUPPORTED",
+        "resposta": "N\u00E3o encontrei evid\u00EAncias suficientes na base para responder com seguran\u00E7a \u00E0 sua pergunta.",
+        "fontes": [],
+        "trechos": []
+      },
+      "stages": [
+        {
+          "stage": "evidence",
+          "documents": [
+            "https://www.gov.br/pt-br/servicos/acessar-informacoes-de-orgaos-publicos",
+            "https://www.gov.br/planejamento/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic/lai-como-solicitar-informacao",
+            "https://www.gov.br/mdic/pt-br/canais_atendimento/ouvidoria/sic/prazos"
+          ],
+          "raw": "{\u0022status\u0022:\u0022UNSUPPORTED\u0022,\u0022evidenceIds\u0022:[\u0022F1\u0022,\u0022F2\u0022,\u0022F3\u0022],\u0022justification\u0022:\u0022A mensagem n\u00E3o fornece informa\u00E7\u00F5es suficientes para determinar se a negativa foi correta. A base descreve o processo de solicita\u00E7\u00E3o de informa\u00E7\u00F5es, o acompanhamento e os prazos, mas n\u00E3o explica os crit\u00E9rios para a aplica\u00E7\u00E3o do sigilo ou a justificativa para a negativa de acesso.\u0022,\u0022clarificationQuestion\u0022:null}",
+          "promptSha256": "A713B27B2CD42831D5CE223EE6CE3866049DCFE3F540C818EDE2C5CD1A003E73"
+        }
+      ]
+    },
+    {
+      "id": "F01",
+      "question": "Tenho 60 anos e 30 anos de contribui\u00E7\u00E3o. Quanto vou receber de aposentadoria?",
+      "expected": "UNSUPPORTED",
+      "actual": "UNSUPPORTED",
+      "statusCode": 200,
+      "referencesValid": true,
+      "expectedSourcePresent": true,
+      "response": {
+        "status": "UNSUPPORTED",
+        "resposta": "N\u00E3o encontrei evid\u00EAncias suficientes na base para responder com seguran\u00E7a \u00E0 sua pergunta.",
+        "fontes": [],
+        "trechos": []
+      },
+      "stages": [
+        {
+          "stage": "evidence",
+          "documents": [
+            "https://www.gov.br/pt-br/servicos/acessar-informacoes-de-orgaos-publicos",
+            "https://www.gov.br/mdic/pt-br/canais_atendimento/ouvidoria/sic/prazos",
+            "https://www.gov.br/planejamento/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic/lai-como-solicitar-informacao"
+          ],
+          "raw": "{\u0022status\u0022:\u0022UNSUPPORTED\u0022,\u0022evidenceIds\u0022:[\u0022F1\u0022,\u0022F2\u0022,\u0022F3\u0022],\u0022justification\u0022:\u0022A informa\u00E7\u00E3o solicitada sobre o c\u00E1lculo da aposentadoria n\u00E3o est\u00E1 presente nos trechos fornecidos. Os documentos tratam de registro de pedidos de acesso \u00E0 informa\u00E7\u00E3o, prazos de atendimento e funcionalidades da plataforma Informa.BR, mas n\u00E3o especificam como o tempo de contribui\u00E7\u00E3o (60 anos e 30 anos) \u00E9 utilizado para calcular o valor da aposentadoria.\u0022, \u0022clarificationQuestion\u0022: null}",
+          "promptSha256": "A713B27B2CD42831D5CE223EE6CE3866049DCFE3F540C818EDE2C5CD1A003E73"
+        }
+      ]
+    },
+    {
+      "id": "F02",
+      "question": "Como agendar uma consulta pelo SUS e qual \u00E9 o prazo de atendimento?",
+      "expected": "UNSUPPORTED",
+      "actual": "SUPPORTED",
+      "statusCode": 200,
+      "referencesValid": true,
+      "expectedSourcePresent": true,
+      "response": {
+        "status": "SUPPORTED",
+        "resposta": "- Quando o atendimento imediato n\u00E3o for poss\u00EDvel: prazo de at\u00E9 20 dias. [lai-prazos-mdic]\n\n- Prorroga\u00E7\u00E3o: mais 10 dias; a justificativa deve chegar ao solicitante antes de terminar o prazo inicial. [lai-prazos-mdic]\n\n- Refer\u00EAncias mencionadas pela p\u00E1gina: artigo 11 da LAI; artigos 15 e 16 do Decreto 7.724/2012; artigo 66 da Lei 9.784/1999. [lai-prazos-mdic]\n\n- Contagem cont\u00EDnua: exclui a data inicial e inclui o vencimento. [lai-prazos-mdic]\n\n- Vencimento sem expediente normal: deslocamento para o pr\u00F3ximo dia \u00FAtil. [lai-prazos-mdic]\n\n- Registros entre 19h e 23h59: considerados recebidos no pr\u00F3ximo dia \u00FAtil; a contagem come\u00E7a no dia \u00FAtil posterior a esse recebimento. [lai-prazos-mdic]\n\n- O sistema calcula e apresenta os prazos. N\u00E3o presumir que o vencimento seja sempre exatamente 20 ou 30 dias corridos ap\u00F3s o envio. [lai-prazos-mdic]\n\n- P\u00FAblico atendido: pessoas f\u00EDsicas e jur\u00EDdicas, de qualquer idade e nacionalidade. [lai-registro-informabr]\n\n- Plataforma: https://informabr.cgu.gov.br/. Autentica\u00E7\u00E3o exigida: conta gov.br. [lai-registro-informabr]\n\n- Etapa pr\u00E9via: pesquisar as informa\u00E7\u00F5es p\u00FAblicas j\u00E1 dispon\u00EDveis. [lai-registro-informabr]\n\n- Abertura: selecionar \u201CFazer Pedido\u201D, definir o tipo de informa\u00E7\u00E3o e o \u00F3rg\u00E3o destinat\u00E1rio. [lai-registro-informabr]\n\n- Preenchimento: explicar objetivamente o que se deseja obter; anexos s\u00E3o opcionais. [lai-registro-informabr]\n\n- Envio: revisar os dados e selecionar \u201CConcluir\u201D. O protocolo chega por e-mail. [lai-registro-informabr]\n\n- Consulta posterior: ap\u00F3s autenticar-se, abrir \u201CAcesso \u00E0 Informa\u00E7\u00E3o\u201D e \u201CMeus pedidos\u201D. A pesquisa por protocolo identifica um pedido espec\u00EDfico. [lai-registro-informabr]\n\n- Custo do servi\u00E7o: gratuito. [lai-registro-informabr]\n\n- Plataforma indicada: https://informabr.cgu.gov.br/. [lai-acompanhamento-mpo]\n\n- Permite acompanhar o tratamento da solicita\u00E7\u00E3o, consultar a resposta encaminhada pelo \u00F3rg\u00E3o e recorrer em pedidos de informa\u00E7\u00E3o. [lai-acompanhamento-mpo]\n\n- Antes de abrir um pedido, o MPO orienta pesquisar os canais de transpar\u00EAncia ativa e o Busca LAI. [lai-acompanhamento-mpo]\n\n- O Busca LAI re\u00FAne pedidos e respostas p\u00FAblicos, inclusive recursos; permite filtros por assunto, ano, \u00F3rg\u00E3o e inst\u00E2ncia recursal. [lai-acompanhamento-mpo]\n\n- A pesquisa p\u00FAblica cobre pedidos ao Executivo federal desde 2015-07-01, sem conte\u00FAdo sujeito a restri\u00E7\u00E3o. [lai-acompanhamento-mpo]\n\nNota editorial: esta p\u00E1gina descreve as funcionalidades, mas n\u00E3o detalha os menus de acompanhamento de pedidos pessoais. A pesquisa p\u00FAblica no Busca LAI n\u00E3o equivale ao acompanhamento de uma solicita\u00E7\u00E3o pessoal. [lai-acompanhamento-mpo]",
+        "fontes": [
+          {
+            "id": "lai-prazos-mdic",
+            "titulo": "Prazos",
+            "url": "https://www.gov.br/mdic/pt-br/canais_atendimento/ouvidoria/sic/prazos",
+            "dataConsulta": "2026-11-05"
+          },
+          {
+            "id": "lai-registro-informabr",
+            "titulo": "Registrar pedido de acesso \u00E0 informa\u00E7\u00E3o na plataforma Informa.BR",
+            "url": "https://www.gov.br/pt-br/servicos/acessar-informacoes-de-orgaos-publicos",
+            "dataConsulta": "2026-11-05"
+          },
+          {
+            "id": "lai-acompanhamento-mpo",
+            "titulo": "LAI - Como solicitar Informa\u00E7\u00E3o",
+            "url": "https://www.gov.br/planejamento/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic/lai-como-solicitar-informacao",
+            "dataConsulta": "2026-11-05"
+          }
+        ],
+        "trechos": [
+          {
+            "fonteId": "lai-prazos-mdic",
+            "texto": "- Quando o atendimento imediato n\u00E3o for poss\u00EDvel: prazo de at\u00E9 20 dias."
+          },
+          {
+            "fonteId": "lai-prazos-mdic",
+            "texto": "- Prorroga\u00E7\u00E3o: mais 10 dias; a justificativa deve chegar ao solicitante antes de terminar o prazo inicial."
+          },
+          {
+            "fonteId": "lai-prazos-mdic",
+            "texto": "- Refer\u00EAncias mencionadas pela p\u00E1gina: artigo 11 da LAI; artigos 15 e 16 do Decreto 7.724/2012; artigo 66 da Lei 9.784/1999."
+          },
+          {
+            "fonteId": "lai-prazos-mdic",
+            "texto": "- Contagem cont\u00EDnua: exclui a data inicial e inclui o vencimento."
+          },
+          {
+            "fonteId": "lai-prazos-mdic",
+            "texto": "- Vencimento sem expediente normal: deslocamento para o pr\u00F3ximo dia \u00FAtil."
+          },
+          {
+            "fonteId": "lai-prazos-mdic",
+            "texto": "- Registros entre 19h e 23h59: considerados recebidos no pr\u00F3ximo dia \u00FAtil; a contagem come\u00E7a no dia \u00FAtil posterior a esse recebimento."
+          },
+          {
+            "fonteId": "lai-prazos-mdic",
+            "texto": "- O sistema calcula e apresenta os prazos. N\u00E3o presumir que o vencimento seja sempre exatamente 20 ou 30 dias corridos ap\u00F3s o envio."
+          },
+          {
+            "fonteId": "lai-registro-informabr",
+            "texto": "- P\u00FAblico atendido: pessoas f\u00EDsicas e jur\u00EDdicas, de qualquer idade e nacionalidade."
+          },
+          {
+            "fonteId": "lai-registro-informabr",
+            "texto": "- Plataforma: https://informabr.cgu.gov.br/. Autentica\u00E7\u00E3o exigida: conta gov.br."
+          },
+          {
+            "fonteId": "lai-registro-informabr",
+            "texto": "- Etapa pr\u00E9via: pesquisar as informa\u00E7\u00F5es p\u00FAblicas j\u00E1 dispon\u00EDveis."
+          },
+          {
+            "fonteId": "lai-registro-informabr",
+            "texto": "- Abertura: selecionar \u201CFazer Pedido\u201D, definir o tipo de informa\u00E7\u00E3o e o \u00F3rg\u00E3o destinat\u00E1rio."
+          },
+          {
+            "fonteId": "lai-registro-informabr",
+            "texto": "- Preenchimento: explicar objetivamente o que se deseja obter; anexos s\u00E3o opcionais."
+          },
+          {
+            "fonteId": "lai-registro-informabr",
+            "texto": "- Envio: revisar os dados e selecionar \u201CConcluir\u201D. O protocolo chega por e-mail."
+          },
+          {
+            "fonteId": "lai-registro-informabr",
+            "texto": "- Consulta posterior: ap\u00F3s autenticar-se, abrir \u201CAcesso \u00E0 Informa\u00E7\u00E3o\u201D e \u201CMeus pedidos\u201D. A pesquisa por protocolo identifica um pedido espec\u00EDfico."
+          },
+          {
+            "fonteId": "lai-registro-informabr",
+            "texto": "- Custo do servi\u00E7o: gratuito."
+          },
+          {
+            "fonteId": "lai-acompanhamento-mpo",
+            "texto": "- Plataforma indicada: https://informabr.cgu.gov.br/."
+          },
+          {
+            "fonteId": "lai-acompanhamento-mpo",
+            "texto": "- Permite acompanhar o tratamento da solicita\u00E7\u00E3o, consultar a resposta encaminhada pelo \u00F3rg\u00E3o e recorrer em pedidos de informa\u00E7\u00E3o."
+          },
+          {
+            "fonteId": "lai-acompanhamento-mpo",
+            "texto": "- Antes de abrir um pedido, o MPO orienta pesquisar os canais de transpar\u00EAncia ativa e o Busca LAI."
+          },
+          {
+            "fonteId": "lai-acompanhamento-mpo",
+            "texto": "- O Busca LAI re\u00FAne pedidos e respostas p\u00FAblicos, inclusive recursos; permite filtros por assunto, ano, \u00F3rg\u00E3o e inst\u00E2ncia recursal."
+          },
+          {
+            "fonteId": "lai-acompanhamento-mpo",
+            "texto": "- A pesquisa p\u00FAblica cobre pedidos ao Executivo federal desde 2015-07-01, sem conte\u00FAdo sujeito a restri\u00E7\u00E3o."
+          },
+          {
+            "fonteId": "lai-acompanhamento-mpo",
+            "texto": "Nota editorial: esta p\u00E1gina descreve as funcionalidades, mas n\u00E3o detalha os menus de acompanhamento de pedidos pessoais. A pesquisa p\u00FAblica no Busca LAI n\u00E3o equivale ao acompanhamento de uma solicita\u00E7\u00E3o pessoal."
+          }
+        ]
+      },
+      "stages": [
+        {
+          "stage": "evidence",
+          "documents": [
+            "https://www.gov.br/mdic/pt-br/canais_atendimento/ouvidoria/sic/prazos",
+            "https://www.gov.br/pt-br/servicos/acessar-informacoes-de-orgaos-publicos",
+            "https://www.gov.br/planejamento/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic/lai-como-solicitar-informacao"
+          ],
+          "raw": "{\u0022status\u0022:\u0022SUPPORTED\u0022, \u0022evidenceIds\u0022: [\u0022F1\u0022, \u0022F2\u0022, \u0022F3\u0022], \u0022justification\u0022: \u0022A informa\u00E7\u00E3o sobre o prazo de atendimento do SUS \u00E9 encontrada em F1, que indica um prazo de 20 dias para atendimento imediato n\u00E3o ser poss\u00EDvel, com prorroga\u00E7\u00F5es de 10 dias. O registro do pedido \u00E9 feito na plataforma Informa.BR (F2), e o acompanhamento \u00E9 poss\u00EDvel atrav\u00E9s do Busca LAI (F3).\u0022, \u0022clarificationQuestion\u0022: null}",
+          "promptSha256": "A713B27B2CD42831D5CE223EE6CE3866049DCFE3F540C818EDE2C5CD1A003E73"
+        },
+        {
+          "stage": "coverage",
+          "documents": [],
+          "raw": "{\u0022contextIdentified\u0022:true,\u0022missingInformation\u0022:[],\u0022status\u0022:\u0022SUPPORTED\u0022,\u0022passageIds\u0022:[\u0022P1\u0022,\u0022P2\u0022,\u0022P3\u0022,\u0022P4\u0022,\u0022P5\u0022,\u0022P6\u0022,\u0022P7\u0022,\u0022P8\u0022,\u0022P9\u0022,\u0022P10\u0022,\u0022P11\u0022,\u0022P12\u0022,\u0022P13\u0022,\u0022P14\u0022,\u0022P15\u0022,\u0022P16\u0022,\u0022P17\u0022,\u0022P18\u0022,\u0022P19\u0022,\u0022P20\u0022,\u0022P21\u0022]}",
+          "promptSha256": "79FE3E5EF230EBF5498699B679A55430EB0626C94C7BE4B043D4E55D4B49F5E6"
+        }
+      ]
+    },
+    {
+      "id": "F03",
+      "question": "Como consultar o andamento da restitui\u00E7\u00E3o do imposto de renda e quando vou receber?",
+      "expected": "UNSUPPORTED",
+      "actual": "UNSUPPORTED",
+      "statusCode": 200,
+      "referencesValid": true,
+      "expectedSourcePresent": true,
+      "response": {
+        "status": "UNSUPPORTED",
+        "resposta": "N\u00E3o encontrei evid\u00EAncias suficientes na base para responder com seguran\u00E7a \u00E0 sua pergunta.",
+        "fontes": [],
+        "trechos": []
+      },
+      "stages": [
+        {
+          "stage": "evidence",
+          "documents": [
+            "https://www.gov.br/mdic/pt-br/canais_atendimento/ouvidoria/sic/prazos",
+            "https://www.gov.br/pt-br/servicos/acessar-informacoes-de-orgaos-publicos",
+            "https://www.gov.br/planejamento/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic/lai-como-solicitar-informacao"
+          ],
+          "raw": "{\u0022status\u0022:\u0022UNSUPPORTED\u0022, \u0022evidenceIds\u0022: [\u0022F1\u0022, \u0022F2\u0022, \u0022F3\u0022], \u0022justification\u0022: \u0022A base de conhecimento fornece informa\u00E7\u00F5es sobre prazos de atendimento, registro de pedidos na plataforma Informa.BR e funcionalidades do Busca LAI. No entanto, n\u00E3o h\u00E1 informa\u00E7\u00F5es sobre como consultar o andamento da restitui\u00E7\u00E3o do imposto de renda ou quando o usu\u00E1rio receber\u00E1 o valor.\u0022,\u0022clarificationQuestion\u0022: null}",
+          "promptSha256": "A713B27B2CD42831D5CE223EE6CE3866049DCFE3F540C818EDE2C5CD1A003E73"
+        }
+      ]
+    },
+    {
+      "id": "N01",
+      "question": "Uma empresa estrangeira pode apresentar pedido no Informa.BR?",
+      "expected": "SUPPORTED",
+      "actual": "UNSUPPORTED",
+      "statusCode": 200,
+      "referencesValid": true,
+      "expectedSourcePresent": false,
+      "response": {
+        "status": "UNSUPPORTED",
+        "resposta": "N\u00E3o encontrei evid\u00EAncias suficientes na base para responder com seguran\u00E7a \u00E0 sua pergunta.",
+        "fontes": [],
+        "trechos": []
+      },
+      "stages": [
+        {
+          "stage": "evidence",
+          "documents": [
+            "https://www.gov.br/pt-br/servicos/acessar-informacoes-de-orgaos-publicos",
+            "https://www.gov.br/planejamento/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic/lai-como-solicitar-informacao",
+            "https://www.gov.br/mdic/pt-br/canais_atendimento/ouvidoria/sic/prazos"
+          ],
+          "raw": "{\u0022status\u0022:\u0022UNSUPPORTED\u0022, \u0022evidenceIds\u0022: [\u0022F1\u0022, \u0022F2\u0022, \u0022F3\u0022], \u0022justification\u0022: \u0022A informa\u00E7\u00E3o nos trechos n\u00E3o permite determinar se uma empresa estrangeira pode apresentar pedido no Informa.BR. O Informa.BR \u00E9 aberto a pessoas f\u00EDsicas e jur\u00EDdicas de qualquer nacionalidade, mas a plataforma utiliza a conta gov.br para autentica\u00E7\u00E3o, o que pode ser uma barreira para empresas estrangeiras.\u0022, \u0022clarificationQuestion\u0022: null}",
+          "promptSha256": "A713B27B2CD42831D5CE223EE6CE3866049DCFE3F540C818EDE2C5CD1A003E73"
+        }
+      ]
+    },
+    {
+      "id": "N02",
+      "question": "\u00C9 obrigat\u00F3rio anexar arquivos ao enviar um pedido no Informa.BR?",
+      "expected": "SUPPORTED",
+      "actual": "UNSUPPORTED",
+      "statusCode": 200,
+      "referencesValid": true,
+      "expectedSourcePresent": false,
+      "response": {
+        "status": "UNSUPPORTED",
+        "resposta": "N\u00E3o encontrei evid\u00EAncias suficientes na base para responder com seguran\u00E7a \u00E0 sua pergunta.",
+        "fontes": [],
+        "trechos": []
+      },
+      "stages": [
+        {
+          "stage": "evidence",
+          "documents": [
+            "https://www.gov.br/pt-br/servicos/acessar-informacoes-de-orgaos-publicos",
+            "https://www.gov.br/planejamento/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic/lai-como-solicitar-informacao",
+            "https://www.gov.br/mdic/pt-br/canais_atendimento/ouvidoria/sic/prazos"
+          ],
+          "raw": "{\u0022status\u0022:\u0022UNSUPPORTED\u0022,\u0022evidenceIds\u0022:[\u0022F1\u0022,\u0022F2\u0022,\u0022F3\u0022],\u0022justification\u0022:\u0022A informa\u00E7\u00E3o sobre a obrigatoriedade de anexar arquivos ao enviar um pedido no Informa.BR n\u00E3o est\u00E1 presente nos trechos fornecidos. Os documentos descrevem o processo de abertura de pedidos, acompanhamento e prazos, mas n\u00E3o mencionam a necessidade de anexos.\u0022, \u0022clarificationQuestion\u0022: null}",
+          "promptSha256": "A713B27B2CD42831D5CE223EE6CE3866049DCFE3F540C818EDE2C5CD1A003E73"
+        }
+      ]
+    },
+    {
+      "id": "N03",
+      "question": "Na contagem do prazo LAI, o dia inicial entra na contagem?",
+      "expected": "SUPPORTED",
+      "actual": "NEEDS_CLARIFICATION",
+      "statusCode": 200,
+      "referencesValid": true,
+      "expectedSourcePresent": false,
+      "response": {
+        "status": "NEEDS_CLARIFICATION",
+        "resposta": "Qual servi\u00E7o e qual etapa da solicita\u00E7\u00E3o voc\u00EA deseja consultar?",
+        "fontes": [],
+        "trechos": []
+      },
+      "stages": [
+        {
+          "stage": "evidence",
+          "documents": [
+            "https://www.gov.br/mdic/pt-br/canais_atendimento/ouvidoria/sic/prazos",
+            "https://www.gov.br/planejamento/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic/lai-como-solicitar-informacao",
+            "https://www.gov.br/pt-br/servicos/acessar-informacoes-de-orgaos-publicos"
+          ],
+          "raw": "{\u0022status\u0022:\u0022SUPPORTED\u0022, \u0022evidenceIds\u0022: [\u0022F1\u0022], \u0022justification\u0022: \u0022O trecho F1 indica que \u0027a contagem continua: exclui a data inicial e inclui o vencimento\u0027.\u0022, \u0022clarificationQuestion\u0022: null}",
+          "promptSha256": "A713B27B2CD42831D5CE223EE6CE3866049DCFE3F540C818EDE2C5CD1A003E73"
+        },
+        {
+          "stage": "coverage",
+          "documents": [],
+          "raw": "{\u0022contextIdentified\u0022:false,\u0022missingInformation\u0022:[],\u0022status\u0022:\u0022SUPPORTED\u0022,\u0022passageIds\u0022:[\u0022P4\u0022]}",
+          "promptSha256": "79FE3E5EF230EBF5498699B679A55430EB0626C94C7BE4B043D4E55D4B49F5E6"
+        }
+      ]
+    },
+    {
+      "id": "N04",
+      "question": "O Busca LAI mostra tamb\u00E9m documentos com acesso restrito?",
+      "expected": "SUPPORTED",
+      "actual": "NEEDS_CLARIFICATION",
+      "statusCode": 200,
+      "referencesValid": true,
+      "expectedSourcePresent": false,
+      "response": {
+        "status": "NEEDS_CLARIFICATION",
+        "resposta": "Qual servi\u00E7o e qual etapa da solicita\u00E7\u00E3o voc\u00EA deseja consultar?",
+        "fontes": [],
+        "trechos": []
+      },
+      "stages": [
+        {
+          "stage": "evidence",
+          "documents": [
+            "https://www.gov.br/planejamento/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic/lai-como-solicitar-informacao",
+            "https://www.gov.br/pt-br/servicos/acessar-informacoes-de-orgaos-publicos",
+            "https://www.gov.br/mdic/pt-br/canais_atendimento/ouvidoria/sic/prazos"
+          ],
+          "raw": "{\u0022status\u0022:\u0022SUPPORTED\u0022, \u0022evidenceIds\u0022: [\u0022F1\u0022, \u0022F2\u0022, \u0022F3\u0022], \u0022justification\u0022: \u0022O trecho F1 descreve que o Busca LAI cobre pedidos ao Executivo federal desde 2015-07-01, sem conte\u00FAdo sujeito a restri\u00E7\u00E3o. N\u00E3o h\u00E1 men\u00E7\u00E3o de documentos com acesso restrito.\u0022, \u0022clarificationQuestion\u0022: null}",
+          "promptSha256": "A713B27B2CD42831D5CE223EE6CE3866049DCFE3F540C818EDE2C5CD1A003E73"
+        },
+        {
+          "stage": "coverage",
+          "documents": [],
+          "raw": "{\u0022contextIdentified\u0022:false, \u0022missingInformation\u0022:[], \u0022status\u0022:\u0022SUPPORTED\u0022, \u0022passageIds\u0022:[]}",
+          "promptSha256": "79FE3E5EF230EBF5498699B679A55430EB0626C94C7BE4B043D4E55D4B49F5E6"
+        }
+      ]
+    },
+    {
+      "id": "N05",
+      "question": "No Informa.BR, preciso revisar os dados antes de concluir o envio?",
+      "expected": "SUPPORTED",
+      "actual": "SUPPORTED",
+      "statusCode": 200,
+      "referencesValid": true,
+      "expectedSourcePresent": true,
+      "response": {
+        "status": "SUPPORTED",
+        "resposta": "- Envio: revisar os dados e selecionar \u201CConcluir\u201D. O protocolo chega por e-mail. [lai-registro-informabr]\n\n- Contagem cont\u00EDnua: exclui a data inicial e inclui o vencimento. [lai-prazos-mdic]\n\n- Vencimento sem expediente normal: deslocamento para o pr\u00F3ximo dia \u00FAtil. [lai-prazos-mdic]\n\n- Registros entre 19h e 23h59: considerados recebidos no pr\u00F3ximo dia \u00FAtil; a contagem come\u00E7a no dia \u00FAtil posterior a esse recebimento. [lai-prazos-mdic]\n\n- O sistema calcula e apresenta os prazos. N\u00E3o presumir que o vencimento seja sempre exatamente 20 ou 30 dias corridos ap\u00F3s o envio. [lai-prazos-mdic]\n\n- Quando o atendimento imediato n\u00E3o for poss\u00EDvel: prazo de at\u00E9 20 dias. [lai-prazos-mdic]\n\n- Prorroga\u00E7\u00E3o: mais 10 dias; a justificativa deve chegar ao solicitante antes de terminar o prazo inicial. [lai-prazos-mdic]\n\n- Refer\u00EAncias mencionadas pela p\u00E1gina: artigo 11 da LAI; artigos 15 e 16 do Decreto 7.724/2012; artigo 66 da Lei 9.784/1999. [lai-prazos-mdic]\n\n- A pesquisa p\u00FAblica cobre pedidos ao Executivo federal desde 2015-07-01, sem conte\u00FAdo sujeito a restri\u00E7\u00E3o. [lai-acompanhamento-mpo]\n\n- O Busca LAI re\u00FAne pedidos e respostas p\u00FAblicos, inclusive recursos; permite filtros por assunto, ano, \u00F3rg\u00E3o e inst\u00E2ncia recursal. [lai-acompanhamento-mpo]\n\n- Antes de abrir um pedido, o MPO orienta pesquisar os canais de transpar\u00EAncia ativa e o Busca LAI. [lai-acompanhamento-mpo]\n\n- Permite acompanhar o tratamento da solicita\u00E7\u00E3o, consultar a resposta encaminhada pelo \u00F3rg\u00E3o e recorrer em pedidos de informa\u00E7\u00E3o. [lai-acompanhamento-mpo]\n\n- Plataforma indicada: https://informabr.cgu.gov.br/. [lai-acompanhamento-mpo]\n\nNota editorial: esta p\u00E1gina descreve as funcionalidades, mas n\u00E3o detalha os menus de acompanhamento de pedidos pessoais. A pesquisa p\u00FAblica no Busca LAI n\u00E3o equivale ao acompanhamento de uma solicita\u00E7\u00E3o pessoal. [lai-acompanhamento-mpo]\n\n- P\u00FAblico atendido: pessoas f\u00EDsicas e jur\u00EDdicas, de qualquer idade e nacionalidade. [lai-registro-informabr]\n\n- Plataforma: https://informabr.cgu.gov.br/. Autentica\u00E7\u00E3o exigida: conta gov.br. [lai-registro-informabr]\n\n- Etapa pr\u00E9via: pesquisar as informa\u00E7\u00F5es p\u00FAblicas j\u00E1 dispon\u00EDveis. [lai-registro-informabr]\n\n- Abertura: selecionar \u201CFazer Pedido\u201D, definir o tipo de informa\u00E7\u00E3o e o \u00F3rg\u00E3o destinat\u00E1rio. [lai-registro-informabr]\n\n- Preenchimento: explicar objetivamente o que se deseja obter; anexos s\u00E3o opcionais. [lai-registro-informabr]",
+        "fontes": [
+          {
+            "id": "lai-registro-informabr",
+            "titulo": "Registrar pedido de acesso \u00E0 informa\u00E7\u00E3o na plataforma Informa.BR",
+            "url": "https://www.gov.br/pt-br/servicos/acessar-informacoes-de-orgaos-publicos",
+            "dataConsulta": "2026-11-05"
+          },
+          {
+            "id": "lai-prazos-mdic",
+            "titulo": "Prazos",
+            "url": "https://www.gov.br/mdic/pt-br/canais_atendimento/ouvidoria/sic/prazos",
+            "dataConsulta": "2026-11-05"
+          },
+          {
+            "id": "lai-acompanhamento-mpo",
+            "titulo": "LAI - Como solicitar Informa\u00E7\u00E3o",
+            "url": "https://www.gov.br/planejamento/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic/lai-como-solicitar-informacao",
+            "dataConsulta": "2026-11-05"
+          }
+        ],
+        "trechos": [
+          {
+            "fonteId": "lai-registro-informabr",
+            "texto": "- Envio: revisar os dados e selecionar \u201CConcluir\u201D. O protocolo chega por e-mail."
+          },
+          {
+            "fonteId": "lai-prazos-mdic",
+            "texto": "- Contagem cont\u00EDnua: exclui a data inicial e inclui o vencimento."
+          },
+          {
+            "fonteId": "lai-prazos-mdic",
+            "texto": "- Vencimento sem expediente normal: deslocamento para o pr\u00F3ximo dia \u00FAtil."
+          },
+          {
+            "fonteId": "lai-prazos-mdic",
+            "texto": "- Registros entre 19h e 23h59: considerados recebidos no pr\u00F3ximo dia \u00FAtil; a contagem come\u00E7a no dia \u00FAtil posterior a esse recebimento."
+          },
+          {
+            "fonteId": "lai-prazos-mdic",
+            "texto": "- O sistema calcula e apresenta os prazos. N\u00E3o presumir que o vencimento seja sempre exatamente 20 ou 30 dias corridos ap\u00F3s o envio."
+          },
+          {
+            "fonteId": "lai-prazos-mdic",
+            "texto": "- Quando o atendimento imediato n\u00E3o for poss\u00EDvel: prazo de at\u00E9 20 dias."
+          },
+          {
+            "fonteId": "lai-prazos-mdic",
+            "texto": "- Prorroga\u00E7\u00E3o: mais 10 dias; a justificativa deve chegar ao solicitante antes de terminar o prazo inicial."
+          },
+          {
+            "fonteId": "lai-prazos-mdic",
+            "texto": "- Refer\u00EAncias mencionadas pela p\u00E1gina: artigo 11 da LAI; artigos 15 e 16 do Decreto 7.724/2012; artigo 66 da Lei 9.784/1999."
+          },
+          {
+            "fonteId": "lai-acompanhamento-mpo",
+            "texto": "- A pesquisa p\u00FAblica cobre pedidos ao Executivo federal desde 2015-07-01, sem conte\u00FAdo sujeito a restri\u00E7\u00E3o."
+          },
+          {
+            "fonteId": "lai-acompanhamento-mpo",
+            "texto": "- O Busca LAI re\u00FAne pedidos e respostas p\u00FAblicos, inclusive recursos; permite filtros por assunto, ano, \u00F3rg\u00E3o e inst\u00E2ncia recursal."
+          },
+          {
+            "fonteId": "lai-acompanhamento-mpo",
+            "texto": "- Antes de abrir um pedido, o MPO orienta pesquisar os canais de transpar\u00EAncia ativa e o Busca LAI."
+          },
+          {
+            "fonteId": "lai-acompanhamento-mpo",
+            "texto": "- Permite acompanhar o tratamento da solicita\u00E7\u00E3o, consultar a resposta encaminhada pelo \u00F3rg\u00E3o e recorrer em pedidos de informa\u00E7\u00E3o."
+          },
+          {
+            "fonteId": "lai-acompanhamento-mpo",
+            "texto": "- Plataforma indicada: https://informabr.cgu.gov.br/."
+          },
+          {
+            "fonteId": "lai-acompanhamento-mpo",
+            "texto": "Nota editorial: esta p\u00E1gina descreve as funcionalidades, mas n\u00E3o detalha os menus de acompanhamento de pedidos pessoais. A pesquisa p\u00FAblica no Busca LAI n\u00E3o equivale ao acompanhamento de uma solicita\u00E7\u00E3o pessoal."
+          },
+          {
+            "fonteId": "lai-registro-informabr",
+            "texto": "- P\u00FAblico atendido: pessoas f\u00EDsicas e jur\u00EDdicas, de qualquer idade e nacionalidade."
+          },
+          {
+            "fonteId": "lai-registro-informabr",
+            "texto": "- Plataforma: https://informabr.cgu.gov.br/. Autentica\u00E7\u00E3o exigida: conta gov.br."
+          },
+          {
+            "fonteId": "lai-registro-informabr",
+            "texto": "- Etapa pr\u00E9via: pesquisar as informa\u00E7\u00F5es p\u00FAblicas j\u00E1 dispon\u00EDveis."
+          },
+          {
+            "fonteId": "lai-registro-informabr",
+            "texto": "- Abertura: selecionar \u201CFazer Pedido\u201D, definir o tipo de informa\u00E7\u00E3o e o \u00F3rg\u00E3o destinat\u00E1rio."
+          },
+          {
+            "fonteId": "lai-registro-informabr",
+            "texto": "- Preenchimento: explicar objetivamente o que se deseja obter; anexos s\u00E3o opcionais."
+          }
+        ]
+      },
+      "stages": [
+        {
+          "stage": "evidence",
+          "documents": [
+            "https://www.gov.br/pt-br/servicos/acessar-informacoes-de-orgaos-publicos",
+            "https://www.gov.br/planejamento/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic/lai-como-solicitar-informacao",
+            "https://www.gov.br/mdic/pt-br/canais_atendimento/ouvidoria/sic/prazos"
+          ],
+          "raw": "{\u0022status\u0022:\u0022SUPPORTED\u0022, \u0022evidenceIds\u0022: [\u0022F1\u0022, \u0022F2\u0022, \u0022F3\u0022], \u0022justification\u0022: \u0022Os trechos F1 e F2 indicam que ap\u00F3s preencher os dados e selecionar \u0027Concluir\u0027 na plataforma Informa.BR, \u00E9 necess\u00E1rio revisar os dados antes de enviar. O trecho F3 detalha os prazos para resposta, mas n\u00E3o especifica se a revis\u00E3o \u00E9 obrigat\u00F3ria.\u0022, \u0022clarificationQuestion\u0022: null}",
+          "promptSha256": "A713B27B2CD42831D5CE223EE6CE3866049DCFE3F540C818EDE2C5CD1A003E73"
+        },
+        {
+          "stage": "coverage",
+          "documents": [],
+          "raw": "{\u0022contextIdentified\u0022:true,\u0022missingInformation\u0022:[],\u0022status\u0022:\u0022SUPPORTED\u0022,\u0022passageIds\u0022:[\u0022P6\u0022,\u0022P18\u0022,\u0022P19\u0022,\u0022P20\u0022,\u0022P21\u0022,\u0022P15\u0022,\u0022P16\u0022,\u0022P17\u0022,\u0022P13\u0022,\u0022P12\u0022,\u0022P11\u0022,\u0022P10\u0022,\u0022P9\u0022,\u0022P14\u0022,\u0022P1\u0022,\u0022P2\u0022,\u0022P3\u0022,\u0022P4\u0022,\u0022P5\u0022]}",
+          "promptSha256": "79FE3E5EF230EBF5498699B679A55430EB0626C94C7BE4B043D4E55D4B49F5E6"
+        }
+      ]
+    },
+    {
+      "id": "N06",
+      "question": "Onde posso consultar isso?",
+      "expected": "NEEDS_CLARIFICATION",
+      "actual": "SUPPORTED",
+      "statusCode": 200,
+      "referencesValid": true,
+      "expectedSourcePresent": true,
+      "response": {
+        "status": "SUPPORTED",
+        "resposta": "- Plataforma: https://informabr.cgu.gov.br/. Autentica\u00E7\u00E3o exigida: conta gov.br. [lai-registro-informabr]\n\n- Plataforma indicada: https://informabr.cgu.gov.br/. [lai-acompanhamento-mpo]\n\n- Permite acompanhar o tratamento da solicita\u00E7\u00E3o, consultar a resposta encaminhada pelo \u00F3rg\u00E3o e recorrer em pedidos de informa\u00E7\u00E3o. [lai-acompanhamento-mpo]\n\n- O Busca LAI re\u00FAne pedidos e respostas p\u00FAblicos, inclusive recursos; permite filtros por assunto, ano, \u00F3rg\u00E3o e inst\u00E2ncia recursal. [lai-acompanhamento-mpo]",
+        "fontes": [
+          {
+            "id": "lai-registro-informabr",
+            "titulo": "Registrar pedido de acesso \u00E0 informa\u00E7\u00E3o na plataforma Informa.BR",
+            "url": "https://www.gov.br/pt-br/servicos/acessar-informacoes-de-orgaos-publicos",
+            "dataConsulta": "2026-11-05"
+          },
+          {
+            "id": "lai-acompanhamento-mpo",
+            "titulo": "LAI - Como solicitar Informa\u00E7\u00E3o",
+            "url": "https://www.gov.br/planejamento/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic/lai-como-solicitar-informacao",
+            "dataConsulta": "2026-11-05"
+          }
+        ],
+        "trechos": [
+          {
+            "fonteId": "lai-registro-informabr",
+            "texto": "- Plataforma: https://informabr.cgu.gov.br/. Autentica\u00E7\u00E3o exigida: conta gov.br."
+          },
+          {
+            "fonteId": "lai-acompanhamento-mpo",
+            "texto": "- Plataforma indicada: https://informabr.cgu.gov.br/."
+          },
+          {
+            "fonteId": "lai-acompanhamento-mpo",
+            "texto": "- Permite acompanhar o tratamento da solicita\u00E7\u00E3o, consultar a resposta encaminhada pelo \u00F3rg\u00E3o e recorrer em pedidos de informa\u00E7\u00E3o."
+          },
+          {
+            "fonteId": "lai-acompanhamento-mpo",
+            "texto": "- O Busca LAI re\u00FAne pedidos e respostas p\u00FAblicos, inclusive recursos; permite filtros por assunto, ano, \u00F3rg\u00E3o e inst\u00E2ncia recursal."
+          }
+        ]
+      },
+      "stages": [
+        {
+          "stage": "evidence",
+          "documents": [
+            "https://www.gov.br/pt-br/servicos/acessar-informacoes-de-orgaos-publicos",
+            "https://www.gov.br/planejamento/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic/lai-como-solicitar-informacao",
+            "https://www.gov.br/mdic/pt-br/canais_atendimento/ouvidoria/sic/prazos"
+          ],
+          "raw": "{\u0022status\u0022:\u0022SUPPORTED\u0022, \u0022evidenceIds\u0022: [\u0022F1\u0022, \u0022F2\u0022, \u0022F3\u0022], \u0022justification\u0022: \u0022A pergunta \u0027Onde posso consultar isso?\u0027 refere-se ao acompanhamento de pedidos de acesso \u00E0 informa\u00E7\u00E3o na plataforma Informa.BR. O trecho F1 descreve o processo de abertura de pedidos, enquanto F2 detalha as funcionalidades do Busca LAI para acompanhar e consultar pedidos. F3 fornece informa\u00E7\u00F5es sobre os prazos de resposta dos pedidos. A consulta pode ser feita atrav\u00E9s da plataforma Informa.BR e do Busca LAI.\u0022, \u0022clarificationQuestion\u0022: null}",
+          "promptSha256": "A713B27B2CD42831D5CE223EE6CE3866049DCFE3F540C818EDE2C5CD1A003E73"
+        },
+        {
+          "stage": "coverage",
+          "documents": [],
+          "raw": "{\u0022contextIdentified\u0022:true, \u0022missingInformation\u0022:[], \u0022status\u0022:\u0022SUPPORTED\u0022, \u0022passageIds\u0022: [\u0022P2\u0022, \u0022P9\u0022, \u0022P10\u0022, \u0022P12\u0022]}",
+          "promptSha256": "79FE3E5EF230EBF5498699B679A55430EB0626C94C7BE4B043D4E55D4B49F5E6"
+        }
+      ]
+    },
+    {
+      "id": "N07",
+      "question": "Qual \u00E9 o prazo desse procedimento?",
+      "expected": "NEEDS_CLARIFICATION",
+      "actual": "SUPPORTED",
+      "statusCode": 200,
+      "referencesValid": true,
+      "expectedSourcePresent": true,
+      "response": {
+        "status": "SUPPORTED",
+        "resposta": "- Quando o atendimento imediato n\u00E3o for poss\u00EDvel: prazo de at\u00E9 20 dias. [lai-prazos-mdic]\n\n- Prorroga\u00E7\u00E3o: mais 10 dias; a justificativa deve chegar ao solicitante antes de terminar o prazo inicial. [lai-prazos-mdic]\n\n- Refer\u00EAncias mencionadas pela p\u00E1gina: artigo 11 da LAI; artigos 15 e 16 do Decreto 7.724/2012; artigo 66 da Lei 9.784/1999. [lai-prazos-mdic]\n\n- Contagem cont\u00EDnua: exclui a data inicial e inclui o vencimento. [lai-prazos-mdic]\n\n- Vencimento sem expediente normal: deslocamento para o pr\u00F3ximo dia \u00FAtil. [lai-prazos-mdic]\n\n- Registros entre 19h e 23h59: considerados recebidos no pr\u00F3ximo dia \u00FAtil; a contagem come\u00E7a no dia \u00FAtil posterior a esse recebimento. [lai-prazos-mdic]\n\n- O sistema calcula e apresenta os prazos. N\u00E3o presumir que o vencimento seja sempre exatamente 20 ou 30 dias corridos ap\u00F3s o envio. [lai-prazos-mdic]",
+        "fontes": [
+          {
+            "id": "lai-prazos-mdic",
+            "titulo": "Prazos",
+            "url": "https://www.gov.br/mdic/pt-br/canais_atendimento/ouvidoria/sic/prazos",
+            "dataConsulta": "2026-11-05"
+          }
+        ],
+        "trechos": [
+          {
+            "fonteId": "lai-prazos-mdic",
+            "texto": "- Quando o atendimento imediato n\u00E3o for poss\u00EDvel: prazo de at\u00E9 20 dias."
+          },
+          {
+            "fonteId": "lai-prazos-mdic",
+            "texto": "- Prorroga\u00E7\u00E3o: mais 10 dias; a justificativa deve chegar ao solicitante antes de terminar o prazo inicial."
+          },
+          {
+            "fonteId": "lai-prazos-mdic",
+            "texto": "- Refer\u00EAncias mencionadas pela p\u00E1gina: artigo 11 da LAI; artigos 15 e 16 do Decreto 7.724/2012; artigo 66 da Lei 9.784/1999."
+          },
+          {
+            "fonteId": "lai-prazos-mdic",
+            "texto": "- Contagem cont\u00EDnua: exclui a data inicial e inclui o vencimento."
+          },
+          {
+            "fonteId": "lai-prazos-mdic",
+            "texto": "- Vencimento sem expediente normal: deslocamento para o pr\u00F3ximo dia \u00FAtil."
+          },
+          {
+            "fonteId": "lai-prazos-mdic",
+            "texto": "- Registros entre 19h e 23h59: considerados recebidos no pr\u00F3ximo dia \u00FAtil; a contagem come\u00E7a no dia \u00FAtil posterior a esse recebimento."
+          },
+          {
+            "fonteId": "lai-prazos-mdic",
+            "texto": "- O sistema calcula e apresenta os prazos. N\u00E3o presumir que o vencimento seja sempre exatamente 20 ou 30 dias corridos ap\u00F3s o envio."
+          }
+        ]
+      },
+      "stages": [
+        {
+          "stage": "evidence",
+          "documents": [
+            "https://www.gov.br/mdic/pt-br/canais_atendimento/ouvidoria/sic/prazos",
+            "https://www.gov.br/pt-br/servicos/acessar-informacoes-de-orgaos-publicos",
+            "https://www.gov.br/planejamento/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic/lai-como-solicitar-informacao"
+          ],
+          "raw": "{\u0022status\u0022:\u0022SUPPORTED\u0022, \u0022evidenceIds\u0022: [\u0022F1\u0022], \u0022justification\u0022: \u0022O trecho F1 indica que o prazo padr\u00E3o para atendimento \u00E9 de 20 dias, podendo ser prorrogado em mais 10 dias com justificativa. O trecho tamb\u00E9m detalha as regras de contagem do prazo, incluindo a exclus\u00E3o da data inicial e a inclus\u00E3o do vencimento.\u0022, \u0022clarificationQuestion\u0022: null}",
+          "promptSha256": "A713B27B2CD42831D5CE223EE6CE3866049DCFE3F540C818EDE2C5CD1A003E73"
+        },
+        {
+          "stage": "coverage",
+          "documents": [],
+          "raw": "{\u0022contextIdentified\u0022:true, \u0022missingInformation\u0022:[], \u0022status\u0022:\u0022SUPPORTED\u0022, \u0022passageIds\u0022:[\u0022P1\u0022, \u0022P2\u0022, \u0022P3\u0022, \u0022P4\u0022, \u0022P5\u0022, \u0022P6\u0022, \u0022P7\u0022]}",
+          "promptSha256": "79FE3E5EF230EBF5498699B679A55430EB0626C94C7BE4B043D4E55D4B49F5E6"
+        }
+      ]
+    },
+    {
+      "id": "N08",
+      "question": "Como trocar a senha da minha conta gov.br?",
+      "expected": "UNSUPPORTED",
+      "actual": "UNSUPPORTED",
+      "statusCode": 200,
+      "referencesValid": true,
+      "expectedSourcePresent": true,
+      "response": {
+        "status": "UNSUPPORTED",
+        "resposta": "N\u00E3o encontrei evid\u00EAncias suficientes na base para responder com seguran\u00E7a \u00E0 sua pergunta.",
+        "fontes": [],
+        "trechos": []
+      },
+      "stages": [
+        {
+          "stage": "evidence",
+          "documents": [
+            "https://www.gov.br/pt-br/servicos/acessar-informacoes-de-orgaos-publicos",
+            "https://www.gov.br/planejamento/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic/lai-como-solicitar-informacao",
+            "https://www.gov.br/mdic/pt-br/canais_atendimento/ouvidoria/sic/prazos"
+          ],
+          "raw": "{\u0022status\u0022:\u0022UNSUPPORTED\u0022,\u0022evidenceIds\u0022:[],\u0022justification\u0022:\u0022A base de conhecimento n\u00E3o fornece informa\u00E7\u00F5es sobre como trocar a senha da conta gov.br. Ela descreve o processo de registro de pedidos de acesso \u00E0 informa\u00E7\u00E3o na plataforma Informa.BR e as funcionalidades do Busca LAI para acompanhar pedidos existentes.\u0022, \u0022clarificationQuestion\u0022: null}",
+          "promptSha256": "A713B27B2CD42831D5CE223EE6CE3866049DCFE3F540C818EDE2C5CD1A003E73"
+        }
+      ]
+    },
+    {
+      "id": "N09",
+      "question": "Qual multa o \u00F3rg\u00E3o paga quando atrasa a resposta de um pedido LAI?",
+      "expected": "UNSUPPORTED",
+      "actual": "UNSUPPORTED",
+      "statusCode": 200,
+      "referencesValid": true,
+      "expectedSourcePresent": true,
+      "response": {
+        "status": "UNSUPPORTED",
+        "resposta": "N\u00E3o encontrei evid\u00EAncias suficientes na base para responder com seguran\u00E7a \u00E0 sua pergunta.",
+        "fontes": [],
+        "trechos": []
+      },
+      "stages": [
+        {
+          "stage": "evidence",
+          "documents": [
+            "https://www.gov.br/mdic/pt-br/canais_atendimento/ouvidoria/sic/prazos",
+            "https://www.gov.br/planejamento/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic/lai-como-solicitar-informacao",
+            "https://www.gov.br/pt-br/servicos/acessar-informacoes-de-orgaos-publicos"
+          ],
+          "raw": "{\u0022status\u0022:\u0022UNSUPPORTED\u0022,\u0022evidenceIds\u0022:[\u0022F1\u0022,\u0022F2\u0022,\u0022F3\u0022],\u0022justification\u0022:\u0022A informa\u00E7\u00E3o sobre a multa aplicada pelo \u00F3rg\u00E3o quando atrasa a resposta de um pedido LAI n\u00E3o est\u00E1 presente nos trechos fornecidos. Os documentos detalham prazos de atendimento, funcionalidades da plataforma Informa.BR e o processo de registro de pedidos, mas n\u00E3o especificam as penalidades por atraso.\u0022, \u0022clarificationQuestion\u0022: null}",
+          "promptSha256": "A713B27B2CD42831D5CE223EE6CE3866049DCFE3F540C818EDE2C5CD1A003E73"
+        }
+      ]
+    },
+    {
+      "id": "N10",
+      "question": "Como registrar um pedido no Informa.BR e excluir definitivamente o pedido depois?",
+      "expected": "UNSUPPORTED",
+      "actual": "UNSUPPORTED",
+      "statusCode": 200,
+      "referencesValid": true,
+      "expectedSourcePresent": true,
+      "response": {
+        "status": "UNSUPPORTED",
+        "resposta": "N\u00E3o encontrei evid\u00EAncias suficientes na base para responder com seguran\u00E7a \u00E0 sua pergunta.",
+        "fontes": [],
+        "trechos": []
+      },
+      "stages": [
+        {
+          "stage": "evidence",
+          "documents": [
+            "https://www.gov.br/pt-br/servicos/acessar-informacoes-de-orgaos-publicos",
+            "https://www.gov.br/planejamento/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic/lai-como-solicitar-informacao",
+            "https://www.gov.br/mdic/pt-br/canais_atendimento/ouvidoria/sic/prazos"
+          ],
+          "raw": "{\u0022status\u0022:\u0022UNSUPPORTED\u0022,\u0022evidenceIds\u0022:[],\u0022justification\u0022:\u0022A base de conhecimento fornece informa\u00E7\u00F5es sobre como registrar um pedido no Informa.BR, mas n\u00E3o detalha o processo de exclus\u00E3o definitiva do pedido.\u0022,\u0022clarificationQuestion\u0022:null}",
+          "promptSha256": "A713B27B2CD42831D5CE223EE6CE3866049DCFE3F540C818EDE2C5CD1A003E73"
+        }
+      ]
+    }
+  ]
+}

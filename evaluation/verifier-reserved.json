@@ -1,0 +1,14 @@
+[
+ {"id":"R01","question":"Menores de idade podem usar o Informa.BR para pedir informações?","expected":"SUPPORTED"},
+ {"id":"R02","question":"O dia do vencimento é incluído na contagem do prazo LAI?","expected":"SUPPORTED"},
+ {"id":"R03","question":"O que o MPO recomenda pesquisar antes de abrir um pedido de informação?","expected":"SUPPORTED"},
+ {"id":"R04","question":"No Informa.BR, quem escolhe o órgão destinatário ao abrir o pedido?","expected":"SUPPORTED"},
+ {"id":"R05","question":"Quero saber como começar. O que faço primeiro?","expected":"NEEDS_CLARIFICATION"},
+ {"id":"R06","question":"Preciso de uma conta para usar esse serviço?","expected":"NEEDS_CLARIFICATION"},
+ {"id":"R07","question":"Posso fazer isso em nome de outra pessoa?","expected":"NEEDS_CLARIFICATION"},
+ {"id":"R08","question":"Não entendi a resposta que recebi. Como ela deve ser interpretada?","expected":"NEEDS_CLARIFICATION"},
+ {"id":"R09","question":"Qual é o limite em megabytes de anexos de um pedido no Informa.BR?","expected":"UNSUPPORTED"},
+ {"id":"R10","question":"Como cancelar um pedido já protocolado no Informa.BR?","expected":"UNSUPPORTED"},
+ {"id":"R11","question":"O Informa.BR aceita que eu escreva o pedido em espanhol?","expected":"UNSUPPORTED"},
+ {"id":"R12","question":"Como escolher o órgão destinatário no Informa.BR e depois transferir um pedido enviado ao órgão errado?","expected":"UNSUPPORTED"}
+]

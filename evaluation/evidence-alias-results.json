@@ -1,0 +1,712 @@
+{
+  "ollamaVersion": "0.40.14",
+  "generationModel": "gemma3:4b",
+  "generationDigest": "68ceab7e468a31c988b44d5a4984a0e21f58c4f7158c6ce29c1804babac38df7",
+  "embeddingModel": "embeddinggemma:latest",
+  "embeddingDigest": "85462619ee721b466c5927d109d4cb765861907d5417b9109caebc4e614679f1",
+  "temperature": 0,
+  "maxOutputTokens": 768,
+  "promptSha256": "75139593ac834826ca3354dbc04e9f87fee21d489255331f50e1bc67f85bf09c",
+  "questionsSha256": "c349e03274eb9671b51ec065bde6dd33224ab55be63cede96fc9f69c18cb54f7",
+  "corpusSha256": "5f1b9b767476801f6bb0e61b8a5c68061785feb072ed82f6bd1acd78d4c19652",
+  "topK": 3,
+  "chunks": 3,
+  "dimensions": 768,
+  "cases": 15,
+  "completed": 15,
+  "correct": 10,
+  "accuracy": 0.6666666666666666,
+  "technicalFailures": 0,
+  "falseSupported": [
+    "F02"
+  ],
+  "supportedWithMissingExpectedSource": [],
+  "confusionMatrix": {
+    "SUPPORTED": {
+      "SUPPORTED": 9,
+      "NEEDS_CLARIFICATION": 0,
+      "UNSUPPORTED": 0
+    },
+    "NEEDS_CLARIFICATION": {
+      "SUPPORTED": 0,
+      "NEEDS_CLARIFICATION": 1,
+      "UNSUPPORTED": 0
+    },
+    "UNSUPPORTED": {
+      "SUPPORTED": 1,
+      "NEEDS_CLARIFICATION": 4,
+      "UNSUPPORTED": 0
+    }
+  },
+  "results": [
+    {
+      "id": "D01",
+      "expected": "SUPPORTED",
+      "outcome": "Completed",
+      "predicted": "SUPPORTED",
+      "justification": "Os trechos fornecem informa\u00E7\u00F5es detalhadas sobre como registrar um pedido de acesso \u00E0 informa\u00E7\u00E3o na plataforma Informa.BR, incluindo o acesso via conta gov.br, o processo de preenchimento do pedido e as op\u00E7\u00F5es de consulta posterior.",
+      "clarificationQuestion": null,
+      "retrievedChunks": [
+        {
+          "id": "lai-registro-informabr:690cd48e077b464bd17d8bfd59b8d0715ec944c0d92e44b5101c821b8937dcf2:1",
+          "documentId": "lai-registro-informabr",
+          "alias": "F1"
+        },
+        {
+          "id": "lai-acompanhamento-mpo:9a3387558e38866be850d86556cfa73f270fb7d94eef81b220d6186894bdffb4:1",
+          "documentId": "lai-acompanhamento-mpo",
+          "alias": "F2"
+        },
+        {
+          "id": "lai-prazos-mdic:3ff71c8eb822fe279f70870367009ca66e1b453f701d0cf0eba487ef355278ef:1",
+          "documentId": "lai-prazos-mdic",
+          "alias": "F3"
+        }
+      ],
+      "returnedIds": [
+        "F1",
+        "F2",
+        "F3"
+      ],
+      "idsInRetrievedSet": true,
+      "citedDocuments": [
+        "lai-registro-informabr",
+        "lai-acompanhamento-mpo",
+        "lai-prazos-mdic"
+      ],
+      "expectedSourcesCited": true,
+      "rawResponse": "{\u0022status\u0022:\u0022SUPPORTED\u0022, \u0022evidenceIds\u0022: [\u0022F1\u0022, \u0022F2\u0022, \u0022F3\u0022], \u0022justification\u0022: \u0022Os trechos fornecem informa\u00E7\u00F5es detalhadas sobre como registrar um pedido de acesso \u00E0 informa\u00E7\u00E3o na plataforma Informa.BR, incluindo o acesso via conta gov.br, o processo de preenchimento do pedido e as op\u00E7\u00F5es de consulta posterior.\u0022, \u0022clarificationQuestion\u0022: null}",
+      "error": null,
+      "canonicalEvidenceIds": [
+        "lai-registro-informabr:690cd48e077b464bd17d8bfd59b8d0715ec944c0d92e44b5101c821b8937dcf2:1",
+        "lai-acompanhamento-mpo:9a3387558e38866be850d86556cfa73f270fb7d94eef81b220d6186894bdffb4:1",
+        "lai-prazos-mdic:3ff71c8eb822fe279f70870367009ca66e1b453f701d0cf0eba487ef355278ef:1"
+      ],
+      "modelStatus": "SUPPORTED"
+    },
+    {
+      "id": "D02",
+      "expected": "SUPPORTED",
+      "outcome": "Completed",
+      "predicted": "SUPPORTED",
+      "justification": "Os trechos indicam que a abertura de um pedido de informa\u00E7\u00E3o \u00E9 gratuita. O trecho F1 afirma explicitamente que o servi\u00E7o \u00E9 gratuito, enquanto F2 e F3 detalham os procedimentos e prazos sem mencionar taxas.",
+      "clarificationQuestion": null,
+      "retrievedChunks": [
+        {
+          "id": "lai-registro-informabr:690cd48e077b464bd17d8bfd59b8d0715ec944c0d92e44b5101c821b8937dcf2:1",
+          "documentId": "lai-registro-informabr",
+          "alias": "F1"
+        },
+        {
+          "id": "lai-acompanhamento-mpo:9a3387558e38866be850d86556cfa73f270fb7d94eef81b220d6186894bdffb4:1",
+          "documentId": "lai-acompanhamento-mpo",
+          "alias": "F2"
+        },
+        {
+          "id": "lai-prazos-mdic:3ff71c8eb822fe279f70870367009ca66e1b453f701d0cf0eba487ef355278ef:1",
+          "documentId": "lai-prazos-mdic",
+          "alias": "F3"
+        }
+      ],
+      "returnedIds": [
+        "F1",
+        "F2",
+        "F3"
+      ],
+      "idsInRetrievedSet": true,
+      "citedDocuments": [
+        "lai-registro-informabr",
+        "lai-acompanhamento-mpo",
+        "lai-prazos-mdic"
+      ],
+      "expectedSourcesCited": true,
+      "rawResponse": "{\u0022status\u0022:\u0022SUPPORTED\u0022, \u0022evidenceIds\u0022: [\u0022F1\u0022, \u0022F2\u0022, \u0022F3\u0022], \u0022justification\u0022: \u0022Os trechos indicam que a abertura de um pedido de informa\u00E7\u00E3o \u00E9 gratuita. O trecho F1 afirma explicitamente que o servi\u00E7o \u00E9 gratuito, enquanto F2 e F3 detalham os procedimentos e prazos sem mencionar taxas.\u0022, \u0022clarificationQuestion\u0022: null}",
+      "error": null,
+      "canonicalEvidenceIds": [
+        "lai-registro-informabr:690cd48e077b464bd17d8bfd59b8d0715ec944c0d92e44b5101c821b8937dcf2:1",
+        "lai-acompanhamento-mpo:9a3387558e38866be850d86556cfa73f270fb7d94eef81b220d6186894bdffb4:1",
+        "lai-prazos-mdic:3ff71c8eb822fe279f70870367009ca66e1b453f701d0cf0eba487ef355278ef:1"
+      ],
+      "modelStatus": "SUPPORTED"
+    },
+    {
+      "id": "D03",
+      "expected": "SUPPORTED",
+      "outcome": "Completed",
+      "predicted": "SUPPORTED",
+      "justification": "Os trechos F1, F2 e F3 descrevem o processo de solicita\u00E7\u00E3o de acesso a informa\u00E7\u00F5es na plataforma Informa.BR, incluindo o envio do pedido e o recebimento do protocolo (identificado por meio de pesquisa).",
+      "clarificationQuestion": null,
+      "retrievedChunks": [
+        {
+          "id": "lai-registro-informabr:690cd48e077b464bd17d8bfd59b8d0715ec944c0d92e44b5101c821b8937dcf2:1",
+          "documentId": "lai-registro-informabr",
+          "alias": "F1"
+        },
+        {
+          "id": "lai-prazos-mdic:3ff71c8eb822fe279f70870367009ca66e1b453f701d0cf0eba487ef355278ef:1",
+          "documentId": "lai-prazos-mdic",
+          "alias": "F2"
+        },
+        {
+          "id": "lai-acompanhamento-mpo:9a3387558e38866be850d86556cfa73f270fb7d94eef81b220d6186894bdffb4:1",
+          "documentId": "lai-acompanhamento-mpo",
+          "alias": "F3"
+        }
+      ],
+      "returnedIds": [
+        "F1",
+        "F2",
+        "F3"
+      ],
+      "idsInRetrievedSet": true,
+      "citedDocuments": [
+        "lai-registro-informabr",
+        "lai-prazos-mdic",
+        "lai-acompanhamento-mpo"
+      ],
+      "expectedSourcesCited": true,
+      "rawResponse": "{\u0022status\u0022:\u0022SUPPORTED\u0022, \u0022evidenceIds\u0022: [\u0022F1\u0022, \u0022F2\u0022, \u0022F3\u0022], \u0022justification\u0022: \u0022Os trechos F1, F2 e F3 descrevem o processo de solicita\u00E7\u00E3o de acesso a informa\u00E7\u00F5es na plataforma Informa.BR, incluindo o envio do pedido e o recebimento do protocolo (identificado por meio de pesquisa).\u0022, \u0022clarificationQuestion\u0022: null}",
+      "error": null,
+      "canonicalEvidenceIds": [
+        "lai-registro-informabr:690cd48e077b464bd17d8bfd59b8d0715ec944c0d92e44b5101c821b8937dcf2:1",
+        "lai-prazos-mdic:3ff71c8eb822fe279f70870367009ca66e1b453f701d0cf0eba487ef355278ef:1",
+        "lai-acompanhamento-mpo:9a3387558e38866be850d86556cfa73f270fb7d94eef81b220d6186894bdffb4:1"
+      ],
+      "modelStatus": "SUPPORTED"
+    },
+    {
+      "id": "D04",
+      "expected": "SUPPORTED",
+      "outcome": "Completed",
+      "predicted": "SUPPORTED",
+      "justification": "O trecho F1 detalha os prazos de resposta da LAI, que s\u00E3o de 20 dias para atendimento imediato n\u00E3o poss\u00EDvel, com a possibilidade de prorroga\u00E7\u00E3o de mais 10 dias, justificando a extens\u00E3o.",
+      "clarificationQuestion": null,
+      "retrievedChunks": [
+        {
+          "id": "lai-prazos-mdic:3ff71c8eb822fe279f70870367009ca66e1b453f701d0cf0eba487ef355278ef:1",
+          "documentId": "lai-prazos-mdic",
+          "alias": "F1"
+        },
+        {
+          "id": "lai-acompanhamento-mpo:9a3387558e38866be850d86556cfa73f270fb7d94eef81b220d6186894bdffb4:1",
+          "documentId": "lai-acompanhamento-mpo",
+          "alias": "F2"
+        },
+        {
+          "id": "lai-registro-informabr:690cd48e077b464bd17d8bfd59b8d0715ec944c0d92e44b5101c821b8937dcf2:1",
+          "documentId": "lai-registro-informabr",
+          "alias": "F3"
+        }
+      ],
+      "returnedIds": [
+        "F1"
+      ],
+      "idsInRetrievedSet": true,
+      "citedDocuments": [
+        "lai-prazos-mdic"
+      ],
+      "expectedSourcesCited": true,
+      "rawResponse": "{\u0022status\u0022:\u0022SUPPORTED\u0022, \u0022evidenceIds\u0022: [\u0022F1\u0022], \u0022justification\u0022: \u0022O trecho F1 detalha os prazos de resposta da LAI, que s\u00E3o de 20 dias para atendimento imediato n\u00E3o poss\u00EDvel, com a possibilidade de prorroga\u00E7\u00E3o de mais 10 dias, justificando a extens\u00E3o.\u0022, \u0022clarificationQuestion\u0022: null}",
+      "error": null,
+      "canonicalEvidenceIds": [
+        "lai-prazos-mdic:3ff71c8eb822fe279f70870367009ca66e1b453f701d0cf0eba487ef355278ef:1"
+      ],
+      "modelStatus": "SUPPORTED"
+    },
+    {
+      "id": "D05",
+      "expected": "SUPPORTED",
+      "outcome": "Completed",
+      "predicted": "SUPPORTED",
+      "justification": "O trecho F1 indica que, se o pedido for enviado entre 19h e 23h59, a contagem do prazo come\u00E7a no dia \u00FAtil seguinte ao recebimento. N\u00E3o h\u00E1 informa\u00E7\u00F5es sobre o momento exato em que a contagem come\u00E7a.",
+      "clarificationQuestion": null,
+      "retrievedChunks": [
+        {
+          "id": "lai-prazos-mdic:3ff71c8eb822fe279f70870367009ca66e1b453f701d0cf0eba487ef355278ef:1",
+          "documentId": "lai-prazos-mdic",
+          "alias": "F1"
+        },
+        {
+          "id": "lai-registro-informabr:690cd48e077b464bd17d8bfd59b8d0715ec944c0d92e44b5101c821b8937dcf2:1",
+          "documentId": "lai-registro-informabr",
+          "alias": "F2"
+        },
+        {
+          "id": "lai-acompanhamento-mpo:9a3387558e38866be850d86556cfa73f270fb7d94eef81b220d6186894bdffb4:1",
+          "documentId": "lai-acompanhamento-mpo",
+          "alias": "F3"
+        }
+      ],
+      "returnedIds": [
+        "F1"
+      ],
+      "idsInRetrievedSet": true,
+      "citedDocuments": [
+        "lai-prazos-mdic"
+      ],
+      "expectedSourcesCited": true,
+      "rawResponse": "{\u0022status\u0022:\u0022SUPPORTED\u0022, \u0022evidenceIds\u0022: [\u0022F1\u0022], \u0022justification\u0022: \u0022O trecho F1 indica que, se o pedido for enviado entre 19h e 23h59, a contagem do prazo come\u00E7a no dia \u00FAtil seguinte ao recebimento. N\u00E3o h\u00E1 informa\u00E7\u00F5es sobre o momento exato em que a contagem come\u00E7a.\u0022, \u0022clarificationQuestion\u0022: null}",
+      "error": null,
+      "canonicalEvidenceIds": [
+        "lai-prazos-mdic:3ff71c8eb822fe279f70870367009ca66e1b453f701d0cf0eba487ef355278ef:1"
+      ],
+      "modelStatus": "SUPPORTED"
+    },
+    {
+      "id": "D06",
+      "expected": "SUPPORTED",
+      "outcome": "Completed",
+      "predicted": "SUPPORTED",
+      "justification": "O trecho F1 indica que, em caso de vencimento sem expediente normal, o prazo \u00E9 deslocado para o pr\u00F3ximo dia \u00FAtil. N\u00E3o h\u00E1 men\u00E7\u00E3o espec\u00EDfica sobre o que acontece se o vencimento ocorrer em um dia sem expediente.",
+      "clarificationQuestion": null,
+      "retrievedChunks": [
+        {
+          "id": "lai-prazos-mdic:3ff71c8eb822fe279f70870367009ca66e1b453f701d0cf0eba487ef355278ef:1",
+          "documentId": "lai-prazos-mdic",
+          "alias": "F1"
+        },
+        {
+          "id": "lai-registro-informabr:690cd48e077b464bd17d8bfd59b8d0715ec944c0d92e44b5101c821b8937dcf2:1",
+          "documentId": "lai-registro-informabr",
+          "alias": "F2"
+        },
+        {
+          "id": "lai-acompanhamento-mpo:9a3387558e38866be850d86556cfa73f270fb7d94eef81b220d6186894bdffb4:1",
+          "documentId": "lai-acompanhamento-mpo",
+          "alias": "F3"
+        }
+      ],
+      "returnedIds": [
+        "F1"
+      ],
+      "idsInRetrievedSet": true,
+      "citedDocuments": [
+        "lai-prazos-mdic"
+      ],
+      "expectedSourcesCited": true,
+      "rawResponse": "{\u0022status\u0022:\u0022SUPPORTED\u0022, \u0022evidenceIds\u0022: [\u0022F1\u0022], \u0022justification\u0022: \u0022O trecho F1 indica que, em caso de vencimento sem expediente normal, o prazo \u00E9 deslocado para o pr\u00F3ximo dia \u00FAtil. N\u00E3o h\u00E1 men\u00E7\u00E3o espec\u00EDfica sobre o que acontece se o vencimento ocorrer em um dia sem expediente.\u0022, \u0022clarificationQuestion\u0022: null}",
+      "error": null,
+      "canonicalEvidenceIds": [
+        "lai-prazos-mdic:3ff71c8eb822fe279f70870367009ca66e1b453f701d0cf0eba487ef355278ef:1"
+      ],
+      "modelStatus": "SUPPORTED"
+    },
+    {
+      "id": "D07",
+      "expected": "SUPPORTED",
+      "outcome": "Completed",
+      "predicted": "SUPPORTED",
+      "justification": "O trecho F1 detalha as funcionalidades do Busca LAI, que permite filtrar pesquisas por ano, \u00F3rg\u00E3o e inst\u00E2ncia recursal. Isso responde \u00E0 pergunta sobre a possibilidade de pesquisar pedidos e respostas p\u00FAblicas por esses crit\u00E9rios.",
+      "clarificationQuestion": null,
+      "retrievedChunks": [
+        {
+          "id": "lai-acompanhamento-mpo:9a3387558e38866be850d86556cfa73f270fb7d94eef81b220d6186894bdffb4:1",
+          "documentId": "lai-acompanhamento-mpo",
+          "alias": "F1"
+        },
+        {
+          "id": "lai-registro-informabr:690cd48e077b464bd17d8bfd59b8d0715ec944c0d92e44b5101c821b8937dcf2:1",
+          "documentId": "lai-registro-informabr",
+          "alias": "F2"
+        },
+        {
+          "id": "lai-prazos-mdic:3ff71c8eb822fe279f70870367009ca66e1b453f701d0cf0eba487ef355278ef:1",
+          "documentId": "lai-prazos-mdic",
+          "alias": "F3"
+        }
+      ],
+      "returnedIds": [
+        "F1"
+      ],
+      "idsInRetrievedSet": true,
+      "citedDocuments": [
+        "lai-acompanhamento-mpo"
+      ],
+      "expectedSourcesCited": true,
+      "rawResponse": "{\u0022status\u0022:\u0022SUPPORTED\u0022, \u0022evidenceIds\u0022: [\u0022F1\u0022], \u0022justification\u0022: \u0022O trecho F1 detalha as funcionalidades do Busca LAI, que permite filtrar pesquisas por ano, \u00F3rg\u00E3o e inst\u00E2ncia recursal. Isso responde \u00E0 pergunta sobre a possibilidade de pesquisar pedidos e respostas p\u00FAblicas por esses crit\u00E9rios.\u0022, \u0022clarificationQuestion\u0022: null}",
+      "error": null,
+      "canonicalEvidenceIds": [
+        "lai-acompanhamento-mpo:9a3387558e38866be850d86556cfa73f270fb7d94eef81b220d6186894bdffb4:1"
+      ],
+      "modelStatus": "SUPPORTED"
+    },
+    {
+      "id": "D08",
+      "expected": "SUPPORTED",
+      "outcome": "Completed",
+      "predicted": "SUPPORTED",
+      "justification": "Os trechos F1 e F2 indicam que o Busca LAI reune pedidos p\u00FAblicos, incluindo recursos, e permite filtros. F3 detalha os prazos de resposta, que podem variar de 20 a 30 dias, dependendo do caso. N\u00E3o h\u00E1 informa\u00E7\u00E3o sobre a divulga\u00E7\u00E3o de informa\u00E7\u00F5es pessoais ou sigilosas.",
+      "clarificationQuestion": null,
+      "retrievedChunks": [
+        {
+          "id": "lai-acompanhamento-mpo:9a3387558e38866be850d86556cfa73f270fb7d94eef81b220d6186894bdffb4:1",
+          "documentId": "lai-acompanhamento-mpo",
+          "alias": "F1"
+        },
+        {
+          "id": "lai-registro-informabr:690cd48e077b464bd17d8bfd59b8d0715ec944c0d92e44b5101c821b8937dcf2:1",
+          "documentId": "lai-registro-informabr",
+          "alias": "F2"
+        },
+        {
+          "id": "lai-prazos-mdic:3ff71c8eb822fe279f70870367009ca66e1b453f701d0cf0eba487ef355278ef:1",
+          "documentId": "lai-prazos-mdic",
+          "alias": "F3"
+        }
+      ],
+      "returnedIds": [
+        "F1",
+        "F2",
+        "F3"
+      ],
+      "idsInRetrievedSet": true,
+      "citedDocuments": [
+        "lai-acompanhamento-mpo",
+        "lai-registro-informabr",
+        "lai-prazos-mdic"
+      ],
+      "expectedSourcesCited": true,
+      "rawResponse": "{\u0022status\u0022:\u0022SUPPORTED\u0022, \u0022evidenceIds\u0022: [\u0022F1\u0022, \u0022F2\u0022, \u0022F3\u0022], \u0022justification\u0022: \u0022Os trechos F1 e F2 indicam que o Busca LAI reune pedidos p\u00FAblicos, incluindo recursos, e permite filtros. F3 detalha os prazos de resposta, que podem variar de 20 a 30 dias, dependendo do caso. N\u00E3o h\u00E1 informa\u00E7\u00E3o sobre a divulga\u00E7\u00E3o de informa\u00E7\u00F5es pessoais ou sigilosas.\u0022, \u0022clarificationQuestion\u0022: null}",
+      "error": null,
+      "canonicalEvidenceIds": [
+        "lai-acompanhamento-mpo:9a3387558e38866be850d86556cfa73f270fb7d94eef81b220d6186894bdffb4:1",
+        "lai-registro-informabr:690cd48e077b464bd17d8bfd59b8d0715ec944c0d92e44b5101c821b8937dcf2:1",
+        "lai-prazos-mdic:3ff71c8eb822fe279f70870367009ca66e1b453f701d0cf0eba487ef355278ef:1"
+      ],
+      "modelStatus": "SUPPORTED"
+    },
+    {
+      "id": "D09",
+      "expected": "SUPPORTED",
+      "outcome": "Completed",
+      "predicted": "SUPPORTED",
+      "justification": "Os trechos F1 e F2 indicam que o Informa.BR permite acompanhar o tratamento do pedido, receber a resposta do \u00F3rg\u00E3o e apresentar recurso. O trecho F3 detalha os prazos envolvidos no processo.",
+      "clarificationQuestion": null,
+      "retrievedChunks": [
+        {
+          "id": "lai-registro-informabr:690cd48e077b464bd17d8bfd59b8d0715ec944c0d92e44b5101c821b8937dcf2:1",
+          "documentId": "lai-registro-informabr",
+          "alias": "F1"
+        },
+        {
+          "id": "lai-acompanhamento-mpo:9a3387558e38866be850d86556cfa73f270fb7d94eef81b220d6186894bdffb4:1",
+          "documentId": "lai-acompanhamento-mpo",
+          "alias": "F2"
+        },
+        {
+          "id": "lai-prazos-mdic:3ff71c8eb822fe279f70870367009ca66e1b453f701d0cf0eba487ef355278ef:1",
+          "documentId": "lai-prazos-mdic",
+          "alias": "F3"
+        }
+      ],
+      "returnedIds": [
+        "F1",
+        "F2",
+        "F3"
+      ],
+      "idsInRetrievedSet": true,
+      "citedDocuments": [
+        "lai-registro-informabr",
+        "lai-acompanhamento-mpo",
+        "lai-prazos-mdic"
+      ],
+      "expectedSourcesCited": true,
+      "rawResponse": "{\u0022status\u0022:\u0022SUPPORTED\u0022, \u0022evidenceIds\u0022: [\u0022F1\u0022, \u0022F2\u0022, \u0022F3\u0022], \u0022justification\u0022: \u0022Os trechos F1 e F2 indicam que o Informa.BR permite acompanhar o tratamento do pedido, receber a resposta do \u00F3rg\u00E3o e apresentar recurso. O trecho F3 detalha os prazos envolvidos no processo.\u0022, \u0022clarificationQuestion\u0022: null}",
+      "error": null,
+      "canonicalEvidenceIds": [
+        "lai-registro-informabr:690cd48e077b464bd17d8bfd59b8d0715ec944c0d92e44b5101c821b8937dcf2:1",
+        "lai-acompanhamento-mpo:9a3387558e38866be850d86556cfa73f270fb7d94eef81b220d6186894bdffb4:1",
+        "lai-prazos-mdic:3ff71c8eb822fe279f70870367009ca66e1b453f701d0cf0eba487ef355278ef:1"
+      ],
+      "modelStatus": "SUPPORTED"
+    },
+    {
+      "id": "A01",
+      "expected": "NEEDS_CLARIFICATION",
+      "outcome": "Completed",
+      "predicted": "NEEDS_CLARIFICATION",
+      "justification": "O trecho F1 fornece informa\u00E7\u00F5es sobre os prazos para atendimento de pedidos de informa\u00E7\u00E3o, mas n\u00E3o responde diretamente \u00E0 pergunta sobre o tempo de espera para um pedido espec\u00EDfico.",
+      "clarificationQuestion": "Quais s\u00E3o os prazos para o tipo de pedido que voc\u00EA est\u00E1 solicitando?",
+      "retrievedChunks": [
+        {
+          "id": "lai-prazos-mdic:3ff71c8eb822fe279f70870367009ca66e1b453f701d0cf0eba487ef355278ef:1",
+          "documentId": "lai-prazos-mdic",
+          "alias": "F1"
+        },
+        {
+          "id": "lai-registro-informabr:690cd48e077b464bd17d8bfd59b8d0715ec944c0d92e44b5101c821b8937dcf2:1",
+          "documentId": "lai-registro-informabr",
+          "alias": "F2"
+        },
+        {
+          "id": "lai-acompanhamento-mpo:9a3387558e38866be850d86556cfa73f270fb7d94eef81b220d6186894bdffb4:1",
+          "documentId": "lai-acompanhamento-mpo",
+          "alias": "F3"
+        }
+      ],
+      "returnedIds": [
+        "F1"
+      ],
+      "idsInRetrievedSet": true,
+      "citedDocuments": [
+        "lai-prazos-mdic"
+      ],
+      "expectedSourcesCited": null,
+      "rawResponse": "{\u0022status\u0022:\u0022NEEDS_CLARIFICATION\u0022, \u0022evidenceIds\u0022: [\u0022F1\u0022], \u0022justification\u0022: \u0022O trecho F1 fornece informa\u00E7\u00F5es sobre os prazos para atendimento de pedidos de informa\u00E7\u00E3o, mas n\u00E3o responde diretamente \u00E0 pergunta sobre o tempo de espera para um pedido espec\u00EDfico.\u0022, \u0022clarificationQuestion\u0022: \u0022Quais s\u00E3o os prazos para o tipo de pedido que voc\u00EA est\u00E1 solicitando?\u0022}",
+      "error": null,
+      "canonicalEvidenceIds": [
+        "lai-prazos-mdic:3ff71c8eb822fe279f70870367009ca66e1b453f701d0cf0eba487ef355278ef:1"
+      ],
+      "modelStatus": "NEEDS_CLARIFICATION"
+    },
+    {
+      "id": "A02",
+      "expected": "UNSUPPORTED",
+      "outcome": "Completed",
+      "predicted": "NEEDS_CLARIFICATION",
+      "justification": "A pergunta solicita informa\u00E7\u00F5es sobre como recorrer de uma resposta e o prazo do recurso. Os trechos fornecem informa\u00E7\u00F5es sobre o registro de pedidos, prazos gerais e a funcionalidade de recurso no Informa.BR, mas n\u00E3o detalham o processo espec\u00EDfico de recurso ou seus prazos.",
+      "clarificationQuestion": "Quais s\u00E3o os passos espec\u00EDficos para recorrer de uma resposta no Informa.BR e qual o prazo para apresentar o recurso?",
+      "retrievedChunks": [
+        {
+          "id": "lai-registro-informabr:690cd48e077b464bd17d8bfd59b8d0715ec944c0d92e44b5101c821b8937dcf2:1",
+          "documentId": "lai-registro-informabr",
+          "alias": "F1"
+        },
+        {
+          "id": "lai-prazos-mdic:3ff71c8eb822fe279f70870367009ca66e1b453f701d0cf0eba487ef355278ef:1",
+          "documentId": "lai-prazos-mdic",
+          "alias": "F2"
+        },
+        {
+          "id": "lai-acompanhamento-mpo:9a3387558e38866be850d86556cfa73f270fb7d94eef81b220d6186894bdffb4:1",
+          "documentId": "lai-acompanhamento-mpo",
+          "alias": "F3"
+        }
+      ],
+      "returnedIds": [
+        "F1",
+        "F2",
+        "F3"
+      ],
+      "idsInRetrievedSet": true,
+      "citedDocuments": [
+        "lai-registro-informabr",
+        "lai-prazos-mdic",
+        "lai-acompanhamento-mpo"
+      ],
+      "expectedSourcesCited": null,
+      "rawResponse": "{\u0022status\u0022:\u0022NEEDS_CLARIFICATION\u0022, \u0022evidenceIds\u0022: [\u0022F1\u0022, \u0022F2\u0022, \u0022F3\u0022], \u0022justification\u0022: \u0022A pergunta solicita informa\u00E7\u00F5es sobre como recorrer de uma resposta e o prazo do recurso. Os trechos fornecem informa\u00E7\u00F5es sobre o registro de pedidos, prazos gerais e a funcionalidade de recurso no Informa.BR, mas n\u00E3o detalham o processo espec\u00EDfico de recurso ou seus prazos.\u0022, \u0022clarificationQuestion\u0022: \u0022Quais s\u00E3o os passos espec\u00EDficos para recorrer de uma resposta no Informa.BR e qual o prazo para apresentar o recurso?\u0022}",
+      "error": null,
+      "canonicalEvidenceIds": [
+        "lai-registro-informabr:690cd48e077b464bd17d8bfd59b8d0715ec944c0d92e44b5101c821b8937dcf2:1",
+        "lai-prazos-mdic:3ff71c8eb822fe279f70870367009ca66e1b453f701d0cf0eba487ef355278ef:1",
+        "lai-acompanhamento-mpo:9a3387558e38866be850d86556cfa73f270fb7d94eef81b220d6186894bdffb4:1"
+      ],
+      "modelStatus": "NEEDS_CLARIFICATION"
+    },
+    {
+      "id": "A03",
+      "expected": "UNSUPPORTED",
+      "outcome": "Completed",
+      "predicted": "NEEDS_CLARIFICATION",
+      "justification": "O texto fornece informa\u00E7\u00F5es sobre o processo de solicita\u00E7\u00E3o de informa\u00E7\u00F5es, mas n\u00E3o indica os crit\u00E9rios espec\u00EDficos que levam \u00E0 negativa de um pedido por \u0027sigilo\u0027. \u00C9 necess\u00E1rio saber quais informa\u00E7\u00F5es s\u00E3o consideradas sigilosas para determinar se a negativa foi correta.",
+      "clarificationQuestion": "Quais s\u00E3o os crit\u00E9rios utilizados para determinar se um pedido de informa\u00E7\u00E3o pode ser negado por \u0027sigilo\u0027?",
+      "retrievedChunks": [
+        {
+          "id": "lai-registro-informabr:690cd48e077b464bd17d8bfd59b8d0715ec944c0d92e44b5101c821b8937dcf2:1",
+          "documentId": "lai-registro-informabr",
+          "alias": "F1"
+        },
+        {
+          "id": "lai-acompanhamento-mpo:9a3387558e38866be850d86556cfa73f270fb7d94eef81b220d6186894bdffb4:1",
+          "documentId": "lai-acompanhamento-mpo",
+          "alias": "F2"
+        },
+        {
+          "id": "lai-prazos-mdic:3ff71c8eb822fe279f70870367009ca66e1b453f701d0cf0eba487ef355278ef:1",
+          "documentId": "lai-prazos-mdic",
+          "alias": "F3"
+        }
+      ],
+      "returnedIds": [
+        "F1",
+        "F2",
+        "F3"
+      ],
+      "idsInRetrievedSet": true,
+      "citedDocuments": [
+        "lai-registro-informabr",
+        "lai-acompanhamento-mpo",
+        "lai-prazos-mdic"
+      ],
+      "expectedSourcesCited": null,
+      "rawResponse": "{\u0022status\u0022:\u0022NEEDS_CLARIFICATION\u0022, \u0022evidenceIds\u0022: [\u0022F1\u0022, \u0022F2\u0022, \u0022F3\u0022], \u0022justification\u0022: \u0022O texto fornece informa\u00E7\u00F5es sobre o processo de solicita\u00E7\u00E3o de informa\u00E7\u00F5es, mas n\u00E3o indica os crit\u00E9rios espec\u00EDficos que levam \u00E0 negativa de um pedido por \u0027sigilo\u0027. \u00C9 necess\u00E1rio saber quais informa\u00E7\u00F5es s\u00E3o consideradas sigilosas para determinar se a negativa foi correta.\u0022, \u0022clarificationQuestion\u0022: \u0022Quais s\u00E3o os crit\u00E9rios utilizados para determinar se um pedido de informa\u00E7\u00E3o pode ser negado por \u0027sigilo\u0027?\u0022}",
+      "error": null,
+      "canonicalEvidenceIds": [
+        "lai-registro-informabr:690cd48e077b464bd17d8bfd59b8d0715ec944c0d92e44b5101c821b8937dcf2:1",
+        "lai-acompanhamento-mpo:9a3387558e38866be850d86556cfa73f270fb7d94eef81b220d6186894bdffb4:1",
+        "lai-prazos-mdic:3ff71c8eb822fe279f70870367009ca66e1b453f701d0cf0eba487ef355278ef:1"
+      ],
+      "modelStatus": "NEEDS_CLARIFICATION"
+    },
+    {
+      "id": "F01",
+      "expected": "UNSUPPORTED",
+      "outcome": "Completed",
+      "predicted": "NEEDS_CLARIFICATION",
+      "justification": "A pergunta solicita informa\u00E7\u00F5es sobre o valor da aposentadoria com base na idade e tempo de contribui\u00E7\u00E3o. Os trechos fornecem informa\u00E7\u00F5es sobre registro de pedidos, prazos e acompanhamento de pedidos, mas n\u00E3o especificam os crit\u00E9rios para c\u00E1lculo da aposentadoria.",
+      "clarificationQuestion": "Quais s\u00E3o os crit\u00E9rios espec\u00EDficos para calcular o valor da aposentadoria com base na idade e tempo de contribui\u00E7\u00E3o?",
+      "retrievedChunks": [
+        {
+          "id": "lai-registro-informabr:690cd48e077b464bd17d8bfd59b8d0715ec944c0d92e44b5101c821b8937dcf2:1",
+          "documentId": "lai-registro-informabr",
+          "alias": "F1"
+        },
+        {
+          "id": "lai-prazos-mdic:3ff71c8eb822fe279f70870367009ca66e1b453f701d0cf0eba487ef355278ef:1",
+          "documentId": "lai-prazos-mdic",
+          "alias": "F2"
+        },
+        {
+          "id": "lai-acompanhamento-mpo:9a3387558e38866be850d86556cfa73f270fb7d94eef81b220d6186894bdffb4:1",
+          "documentId": "lai-acompanhamento-mpo",
+          "alias": "F3"
+        }
+      ],
+      "returnedIds": [
+        "F1",
+        "F2",
+        "F3"
+      ],
+      "idsInRetrievedSet": true,
+      "citedDocuments": [
+        "lai-registro-informabr",
+        "lai-prazos-mdic",
+        "lai-acompanhamento-mpo"
+      ],
+      "expectedSourcesCited": null,
+      "rawResponse": "{\u0022status\u0022:\u0022NEEDS_CLARIFICATION\u0022, \u0022evidenceIds\u0022: [\u0022F1\u0022, \u0022F2\u0022, \u0022F3\u0022], \u0022justification\u0022: \u0022A pergunta solicita informa\u00E7\u00F5es sobre o valor da aposentadoria com base na idade e tempo de contribui\u00E7\u00E3o. Os trechos fornecem informa\u00E7\u00F5es sobre registro de pedidos, prazos e acompanhamento de pedidos, mas n\u00E3o especificam os crit\u00E9rios para c\u00E1lculo da aposentadoria.\u0022, \u0022clarificationQuestion\u0022: \u0022Quais s\u00E3o os crit\u00E9rios espec\u00EDficos para calcular o valor da aposentadoria com base na idade e tempo de contribui\u00E7\u00E3o?\u0022}",
+      "error": null,
+      "canonicalEvidenceIds": [
+        "lai-registro-informabr:690cd48e077b464bd17d8bfd59b8d0715ec944c0d92e44b5101c821b8937dcf2:1",
+        "lai-prazos-mdic:3ff71c8eb822fe279f70870367009ca66e1b453f701d0cf0eba487ef355278ef:1",
+        "lai-acompanhamento-mpo:9a3387558e38866be850d86556cfa73f270fb7d94eef81b220d6186894bdffb4:1"
+      ],
+      "modelStatus": "NEEDS_CLARIFICATION"
+    },
+    {
+      "id": "F02",
+      "expected": "UNSUPPORTED",
+      "outcome": "Completed",
+      "predicted": "SUPPORTED",
+      "justification": "Os trechos F1 e F2 fornecem informa\u00E7\u00F5es sobre os prazos de atendimento do SUS (20 dias para atendimento imediato, com prorroga\u00E7\u00F5es de 10 dias) e o processo de registro de pedidos na plataforma Informa.BR. O trecho F3 detalha o uso da plataforma Informa.BR para acompanhar pedidos, incluindo o Busca LAI.",
+      "clarificationQuestion": null,
+      "retrievedChunks": [
+        {
+          "id": "lai-prazos-mdic:3ff71c8eb822fe279f70870367009ca66e1b453f701d0cf0eba487ef355278ef:1",
+          "documentId": "lai-prazos-mdic",
+          "alias": "F1"
+        },
+        {
+          "id": "lai-registro-informabr:690cd48e077b464bd17d8bfd59b8d0715ec944c0d92e44b5101c821b8937dcf2:1",
+          "documentId": "lai-registro-informabr",
+          "alias": "F2"
+        },
+        {
+          "id": "lai-acompanhamento-mpo:9a3387558e38866be850d86556cfa73f270fb7d94eef81b220d6186894bdffb4:1",
+          "documentId": "lai-acompanhamento-mpo",
+          "alias": "F3"
+        }
+      ],
+      "returnedIds": [
+        "F1",
+        "F2",
+        "F3"
+      ],
+      "idsInRetrievedSet": true,
+      "citedDocuments": [
+        "lai-prazos-mdic",
+        "lai-registro-informabr",
+        "lai-acompanhamento-mpo"
+      ],
+      "expectedSourcesCited": null,
+      "rawResponse": "{\u0022status\u0022:\u0022SUPPORTED\u0022, \u0022evidenceIds\u0022: [\u0022F1\u0022, \u0022F2\u0022, \u0022F3\u0022], \u0022justification\u0022: \u0022Os trechos F1 e F2 fornecem informa\u00E7\u00F5es sobre os prazos de atendimento do SUS (20 dias para atendimento imediato, com prorroga\u00E7\u00F5es de 10 dias) e o processo de registro de pedidos na plataforma Informa.BR. O trecho F3 detalha o uso da plataforma Informa.BR para acompanhar pedidos, incluindo o Busca LAI.\u0022, \u0022clarificationQuestion\u0022: null}",
+      "error": null,
+      "canonicalEvidenceIds": [
+        "lai-prazos-mdic:3ff71c8eb822fe279f70870367009ca66e1b453f701d0cf0eba487ef355278ef:1",
+        "lai-registro-informabr:690cd48e077b464bd17d8bfd59b8d0715ec944c0d92e44b5101c821b8937dcf2:1",
+        "lai-acompanhamento-mpo:9a3387558e38866be850d86556cfa73f270fb7d94eef81b220d6186894bdffb4:1"
+      ],
+      "modelStatus": "SUPPORTED"
+    },
+    {
+      "id": "F03",
+      "expected": "UNSUPPORTED",
+      "outcome": "Completed",
+      "predicted": "NEEDS_CLARIFICATION",
+      "justification": "O texto fornece informa\u00E7\u00F5es sobre prazos de atendimento e como registrar pedidos de informa\u00E7\u00E3o, mas n\u00E3o detalha como consultar o andamento espec\u00EDfico da restitui\u00E7\u00E3o do imposto de renda ou quando o valor ser\u00E1 recebido. \u00C9 necess\u00E1rio mais contexto para responder \u00E0 pergunta.",
+      "clarificationQuestion": "Como posso consultar o andamento da minha restitui\u00E7\u00E3o do imposto de renda e quando posso esperar o pagamento?",
+      "retrievedChunks": [
+        {
+          "id": "lai-prazos-mdic:3ff71c8eb822fe279f70870367009ca66e1b453f701d0cf0eba487ef355278ef:1",
+          "documentId": "lai-prazos-mdic",
+          "alias": "F1"
+        },
+        {
+          "id": "lai-registro-informabr:690cd48e077b464bd17d8bfd59b8d0715ec944c0d92e44b5101c821b8937dcf2:1",
+          "documentId": "lai-registro-informabr",
+          "alias": "F2"
+        },
+        {
+          "id": "lai-acompanhamento-mpo:9a3387558e38866be850d86556cfa73f270fb7d94eef81b220d6186894bdffb4:1",
+          "documentId": "lai-acompanhamento-mpo",
+          "alias": "F3"
+        }
+      ],
+      "returnedIds": [
+        "F1",
+        "F2",
+        "F3"
+      ],
+      "idsInRetrievedSet": true,
+      "citedDocuments": [
+        "lai-prazos-mdic",
+        "lai-registro-informabr",
+        "lai-acompanhamento-mpo"
+      ],
+      "expectedSourcesCited": null,
+      "rawResponse": "{\u0022status\u0022:\u0022NEEDS_CLARIFICATION\u0022, \u0022evidenceIds\u0022: [\u0022F1\u0022, \u0022F2\u0022, \u0022F3\u0022], \u0022justification\u0022: \u0022O texto fornece informa\u00E7\u00F5es sobre prazos de atendimento e como registrar pedidos de informa\u00E7\u00E3o, mas n\u00E3o detalha como consultar o andamento espec\u00EDfico da restitui\u00E7\u00E3o do imposto de renda ou quando o valor ser\u00E1 recebido. \u00C9 necess\u00E1rio mais contexto para responder \u00E0 pergunta.\u0022, \u0022clarificationQuestion\u0022: \u0022Como posso consultar o andamento da minha restitui\u00E7\u00E3o do imposto de renda e quando posso esperar o pagamento?\u0022}",
+      "error": null,
+      "canonicalEvidenceIds": [
+        "lai-prazos-mdic:3ff71c8eb822fe279f70870367009ca66e1b453f701d0cf0eba487ef355278ef:1",
+        "lai-registro-informabr:690cd48e077b464bd17d8bfd59b8d0715ec944c0d92e44b5101c821b8937dcf2:1",
+        "lai-acompanhamento-mpo:9a3387558e38866be850d86556cfa73f270fb7d94eef81b220d6186894bdffb4:1"
+      ],
+      "modelStatus": "NEEDS_CLARIFICATION"
+    }
+  ],
+  "modelReadableStatuses": 15,
+  "modelCorrect": 10,
+  "modelAccuracy": 0.6666666666666666,
+  "modelFalseSupported": [
+    "F02"
+  ],
+  "modelConfusionMatrix": {
+    "SUPPORTED": {
+      "SUPPORTED": 9,
+      "NEEDS_CLARIFICATION": 0,
+      "UNSUPPORTED": 0
+    },
+    "NEEDS_CLARIFICATION": {
+      "SUPPORTED": 0,
+      "NEEDS_CLARIFICATION": 1,
+      "UNSUPPORTED": 0
+    },
+    "UNSUPPORTED": {
+      "SUPPORTED": 1,
+      "NEEDS_CLARIFICATION": 4,
+      "UNSUPPORTED": 0
+    }
+  },
+  "casesWithAllReturnedIdsValid": 15
+}

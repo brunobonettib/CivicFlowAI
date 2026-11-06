@@ -1,0 +1,214 @@
+{
+    "cases":  7,
+    "correct":  2,
+    "falseSupported":  [
+                           "A01",
+                           "A02"
+                       ],
+    "technicalFailures":  0,
+    "results":  [
+                    {
+                        "id":  "D01",
+                        "expected":  "SUPPORTED",
+                        "httpStatus":  200,
+                        "actual":  "SUPPORTED",
+                        "referencesValid":  true,
+                        "response":  {
+                                         "status":  "SUPPORTED",
+                                         "resposta":  "- Plataforma: https://informabr.cgu.gov.br/. Autenticação exigida: conta gov.br. [lai-registro-informabr]\n\n- Abertura: selecionar “Fazer Pedido”, definir o tipo de informação e o órgão destinatário. [lai-registro-informabr]\n\n- Preenchimento: explicar objetivamente o que se deseja obter; anexos são opcionais. [lai-registro-informabr]\n\n- Envio: revisar os dados e selecionar “Concluir”. O protocolo chega por e-mail. [lai-registro-informabr]\n\n- Consulta posterior: após autenticar-se, abrir “Acesso à Informação” e “Meus pedidos”. A pesquisa por protocolo identifica um pedido específico. [lai-registro-informabr]",
+                                         "fontes":  [
+                                                        {
+                                                            "id":  "lai-registro-informabr",
+                                                            "titulo":  "Registrar pedido de acesso à informação na plataforma Informa.BR",
+                                                            "url":  "https://www.gov.br/pt-br/servicos/acessar-informacoes-de-orgaos-publicos",
+                                                            "dataConsulta":  "2026-11-05"
+                                                        }
+                                                    ],
+                                         "trechos":  [
+                                                         {
+                                                             "fonteId":  "lai-registro-informabr",
+                                                             "texto":  "- Plataforma: https://informabr.cgu.gov.br/. Autenticação exigida: conta gov.br."
+                                                         },
+                                                         {
+                                                             "fonteId":  "lai-registro-informabr",
+                                                             "texto":  "- Abertura: selecionar “Fazer Pedido”, definir o tipo de informação e o órgão destinatário."
+                                                         },
+                                                         {
+                                                             "fonteId":  "lai-registro-informabr",
+                                                             "texto":  "- Preenchimento: explicar objetivamente o que se deseja obter; anexos são opcionais."
+                                                         },
+                                                         {
+                                                             "fonteId":  "lai-registro-informabr",
+                                                             "texto":  "- Envio: revisar os dados e selecionar “Concluir”. O protocolo chega por e-mail."
+                                                         },
+                                                         {
+                                                             "fonteId":  "lai-registro-informabr",
+                                                             "texto":  "- Consulta posterior: após autenticar-se, abrir “Acesso à Informação” e “Meus pedidos”. A pesquisa por protocolo identifica um pedido específico."
+                                                         }
+                                                     ]
+                                     }
+                    },
+                    {
+                        "id":  "D04",
+                        "expected":  "SUPPORTED",
+                        "httpStatus":  200,
+                        "actual":  "SUPPORTED",
+                        "referencesValid":  true,
+                        "response":  {
+                                         "status":  "SUPPORTED",
+                                         "resposta":  "- Quando o atendimento imediato não for possível: prazo de até 20 dias. [lai-prazos-mdic]\n\n- Prorrogação: mais 10 dias; a justificativa deve chegar ao solicitante antes de terminar o prazo inicial. [lai-prazos-mdic]\n\n- Referências mencionadas pela página: artigo 11 da LAI; artigos 15 e 16 do Decreto 7.724/2012; artigo 66 da Lei 9.784/1999. [lai-prazos-mdic]",
+                                         "fontes":  [
+                                                        {
+                                                            "id":  "lai-prazos-mdic",
+                                                            "titulo":  "Prazos",
+                                                            "url":  "https://www.gov.br/mdic/pt-br/canais_atendimento/ouvidoria/sic/prazos",
+                                                            "dataConsulta":  "2026-11-05"
+                                                        }
+                                                    ],
+                                         "trechos":  [
+                                                         {
+                                                             "fonteId":  "lai-prazos-mdic",
+                                                             "texto":  "- Quando o atendimento imediato não for possível: prazo de até 20 dias."
+                                                         },
+                                                         {
+                                                             "fonteId":  "lai-prazos-mdic",
+                                                             "texto":  "- Prorrogação: mais 10 dias; a justificativa deve chegar ao solicitante antes de terminar o prazo inicial."
+                                                         },
+                                                         {
+                                                             "fonteId":  "lai-prazos-mdic",
+                                                             "texto":  "- Referências mencionadas pela página: artigo 11 da LAI; artigos 15 e 16 do Decreto 7.724/2012; artigo 66 da Lei 9.784/1999."
+                                                         }
+                                                     ]
+                                     }
+                    },
+                    {
+                        "id":  "A01",
+                        "expected":  "NEEDS_CLARIFICATION",
+                        "httpStatus":  200,
+                        "actual":  "SUPPORTED",
+                        "referencesValid":  true,
+                        "response":  {
+                                         "status":  "SUPPORTED",
+                                         "resposta":  "- Quando o atendimento imediato não for possível: prazo de até 20 dias. [lai-prazos-mdic]\n\n- Prorrogação: mais 10 dias; a justificativa deve chegar ao solicitante antes de terminar o prazo inicial. [lai-prazos-mdic]\n\n- Contagem contínua: exclui a data inicial e inclui o vencimento. [lai-prazos-mdic]\n\n- Vencimento sem expediente normal: deslocamento para o próximo dia útil. [lai-prazos-mdic]",
+                                         "fontes":  [
+                                                        {
+                                                            "id":  "lai-prazos-mdic",
+                                                            "titulo":  "Prazos",
+                                                            "url":  "https://www.gov.br/mdic/pt-br/canais_atendimento/ouvidoria/sic/prazos",
+                                                            "dataConsulta":  "2026-11-05"
+                                                        }
+                                                    ],
+                                         "trechos":  [
+                                                         {
+                                                             "fonteId":  "lai-prazos-mdic",
+                                                             "texto":  "- Quando o atendimento imediato não for possível: prazo de até 20 dias."
+                                                         },
+                                                         {
+                                                             "fonteId":  "lai-prazos-mdic",
+                                                             "texto":  "- Prorrogação: mais 10 dias; a justificativa deve chegar ao solicitante antes de terminar o prazo inicial."
+                                                         },
+                                                         {
+                                                             "fonteId":  "lai-prazos-mdic",
+                                                             "texto":  "- Contagem contínua: exclui a data inicial e inclui o vencimento."
+                                                         },
+                                                         {
+                                                             "fonteId":  "lai-prazos-mdic",
+                                                             "texto":  "- Vencimento sem expediente normal: deslocamento para o próximo dia útil."
+                                                         }
+                                                     ]
+                                     }
+                    },
+                    {
+                        "id":  "A02",
+                        "expected":  "UNSUPPORTED",
+                        "httpStatus":  200,
+                        "actual":  "SUPPORTED",
+                        "referencesValid":  true,
+                        "response":  {
+                                         "status":  "SUPPORTED",
+                                         "resposta":  "- Permite acompanhar o tratamento da solicitação, consultar a resposta encaminhada pelo órgão e recorrer em pedidos de informação. [lai-acompanhamento-mpo]\n\n- Antes de abrir um pedido, o MPO orienta pesquisar os canais de transparência ativa e o Busca LAI. [lai-acompanhamento-mpo]\n\n- O Busca LAI reúne pedidos e respostas públicos, inclusive recursos; permite filtros por assunto, ano, órgão e instância recursal. [lai-acompanhamento-mpo]\n\n- A pesquisa pública cobre pedidos ao Executivo federal desde 2015-07-01, sem conteúdo sujeito a restrição. [lai-acompanhamento-mpo]\n\nNota editorial: esta página descreve as funcionalidades, mas não detalha os menus de acompanhamento de pedidos pessoais. A pesquisa pública no Busca LAI não equivale ao acompanhamento de uma solicitação pessoal. [lai-acompanhamento-mpo]",
+                                         "fontes":  [
+                                                        {
+                                                            "id":  "lai-acompanhamento-mpo",
+                                                            "titulo":  "LAI - Como solicitar Informação",
+                                                            "url":  "https://www.gov.br/planejamento/pt-br/acesso-a-informacao/servico-de-informacao-ao-cidadao-sic/lai-como-solicitar-informacao",
+                                                            "dataConsulta":  "2026-11-05"
+                                                        }
+                                                    ],
+                                         "trechos":  [
+                                                         {
+                                                             "fonteId":  "lai-acompanhamento-mpo",
+                                                             "texto":  "- Permite acompanhar o tratamento da solicitação, consultar a resposta encaminhada pelo órgão e recorrer em pedidos de informação."
+                                                         },
+                                                         {
+                                                             "fonteId":  "lai-acompanhamento-mpo",
+                                                             "texto":  "- Antes de abrir um pedido, o MPO orienta pesquisar os canais de transparência ativa e o Busca LAI."
+                                                         },
+                                                         {
+                                                             "fonteId":  "lai-acompanhamento-mpo",
+                                                             "texto":  "- O Busca LAI reúne pedidos e respostas públicos, inclusive recursos; permite filtros por assunto, ano, órgão e instância recursal."
+                                                         },
+                                                         {
+                                                             "fonteId":  "lai-acompanhamento-mpo",
+                                                             "texto":  "- A pesquisa pública cobre pedidos ao Executivo federal desde 2015-07-01, sem conteúdo sujeito a restrição."
+                                                         },
+                                                         {
+                                                             "fonteId":  "lai-acompanhamento-mpo",
+                                                             "texto":  "Nota editorial: esta página descreve as funcionalidades, mas não detalha os menus de acompanhamento de pedidos pessoais. A pesquisa pública no Busca LAI não equivale ao acompanhamento de uma solicitação pessoal."
+                                                         }
+                                                     ]
+                                     }
+                    },
+                    {
+                        "id":  "F01",
+                        "expected":  "UNSUPPORTED",
+                        "httpStatus":  200,
+                        "actual":  "NEEDS_CLARIFICATION",
+                        "referencesValid":  true,
+                        "response":  {
+                                         "status":  "NEEDS_CLARIFICATION",
+                                         "resposta":  "Quais são os critérios específicos para calcular o valor da aposentadoria com base na idade e tempo de contribuição?",
+                                         "fontes":  [
+
+                                                    ],
+                                         "trechos":  [
+
+                                                     ]
+                                     }
+                    },
+                    {
+                        "id":  "F02",
+                        "expected":  "UNSUPPORTED",
+                        "httpStatus":  200,
+                        "actual":  "NEEDS_CLARIFICATION",
+                        "referencesValid":  true,
+                        "response":  {
+                                         "status":  "NEEDS_CLARIFICATION",
+                                         "resposta":  "Quais são os prazos para agendar uma consulta pelo SUS?",
+                                         "fontes":  [
+
+                                                    ],
+                                         "trechos":  [
+
+                                                     ]
+                                     }
+                    },
+                    {
+                        "id":  "F03",
+                        "expected":  "UNSUPPORTED",
+                        "httpStatus":  200,
+                        "actual":  "NEEDS_CLARIFICATION",
+                        "referencesValid":  true,
+                        "response":  {
+                                         "status":  "NEEDS_CLARIFICATION",
+                                         "resposta":  "Como posso acompanhar o andamento da minha solicitação de restituição do imposto de renda usando as ferramentas mencionadas?",
+                                         "fontes":  [
+
+                                                    ],
+                                         "trechos":  [
+
+                                                     ]
+                                     }
+                    }
+                ]
+}

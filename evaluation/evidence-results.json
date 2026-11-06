@@ -1,0 +1,554 @@
+{
+  "ollamaVersion": "0.40.14",
+  "generationModel": "gemma3:4b",
+  "generationDigest": "68ceab7e468a31c988b44d5a4984a0e21f58c4f7158c6ce29c1804babac38df7",
+  "embeddingModel": "embeddinggemma:latest",
+  "embeddingDigest": "85462619ee721b466c5927d109d4cb765861907d5417b9109caebc4e614679f1",
+  "temperature": 0,
+  "maxOutputTokens": 768,
+  "promptSha256": "93b44489ac108634ac3f967f4967e8c049fdd68fbca979c2d5422a00aa9099e0",
+  "questionsSha256": "c349e03274eb9671b51ec065bde6dd33224ab55be63cede96fc9f69c18cb54f7",
+  "corpusSha256": "5f1b9b767476801f6bb0e61b8a5c68061785feb072ed82f6bd1acd78d4c19652",
+  "topK": 3,
+  "chunks": 3,
+  "dimensions": 768,
+  "cases": 15,
+  "completed": 1,
+  "correct": 0,
+  "accuracy": 0,
+  "technicalFailures": 14,
+  "falseSupported": [],
+  "supportedWithMissingExpectedSource": [],
+  "confusionMatrix": {
+    "SUPPORTED": {
+      "SUPPORTED": 0,
+      "NEEDS_CLARIFICATION": 1,
+      "UNSUPPORTED": 0
+    },
+    "NEEDS_CLARIFICATION": {
+      "SUPPORTED": 0,
+      "NEEDS_CLARIFICATION": 0,
+      "UNSUPPORTED": 0
+    },
+    "UNSUPPORTED": {
+      "SUPPORTED": 0,
+      "NEEDS_CLARIFICATION": 0,
+      "UNSUPPORTED": 0
+    }
+  },
+  "results": [
+    {
+      "id": "D01",
+      "expected": "SUPPORTED",
+      "outcome": "InvalidResponse",
+      "predicted": null,
+      "justification": null,
+      "clarificationQuestion": null,
+      "retrievedChunks": [
+        {
+          "id": "lai-registro-informabr:690cd48e077b464bd17d8bfd59b8d0715ec944c0d92e44b5101c821b8937dcf2:1",
+          "documentId": "lai-registro-informabr"
+        },
+        {
+          "id": "lai-acompanhamento-mpo:9a3387558e38866be850d86556cfa73f270fb7d94eef81b220d6186894bdffb4:1",
+          "documentId": "lai-acompanhamento-mpo"
+        },
+        {
+          "id": "lai-prazos-mdic:3ff71c8eb822fe279f70870367009ca66e1b453f701d0cf0eba487ef355278ef:1",
+          "documentId": "lai-prazos-mdic"
+        }
+      ],
+      "returnedIds": [
+        "lai-registro-informabr:690cd48e077b464bd17d8bfd59b8d0715ec944c0d92e44b5101c821b8937dcf2",
+        "lai-acompanhamento-mpo:9a3387558e38866be850d86556cfa73f270fb7d94eef81b220d6186894bdffb4"
+      ],
+      "idsInRetrievedSet": false,
+      "citedDocuments": [],
+      "expectedSourcesCited": false,
+      "rawResponse": "{\u0022status\u0022:\u0022SUPPORTED\u0022, \u0022evidenceIds\u0022: [\u0022lai-registro-informabr:690cd48e077b464bd17d8bfd59b8d0715ec944c0d92e44b5101c821b8937dcf2\u0022, \u0022lai-acompanhamento-mpo:9a3387558e38866be850d86556cfa73f270fb7d94eef81b220d6186894bdffb4\u0022], \u0022justification\u0022: \u0022Os documentos fornecem informa\u00E7\u00F5es sobre como entrar no Informa.BR e registrar um pedido de acesso \u00E0 informa\u00E7\u00E3o. O processo envolve o uso da plataforma https://informabr.cgu.gov.br/, autentica\u00E7\u00E3o via conta gov.br, defini\u00E7\u00E3o do tipo de informa\u00E7\u00E3o e envio da solicita\u00E7\u00E3o.\u0022, \u0022clarificationQuestion\u0022: null}",
+      "error": "Resposta de an\u00E1lise malformada, inconsistente ou com evid\u00EAncias inexistentes.",
+      "modelStatus": "SUPPORTED"
+    },
+    {
+      "id": "D02",
+      "expected": "SUPPORTED",
+      "outcome": "InvalidResponse",
+      "predicted": null,
+      "justification": null,
+      "clarificationQuestion": null,
+      "retrievedChunks": [
+        {
+          "id": "lai-registro-informabr:690cd48e077b464bd17d8bfd59b8d0715ec944c0d92e44b5101c821b8937dcf2:1",
+          "documentId": "lai-registro-informabr"
+        },
+        {
+          "id": "lai-acompanhamento-mpo:9a3387558e38866be850d86556cfa73f270fb7d94eef81b220d6186894bdffb4:1",
+          "documentId": "lai-acompanhamento-mpo"
+        },
+        {
+          "id": "lai-prazos-mdic:3ff71c8eb822fe279f70870367009ca66e1b453f701d0cf0eba487ef355278ef:1",
+          "documentId": "lai-prazos-mdic"
+        }
+      ],
+      "returnedIds": [
+        "lai-registro-informabr:690cd48e077b464bd17d8bfd59b8d0715ec944c0d92e44b5101c821b8937dcf2",
+        "lai-acompanhamento-mpo:9a3387558e38866be850d86556cfa73f270fb7d94eef81b220d6186894bdffb4"
+      ],
+      "idsInRetrievedSet": false,
+      "citedDocuments": [],
+      "expectedSourcesCited": false,
+      "rawResponse": "{\u0022status\u0022:\u0022SUPPORTED\u0022, \u0022evidenceIds\u0022: [\u0022lai-registro-informabr:690cd48e077b464bd17d8bfd59b8d0715ec944c0d92e44b5101c821b8937dcf2\u0022, \u0022lai-acompanhamento-mpo:9a3387558e38866be850d86556cfa73f270fb7d94eef81b220d6186894bdffb4\u0022], \u0022justification\u0022: \u0022Os documentos indicam que a abertura de pedidos de informa\u00E7\u00E3o \u00E9 gratuita. O documento \u0027lai-registro-informabr\u0027 especifica que o servi\u00E7o \u00E9 gratuito, enquanto \u0027lai-acompanhamento-mpo\u0027 detalha a plataforma utilizada para o pedido.\u0022, \u0022clarificationQuestion\u0022: null}",
+      "error": "Resposta de an\u00E1lise malformada, inconsistente ou com evid\u00EAncias inexistentes.",
+      "modelStatus": "SUPPORTED"
+    },
+    {
+      "id": "D03",
+      "expected": "SUPPORTED",
+      "outcome": "InvalidResponse",
+      "predicted": null,
+      "justification": null,
+      "clarificationQuestion": null,
+      "retrievedChunks": [
+        {
+          "id": "lai-registro-informabr:690cd48e077b464bd17d8bfd59b8d0715ec944c0d92e44b5101c821b8937dcf2:1",
+          "documentId": "lai-registro-informabr"
+        },
+        {
+          "id": "lai-prazos-mdic:3ff71c8eb822fe279f70870367009ca66e1b453f701d0cf0eba487ef355278ef:1",
+          "documentId": "lai-prazos-mdic"
+        },
+        {
+          "id": "lai-acompanhamento-mpo:9a3387558e38866be850d86556cfa73f270fb7d94eef81b220d6186894bdffb4:1",
+          "documentId": "lai-acompanhamento-mpo"
+        }
+      ],
+      "returnedIds": [
+        "lai-registro-informabr:690cd48e077b464bd17d8bfd59b8d0715ec944c0d92e44b5101c821b8937dcf2",
+        "lai-prazos-mdic:3ff71c8eb822fe279f70870367009ca66e1b453f701d0cf0eba487ef355278ef",
+        "lai-acompanhamento-mpo:9a3387558e38866be850d86556cfa73f270fb7d94eef81b220d6186894bdffb4"
+      ],
+      "idsInRetrievedSet": false,
+      "citedDocuments": [],
+      "expectedSourcesCited": false,
+      "rawResponse": "{\u0022status\u0022:\u0022NEEDS_CLARIFICATION\u0022, \u0022evidenceIds\u0022:[\u0022lai-registro-informabr:690cd48e077b464bd17d8bfd59b8d0715ec944c0d92e44b5101c821b8937dcf2\u0022, \u0022lai-prazos-mdic:3ff71c8eb822fe279f70870367009ca66e1b453f701d0cf0eba487ef355278ef\u0022, \u0022lai-acompanhamento-mpo:9a3387558e38866be850d86556cfa73f270fb7d94eef81b220d6186894bdffb4\u0022], \u0022justification\u0022:\u0022O texto descreve como o pedido \u00E9 registrado e o protocolo chega por e-mail, mas n\u00E3o explica como o n\u00FAmero do protocolo \u00E9 recebido ap\u00F3s o envio.\u0022, \u0022clarificationQuestion\u0022:\u0022Como o usu\u00E1rio recebe o n\u00FAmero do protocolo ap\u00F3s enviar o pedido?\u0022}",
+      "error": "Resposta de an\u00E1lise malformada, inconsistente ou com evid\u00EAncias inexistentes.",
+      "modelStatus": "NEEDS_CLARIFICATION"
+    },
+    {
+      "id": "D04",
+      "expected": "SUPPORTED",
+      "outcome": "InvalidResponse",
+      "predicted": null,
+      "justification": null,
+      "clarificationQuestion": null,
+      "retrievedChunks": [
+        {
+          "id": "lai-prazos-mdic:3ff71c8eb822fe279f70870367009ca66e1b453f701d0cf0eba487ef355278ef:1",
+          "documentId": "lai-prazos-mdic"
+        },
+        {
+          "id": "lai-acompanhamento-mpo:9a3387558e38866be850d86556cfa73f270fb7d94eef81b220d6186894bdffb4:1",
+          "documentId": "lai-acompanhamento-mpo"
+        },
+        {
+          "id": "lai-registro-informabr:690cd48e077b464bd17d8bfd59b8d0715ec944c0d92e44b5101c821b8937dcf2:1",
+          "documentId": "lai-registro-informabr"
+        }
+      ],
+      "returnedIds": [
+        "lai-prazos-mdic",
+        "lai-acompanhamento-mpo"
+      ],
+      "idsInRetrievedSet": false,
+      "citedDocuments": [],
+      "expectedSourcesCited": false,
+      "rawResponse": "{\u0022status\u0022:\u0022SUPPORTED\u0022, \u0022evidenceIds\u0022: [\u0022lai-prazos-mdic\u0022, \u0022lai-acompanhamento-mpo\u0022], \u0022justification\u0022:\u0022Os trechos fornecem informa\u00E7\u00F5es sobre os prazos de resposta da LAI, que s\u00E3o de 20 dias, com possibilidade de prorroga\u00E7\u00E3o de mais 10 dias. A prorroga\u00E7\u00E3o depende da justificativa apresentada pelo solicitante.\u0022, \u0022clarificationQuestion\u0022: null}",
+      "error": "Resposta de an\u00E1lise malformada, inconsistente ou com evid\u00EAncias inexistentes.",
+      "modelStatus": "SUPPORTED"
+    },
+    {
+      "id": "D05",
+      "expected": "SUPPORTED",
+      "outcome": "InvalidResponse",
+      "predicted": null,
+      "justification": null,
+      "clarificationQuestion": null,
+      "retrievedChunks": [
+        {
+          "id": "lai-prazos-mdic:3ff71c8eb822fe279f70870367009ca66e1b453f701d0cf0eba487ef355278ef:1",
+          "documentId": "lai-prazos-mdic"
+        },
+        {
+          "id": "lai-registro-informabr:690cd48e077b464bd17d8bfd59b8d0715ec944c0d92e44b5101c821b8937dcf2:1",
+          "documentId": "lai-registro-informabr"
+        },
+        {
+          "id": "lai-acompanhamento-mpo:9a3387558e38866be850d86556cfa73f270fb7d94eef81b220d6186894bdffb4:1",
+          "documentId": "lai-acompanhamento-mpo"
+        }
+      ],
+      "returnedIds": [
+        "lai-prazos-mdic:3ff71c8eb822fe279f70870367009ca66e1b453f701d0cf0eba487ef355278ef",
+        "lai-registro-informabr:690cd48e077b464bd17d8bfd59b8d0715ec944c0d92e44b5101c821b8937dcf2"
+      ],
+      "idsInRetrievedSet": false,
+      "citedDocuments": [],
+      "expectedSourcesCited": false,
+      "rawResponse": "{\u0022status\u0022:\u0022SUPPORTED\u0022, \u0022evidenceIds\u0022: [\u0022lai-prazos-mdic:3ff71c8eb822fe279f70870367009ca66e1b453f701d0cf0eba487ef355278ef\u0022, \u0022lai-registro-informabr:690cd48e077b464bd17d8bfd59b8d0715ec944c0d92e44b5101c821b8937dcf2\u0022], \u0022justification\u0022: \u0022O documento \u0027Prazos\u0027 indica que a contagem do prazo come\u00E7a no dia \u00FAtil seguinte ao envio, exceto entre 19h e 23h59, que s\u00E3o considerados recebidos no dia \u00FAtil seguinte. O documento \u0027Registrar pedido de acesso\u0027 n\u00E3o fornece informa\u00E7\u00F5es sobre o momento exato em que a contagem come\u00E7a.\u0022, \u0022clarificationQuestion\u0022: null}",
+      "error": "Resposta de an\u00E1lise malformada, inconsistente ou com evid\u00EAncias inexistentes.",
+      "modelStatus": "SUPPORTED"
+    },
+    {
+      "id": "D06",
+      "expected": "SUPPORTED",
+      "outcome": "InvalidResponse",
+      "predicted": null,
+      "justification": null,
+      "clarificationQuestion": null,
+      "retrievedChunks": [
+        {
+          "id": "lai-prazos-mdic:3ff71c8eb822fe279f70870367009ca66e1b453f701d0cf0eba487ef355278ef:1",
+          "documentId": "lai-prazos-mdic"
+        },
+        {
+          "id": "lai-registro-informabr:690cd48e077b464bd17d8bfd59b8d0715ec944c0d92e44b5101c821b8937dcf2:1",
+          "documentId": "lai-registro-informabr"
+        },
+        {
+          "id": "lai-acompanhamento-mpo:9a3387558e38866be850d86556cfa73f270fb7d94eef81b220d6186894bdffb4:1",
+          "documentId": "lai-acompanhamento-mpo"
+        }
+      ],
+      "returnedIds": [
+        "lai-prazos-mdic:3ff71c8eb822fe279f70870367009ca66e1b453f701d0cf0eba487ef355278ef",
+        "lai-registro-informabr:690cd48e077b464bd17d8bfd59b8d0715ec944c0d92e44b5101c821b8937dcf2"
+      ],
+      "idsInRetrievedSet": false,
+      "citedDocuments": [],
+      "expectedSourcesCited": false,
+      "rawResponse": "{\u0022status\u0022:\u0022SUPPORTED\u0022, \u0022evidenceIds\u0022: [\u0022lai-prazos-mdic:3ff71c8eb822fe279f70870367009ca66e1b453f701d0cf0eba487ef355278ef\u0022, \u0022lai-registro-informabr:690cd48e077b464bd17d8bfd59b8d0715ec944c0d92e44b5101c821b8937dcf2\u0022], \u0022justification\u0022: \u0022O documento \u0027Prazos\u0027 (lai-prazos-mdic) estabelece que, em caso de vencimento sem expediente normal, o prazo \u00E9 deslocado para o pr\u00F3ximo dia \u00FAtil. O documento \u0027Registrar pedido de acesso\u0027 (lai-registro-informabr) n\u00E3o aborda especificamente o caso de vencimento em dia sem expediente.\u0022, \u0022clarificationQuestion\u0022: null}",
+      "error": "Resposta de an\u00E1lise malformada, inconsistente ou com evid\u00EAncias inexistentes.",
+      "modelStatus": "SUPPORTED"
+    },
+    {
+      "id": "D07",
+      "expected": "SUPPORTED",
+      "outcome": "Completed",
+      "predicted": "NEEDS_CLARIFICATION",
+      "justification": "A pergunta solicita a possibilidade de pesquisar pedidos p\u00FAblicos por ano, \u00F3rg\u00E3o e inst\u00E2ncia recursal. O trecho indica que o Busca LAI permite essa pesquisa, mas n\u00E3o especifica se \u00E9 poss\u00EDvel filtrar por todos os crit\u00E9rios simultaneamente.",
+      "clarificationQuestion": "Quais crit\u00E9rios espec\u00EDficos voc\u00EA deseja usar para filtrar os pedidos p\u00FAblicos na pesquisa?",
+      "retrievedChunks": [
+        {
+          "id": "lai-acompanhamento-mpo:9a3387558e38866be850d86556cfa73f270fb7d94eef81b220d6186894bdffb4:1",
+          "documentId": "lai-acompanhamento-mpo"
+        },
+        {
+          "id": "lai-registro-informabr:690cd48e077b464bd17d8bfd59b8d0715ec944c0d92e44b5101c821b8937dcf2:1",
+          "documentId": "lai-registro-informabr"
+        },
+        {
+          "id": "lai-prazos-mdic:3ff71c8eb822fe279f70870367009ca66e1b453f701d0cf0eba487ef355278ef:1",
+          "documentId": "lai-prazos-mdic"
+        }
+      ],
+      "returnedIds": [
+        "lai-acompanhamento-mpo:9a3387558e38866be850d86556cfa73f270fb7d94eef81b220d6186894bdffb4:1"
+      ],
+      "idsInRetrievedSet": true,
+      "citedDocuments": [
+        "lai-acompanhamento-mpo"
+      ],
+      "expectedSourcesCited": true,
+      "rawResponse": "{\u0022status\u0022:\u0022NEEDS_CLARIFICATION\u0022, \u0022evidenceIds\u0022: [\u0022lai-acompanhamento-mpo:9a3387558e38866be850d86556cfa73f270fb7d94eef81b220d6186894bdffb4:1\u0022], \u0022justification\u0022: \u0022A pergunta solicita a possibilidade de pesquisar pedidos p\u00FAblicos por ano, \u00F3rg\u00E3o e inst\u00E2ncia recursal. O trecho indica que o Busca LAI permite essa pesquisa, mas n\u00E3o especifica se \u00E9 poss\u00EDvel filtrar por todos os crit\u00E9rios simultaneamente.\u0022, \u0022clarificationQuestion\u0022: \u0022Quais crit\u00E9rios espec\u00EDficos voc\u00EA deseja usar para filtrar os pedidos p\u00FAblicos na pesquisa?\u0022}",
+      "error": null,
+      "modelStatus": "NEEDS_CLARIFICATION"
+    },
+    {
+      "id": "D08",
+      "expected": "SUPPORTED",
+      "outcome": "InvalidResponse",
+      "predicted": null,
+      "justification": null,
+      "clarificationQuestion": null,
+      "retrievedChunks": [
+        {
+          "id": "lai-acompanhamento-mpo:9a3387558e38866be850d86556cfa73f270fb7d94eef81b220d6186894bdffb4:1",
+          "documentId": "lai-acompanhamento-mpo"
+        },
+        {
+          "id": "lai-registro-informabr:690cd48e077b464bd17d8bfd59b8d0715ec944c0d92e44b5101c821b8937dcf2:1",
+          "documentId": "lai-registro-informabr"
+        },
+        {
+          "id": "lai-prazos-mdic:3ff71c8eb822fe279f70870367009ca66e1b453f701d0cf0eba487ef355278ef:1",
+          "documentId": "lai-prazos-mdic"
+        }
+      ],
+      "returnedIds": [
+        "lai-acompanhamento-mpo:9a3387558e38866be850d86556cfa73f270fb7d94eef81b220d6186894bdffb4",
+        "lai-registro-informabr:690cd48e077b464bd17d8bfd59b8d0715ec944c0d92e44b5101c821b8937dcf2",
+        "lai-prazos-mdic:3ff71c8eb822fe279f70870367009ca66e1b453f701d0cf0eba487ef355278ef"
+      ],
+      "idsInRetrievedSet": false,
+      "citedDocuments": [],
+      "expectedSourcesCited": false,
+      "rawResponse": "{\u0022status\u0022:\u0022NEEDS_CLARIFICATION\u0022, \u0022evidenceIds\u0022: [\u0022lai-acompanhamento-mpo:9a3387558e38866be850d86556cfa73f270fb7d94eef81b220d6186894bdffb4\u0022, \u0022lai-registro-informabr:690cd48e077b464bd17d8bfd59b8d0715ec944c0d92e44b5101c821b8937dcf2\u0022, \u0022lai-prazos-mdic:3ff71c8eb822fe279f70870367009ca66e1b453f701d0cf0eba487ef355278ef\u0022], \u0022justification\u0022: \u0022A pergunta necessita de mais contexto para determinar se o Busca LAI reane pedidos p\u00FAblicos e mostra informa\u00E7\u00F5es pessoais ou sigilosas. \u00C9 preciso saber qual tipo de pedido est\u00E1 sendo questionado.\u0022, \u0022clarificationQuestion\u0022: \u0022Que tipo de pedido est\u00E1 sendo questionado em rela\u00E7\u00E3o ao Busca LAI?\u0022}",
+      "error": "Resposta de an\u00E1lise malformada, inconsistente ou com evid\u00EAncias inexistentes.",
+      "modelStatus": "NEEDS_CLARIFICATION"
+    },
+    {
+      "id": "D09",
+      "expected": "SUPPORTED",
+      "outcome": "InvalidResponse",
+      "predicted": null,
+      "justification": null,
+      "clarificationQuestion": null,
+      "retrievedChunks": [
+        {
+          "id": "lai-registro-informabr:690cd48e077b464bd17d8bfd59b8d0715ec944c0d92e44b5101c821b8937dcf2:1",
+          "documentId": "lai-registro-informabr"
+        },
+        {
+          "id": "lai-acompanhamento-mpo:9a3387558e38866be850d86556cfa73f270fb7d94eef81b220d6186894bdffb4:1",
+          "documentId": "lai-acompanhamento-mpo"
+        },
+        {
+          "id": "lai-prazos-mdic:3ff71c8eb822fe279f70870367009ca66e1b453f701d0cf0eba487ef355278ef:1",
+          "documentId": "lai-prazos-mdic"
+        }
+      ],
+      "returnedIds": [
+        "lai-registro-informabr:690cd48e077b464bd17d8bfd59b8d0715ec944c0d92e44b5101c821b8937dcf2",
+        "lai-acompanhamento-mpo:9a3387558e38866be850d86556cfa73f270fb7d94eef81b220d6186894bdffb4"
+      ],
+      "idsInRetrievedSet": false,
+      "citedDocuments": [],
+      "expectedSourcesCited": false,
+      "rawResponse": "{\u0022status\u0022:\u0022SUPPORTED\u0022, \u0022evidenceIds\u0022: [\u0022lai-registro-informabr:690cd48e077b464bd17d8bfd59b8d0715ec944c0d92e44b5101c821b8937dcf2\u0022, \u0022lai-acompanhamento-mpo:9a3387558e38866be850d86556cfa73f270fb7d94eef81b220d6186894bdffb4\u0022], \u0022justification\u0022: \u0022Os documentos \u0027lai-registro-informabr\u0027 e \u0027lai-acompanhamento-mpo\u0027 indicam que \u00E9 poss\u00EDvel acompanhar o tratamento do pedido no Informa.BR, receber a resposta do \u00F3rg\u00E3o e apresentar recurso.\u0022, \u0022clarificationQuestion\u0022: null}",
+      "error": "Resposta de an\u00E1lise malformada, inconsistente ou com evid\u00EAncias inexistentes.",
+      "modelStatus": "SUPPORTED"
+    },
+    {
+      "id": "A01",
+      "expected": "NEEDS_CLARIFICATION",
+      "outcome": "InvalidResponse",
+      "predicted": null,
+      "justification": null,
+      "clarificationQuestion": null,
+      "retrievedChunks": [
+        {
+          "id": "lai-prazos-mdic:3ff71c8eb822fe279f70870367009ca66e1b453f701d0cf0eba487ef355278ef:1",
+          "documentId": "lai-prazos-mdic"
+        },
+        {
+          "id": "lai-registro-informabr:690cd48e077b464bd17d8bfd59b8d0715ec944c0d92e44b5101c821b8937dcf2:1",
+          "documentId": "lai-registro-informabr"
+        },
+        {
+          "id": "lai-acompanhamento-mpo:9a3387558e38866be850d86556cfa73f270fb7d94eef81b220d6186894bdffb4:1",
+          "documentId": "lai-acompanhamento-mpo"
+        }
+      ],
+      "returnedIds": [
+        "lai-prazos-mdic:3ff71c8eb822fe279f70870367009ca66e1b453f701d0cf0eba487ef355278ef",
+        "lai-registro-informabr:690cd48e077b464bd17d8bfd59b8d0715ec944c0d92e44b5101c821b8937dcf2",
+        "lai-acompanhamento-mpo:9a3387558e38866be850d86556cfa73f270fb7d94eef81b220d6186894bdffb4"
+      ],
+      "idsInRetrievedSet": false,
+      "citedDocuments": [],
+      "expectedSourcesCited": null,
+      "rawResponse": "{\u0022status\u0022:\u0022NEEDS_CLARIFICATION\u0022, \u0022evidenceIds\u0022: [\u0022lai-prazos-mdic:3ff71c8eb822fe279f70870367009ca66e1b453f701d0cf0eba487ef355278ef\u0022, \u0022lai-registro-informabr:690cd48e077b464bd17d8bfd59b8d0715ec944c0d92e44b5101c821b8937dcf2\u0022, \u0022lai-acompanhamento-mpo:9a3387558e38866be850d86556cfa73f270fb7d94eef81b220d6186894bdffb4\u0022], \u0022justification\u0022: \u0022A pergunta solicita o tempo de espera para um pedido, mas os documentos fornecem informa\u00E7\u00F5es sobre prazos gerais, registro de pedidos e acompanhamento, sem especificar o tempo de espera para um pedido individual.\u0022, \u0022clarificationQuestion\u0022: \u0022Qual tipo de pedido voc\u00EA est\u00E1 se referindo para que eu possa informar o tempo de espera?\u0022}",
+      "error": "Resposta de an\u00E1lise malformada, inconsistente ou com evid\u00EAncias inexistentes.",
+      "modelStatus": "NEEDS_CLARIFICATION"
+    },
+    {
+      "id": "A02",
+      "expected": "UNSUPPORTED",
+      "outcome": "InvalidResponse",
+      "predicted": null,
+      "justification": null,
+      "clarificationQuestion": null,
+      "retrievedChunks": [
+        {
+          "id": "lai-registro-informabr:690cd48e077b464bd17d8bfd59b8d0715ec944c0d92e44b5101c821b8937dcf2:1",
+          "documentId": "lai-registro-informabr"
+        },
+        {
+          "id": "lai-prazos-mdic:3ff71c8eb822fe279f70870367009ca66e1b453f701d0cf0eba487ef355278ef:1",
+          "documentId": "lai-prazos-mdic"
+        },
+        {
+          "id": "lai-acompanhamento-mpo:9a3387558e38866be850d86556cfa73f270fb7d94eef81b220d6186894bdffb4:1",
+          "documentId": "lai-acompanhamento-mpo"
+        }
+      ],
+      "returnedIds": [
+        "lai-registro-informabr:690cd48e077b464bd17d8bfd59b8d0715ec944c0d92e44b5101c821b8937dcf2",
+        "lai-prazos-mdic:3ff71c8eb822fe279f70870367009ca66e1b453f701d0cf0eba487ef355278ef",
+        "lai-acompanhamento-mpo:9a3387558e38866be850d86556cfa73f270fb7d94eef81b220d6186894bdffb4"
+      ],
+      "idsInRetrievedSet": false,
+      "citedDocuments": [],
+      "expectedSourcesCited": null,
+      "rawResponse": "{\u0022status\u0022:\u0022SUPPORTED\u0022, \u0022evidenceIds\u0022: [\u0022lai-registro-informabr:690cd48e077b464bd17d8bfd59b8d0715ec944c0d92e44b5101c821b8937dcf2\u0022, \u0022lai-prazos-mdic:3ff71c8eb822fe279f70870367009ca66e1b453f701d0cf0eba487ef355278ef\u0022, \u0022lai-acompanhamento-mpo:9a3387558e38866be850d86556cfa73f270fb7d94eef81b220d6186894bdffb4\u0022], \u0022justification\u0022: \u0022\\\u0022O documento lai-prazos-mdic indica que o prazo para recurso \u00E9 de 20 dias, com possibilidade de prorroga\u00E7\u00E3o de 10 dias. O documento lai-acompanhamento-mpo detalha o processo de recurso na plataforma Informa.BR.\\\u0022\u0022, \u0022clarificationQuestion\u0022: null}",
+      "error": "Resposta de an\u00E1lise malformada, inconsistente ou com evid\u00EAncias inexistentes.",
+      "modelStatus": "SUPPORTED"
+    },
+    {
+      "id": "A03",
+      "expected": "UNSUPPORTED",
+      "outcome": "InvalidResponse",
+      "predicted": null,
+      "justification": null,
+      "clarificationQuestion": null,
+      "retrievedChunks": [
+        {
+          "id": "lai-registro-informabr:690cd48e077b464bd17d8bfd59b8d0715ec944c0d92e44b5101c821b8937dcf2:1",
+          "documentId": "lai-registro-informabr"
+        },
+        {
+          "id": "lai-acompanhamento-mpo:9a3387558e38866be850d86556cfa73f270fb7d94eef81b220d6186894bdffb4:1",
+          "documentId": "lai-acompanhamento-mpo"
+        },
+        {
+          "id": "lai-prazos-mdic:3ff71c8eb822fe279f70870367009ca66e1b453f701d0cf0eba487ef355278ef:1",
+          "documentId": "lai-prazos-mdic"
+        }
+      ],
+      "returnedIds": [
+        "lai-registro-informabr:690cd48e077b464bd17d8bfd59b8d0715ec944c0d92e44b5101c821b8937dcf2",
+        "lai-acompanhamento-mpo:9a3387558e38866be850d86556cfa73f270fb7d94eef81b220d6186894bdffb4",
+        "lai-prazos-mdic:3ff71c8eb822fe279f70870367009ca66e1b453f701d0cf0eba487ef355278ef"
+      ],
+      "idsInRetrievedSet": false,
+      "citedDocuments": [],
+      "expectedSourcesCited": null,
+      "rawResponse": "{\u0022status\u0022:\u0022NEEDS_CLARIFICATION\u0022, \u0022evidenceIds\u0022: [\u0022lai-registro-informabr:690cd48e077b464bd17d8bfd59b8d0715ec944c0d92e44b5101c821b8937dcf2\u0022, \u0022lai-acompanhamento-mpo:9a3387558e38866be850d86556cfa73f270fb7d94eef81b220d6186894bdffb4\u0022, \u0022lai-prazos-mdic:3ff71c8eb822fe279f70870367009ca66e1b453f701d0cf0eba487ef355278ef\u0022], \u0022justification\u0022: \u0022A negativa do pedido de informa\u00E7\u00E3o foi justificada como sigilo. \u00C9 necess\u00E1rio verificar se a negativa foi realizada dentro dos prazos estabelecidos e se a solicita\u00E7\u00E3o se enquadra nas regras de acesso \u00E0 informa\u00E7\u00E3o.\u0022, \u0022clarificationQuestion\u0022: \u0022Quais s\u00E3o os crit\u00E9rios espec\u00EDficos que levaram \u00E0 negativa do pedido de informa\u00E7\u00E3o, considerando os prazos e as regras de acesso \u00E0 informa\u00E7\u00E3o?\u0022}",
+      "error": "Resposta de an\u00E1lise malformada, inconsistente ou com evid\u00EAncias inexistentes.",
+      "modelStatus": "NEEDS_CLARIFICATION"
+    },
+    {
+      "id": "F01",
+      "expected": "UNSUPPORTED",
+      "outcome": "InvalidResponse",
+      "predicted": null,
+      "justification": null,
+      "clarificationQuestion": null,
+      "retrievedChunks": [
+        {
+          "id": "lai-registro-informabr:690cd48e077b464bd17d8bfd59b8d0715ec944c0d92e44b5101c821b8937dcf2:1",
+          "documentId": "lai-registro-informabr"
+        },
+        {
+          "id": "lai-prazos-mdic:3ff71c8eb822fe279f70870367009ca66e1b453f701d0cf0eba487ef355278ef:1",
+          "documentId": "lai-prazos-mdic"
+        },
+        {
+          "id": "lai-acompanhamento-mpo:9a3387558e38866be850d86556cfa73f270fb7d94eef81b220d6186894bdffb4:1",
+          "documentId": "lai-acompanhamento-mpo"
+        }
+      ],
+      "returnedIds": [
+        "lai-registro-informabr:690cd48e077b464bd17d8bfd59b8d0715ec944c0d92e44b5101c821b8937dcf2",
+        "lai-prazos-mdic:3ff71c8eb822fe279f70870367009ca66e1b453f701d0cf0eba487ef355278ef",
+        "lai-acompanhamento-mpo:9a3387558e38866be850d86556cfa73f270fb7d94eef81b220d6186894bdffb4"
+      ],
+      "idsInRetrievedSet": false,
+      "citedDocuments": [],
+      "expectedSourcesCited": null,
+      "rawResponse": "{\u0022status\u0022:\u0022NEEDS_CLARIFICATION\u0022,\u0022evidenceIds\u0022:[\u0022lai-registro-informabr:690cd48e077b464bd17d8bfd59b8d0715ec944c0d92e44b5101c821b8937dcf2\u0022,\u0022lai-prazos-mdic:3ff71c8eb822fe279f70870367009ca66e1b453f701d0cf0eba487ef355278ef\u0022,\u0022lai-acompanhamento-mpo:9a3387558e38866be850d86556cfa73f270fb7d94eef81b220d6186894bdffb4\u0022], \u0022justification\u0022:\u0022A pergunta solicita o valor da aposentadoria com base em anos de contribui\u00E7\u00E3o. Os documentos fornecem informa\u00E7\u00F5es sobre o registro de pedidos, prazos e acompanhamento, mas n\u00E3o especificam os crit\u00E9rios de c\u00E1lculo da aposentadoria.\u0022, \u0022clarificationQuestion\u0022:\u0022Quais s\u00E3o os crit\u00E9rios espec\u00EDficos para o c\u00E1lculo da aposentadoria com base em 60 anos de idade e 30 anos de contribui\u00E7\u00E3o?\u0022}",
+      "error": "Resposta de an\u00E1lise malformada, inconsistente ou com evid\u00EAncias inexistentes.",
+      "modelStatus": "NEEDS_CLARIFICATION"
+    },
+    {
+      "id": "F02",
+      "expected": "UNSUPPORTED",
+      "outcome": "InvalidResponse",
+      "predicted": null,
+      "justification": null,
+      "clarificationQuestion": null,
+      "retrievedChunks": [
+        {
+          "id": "lai-prazos-mdic:3ff71c8eb822fe279f70870367009ca66e1b453f701d0cf0eba487ef355278ef:1",
+          "documentId": "lai-prazos-mdic"
+        },
+        {
+          "id": "lai-registro-informabr:690cd48e077b464bd17d8bfd59b8d0715ec944c0d92e44b5101c821b8937dcf2:1",
+          "documentId": "lai-registro-informabr"
+        },
+        {
+          "id": "lai-acompanhamento-mpo:9a3387558e38866be850d86556cfa73f270fb7d94eef81b220d6186894bdffb4:1",
+          "documentId": "lai-acompanhamento-mpo"
+        }
+      ],
+      "returnedIds": [
+        "lai-prazos-mdic",
+        "lai-registro-informabr",
+        "lai-acompanhamento-mpo"
+      ],
+      "idsInRetrievedSet": false,
+      "citedDocuments": [],
+      "expectedSourcesCited": null,
+      "rawResponse": "{\u0022status\u0022:\u0022NEEDS_CLARIFICATION\u0022, \u0022evidenceIds\u0022: [\u0022lai-prazos-mdic\u0022, \u0022lai-registro-informabr\u0022, \u0022lai-acompanhamento-mpo\u0022], \u0022justification\u0022: \u0022A pergunta solicita informa\u00E7\u00F5es sobre agendamento de consulta e prazos de atendimento no SUS. Os documentos fornecem informa\u00E7\u00F5es sobre o processo de solicita\u00E7\u00E3o de informa\u00E7\u00F5es no Informa.BR, mas n\u00E3o detalham o agendamento de consultas.\u0022, \u0022clarificationQuestion\u0022: \u0022Quais informa\u00E7\u00F5es espec\u00EDficas voc\u00EA precisa sobre o agendamento de consultas no SUS?\u0022}",
+      "error": "Resposta de an\u00E1lise malformada, inconsistente ou com evid\u00EAncias inexistentes.",
+      "modelStatus": "NEEDS_CLARIFICATION"
+    },
+    {
+      "id": "F03",
+      "expected": "UNSUPPORTED",
+      "outcome": "InvalidResponse",
+      "predicted": null,
+      "justification": null,
+      "clarificationQuestion": null,
+      "retrievedChunks": [
+        {
+          "id": "lai-prazos-mdic:3ff71c8eb822fe279f70870367009ca66e1b453f701d0cf0eba487ef355278ef:1",
+          "documentId": "lai-prazos-mdic"
+        },
+        {
+          "id": "lai-registro-informabr:690cd48e077b464bd17d8bfd59b8d0715ec944c0d92e44b5101c821b8937dcf2:1",
+          "documentId": "lai-registro-informabr"
+        },
+        {
+          "id": "lai-acompanhamento-mpo:9a3387558e38866be850d86556cfa73f270fb7d94eef81b220d6186894bdffb4:1",
+          "documentId": "lai-acompanhamento-mpo"
+        }
+      ],
+      "returnedIds": [
+        "lai-prazos-mdic",
+        "lai-registro-informabr",
+        "lai-acompanhamento-mpo"
+      ],
+      "idsInRetrievedSet": false,
+      "citedDocuments": [],
+      "expectedSourcesCited": null,
+      "rawResponse": "{\u0022status\u0022:\u0022NEEDS_CLARIFICATION\u0022, \u0022evidenceIds\u0022: [\u0022lai-prazos-mdic\u0022, \u0022lai-registro-informabr\u0022, \u0022lai-acompanhamento-mpo\u0022], \u0022justification\u0022: \u0022O texto fornece informa\u00E7\u00F5es sobre prazos gerais de atendimento e como registrar pedidos, mas n\u00E3o detalha como consultar o andamento espec\u00EDfico da restitui\u00E7\u00E3o do imposto de renda ou quando ela ser\u00E1 recebida. \u00C9 necess\u00E1rio mais contexto para responder \u00E0 pergunta.\u0022, \u0022clarificationQuestion\u0022: \u0022Como posso consultar o andamento da minha restitui\u00E7\u00E3o do imposto de renda e quando posso esperar receb\u00EA-la?\u0022}",
+      "error": "Resposta de an\u00E1lise malformada, inconsistente ou com evid\u00EAncias inexistentes.",
+      "modelStatus": "NEEDS_CLARIFICATION"
+    }
+  ],
+  "modelReadableStatuses": 15,
+  "modelCorrect": 7,
+  "modelAccuracy": 0.4666666666666667,
+  "modelFalseSupported": [
+    "A02"
+  ],
+  "modelConfusionMatrix": {
+    "SUPPORTED": {
+      "SUPPORTED": 6,
+      "NEEDS_CLARIFICATION": 3,
+      "UNSUPPORTED": 0
+    },
+    "NEEDS_CLARIFICATION": {
+      "SUPPORTED": 0,
+      "NEEDS_CLARIFICATION": 1,
+      "UNSUPPORTED": 0
+    },
+    "UNSUPPORTED": {
+      "SUPPORTED": 1,
+      "NEEDS_CLARIFICATION": 4,
+      "UNSUPPORTED": 0
+    }
+  },
+  "casesWithAllReturnedIdsValid": 1
+}
